@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jayny.povertyalleviation">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AssistListActivity"
+            android:label="@string/module_assist" />
+        <activity
+            android:name=".PoorListActivity"
+            android:label="@string/module_poor" />
+        <activity
+            android:name=".ItemListActivity"
+            android:label="@string/title_item_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ItemDetailActivity"
+            android:label="@string/title_item_detail"
+            android:parentActivityName=".ItemListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jayny.povertyalleviation.ItemListActivity" />
+        </activity>
+        <activity
+            android:name=".PoorInfoActivity"
+            android:label="@string/title_p_info"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jayny.povertyalleviation.AssistListActivity" />
+        </activity>
+        <activity
+            android:name=".SuggestActivity"
+            android:label="@string/title_p_suggest"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jayny.povertyalleviation.AssistListActivity" />
+        </activity>
+        <activity
+            android:name=".AssistSetActivity"
+            android:label="@string/title_assis_set"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AssistSetPhotoActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jayny.povertyalleviation.AssistSetActivity" />
+        </activity>
+        <activity
+            android:name=".PhotoZoomActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jayny.povertyalleviation.AssistSetPhotoActivity" />
+        </activity>
+        <activity
+            android:name=".SetContentActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jayny.povertyalleviation.AssistSetActivity" />
+        </activity>
+        <activity
+            android:name=".RequireListActivity"
+            android:label="@string/title_require_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RequireDetailActivity"
+            android:label="@string/title_require_detail"
+            android:parentActivityName=".RequireListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jayny.povertyalleviation.RequireListActivity" />
+        </activity>
+        <activity
+            android:name=".SetTwelveListListActivity"
+            android:label="@string/title_settwelvelist_list"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jayny.povertyalleviation.AssistSetActivity" />
+        </activity>
+        <activity
+            android:name=".SetTwelveListDetailActivity"
+            android:label="@string/title_settwelvelist_detail"
+            android:parentActivityName=".SetTwelveListListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jayny.povertyalleviation.SetTwelveListListActivity" />
+        </activity>
+        <activity
+            android:name=".ManagerListActivity"
+            android:label="@string/module_manager" />
+        <activity
+            android:name=".VillageListActivity"
+            android:label="@string/title_village_list"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jayny.povertyalleviation.ManagerListActivity" />
+        </activity>
+        <activity
+            android:name=".PoorerListActivity"
+            android:label="@string/title_poorer_list"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jayny.povertyalleviation.ManagerListActivity" />
+        </activity>
+        <activity
+            android:name=".PoorerListDetailActivity"
+            android:label="@string/title_poorer_list"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jayny.povertyalleviation.PoorerListActivity" />
+        </activity>
+        <activity
+            android:name=".suggestRetrunListActivity"
+            android:label="@string/title_suggestretrun_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".suggestRetrunDetailActivity"
+            android:label="@string/title_suggestretrun_detail"
+            android:parentActivityName=".suggestRetrunListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jayny.povertyalleviation.suggestRetrunListActivity" />
+        </activity>
+        <activity
+            android:name=".groupListActivity"
+            android:label="@string/title_group_list"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jayny.povertyalleviation.ManagerListActivity" />
+        </activity>
+        <activity
+            android:name=".groupDetailActivity"
+            android:label="@string/title_group_detail"
+            android:parentActivityName=".groupListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jayny.povertyalleviation.groupListActivity" />
+        </activity>
+        <activity
+            android:name=".fundListActivity"
+            android:label="@string/title_fund_list"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".fundDetailActivity"
+            android:label="@string/title_fund_detail"
+            android:parentActivityName=".fundListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jayny.povertyalleviation.fundListActivity" />
+        </activity>
+    </application>
+
+</manifest>

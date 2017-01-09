@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f30001</color>
+    <color name="colorPrimaryDark">#f30001</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBlurGrey">#669999</color>
+    <color name="font_black">#000</color>
+    <color name="font_green">#11c601</color>
+    <color name="font_red">#de000b</color>
+    <color name="transparent_grey">#FFC9C7C3</color>
+    <color name="transparent_white">#FFFFFF</color>
+    <color name="blurOrange">#993333</color>
+    <!-- 描边颜色 -->
+    <color name="border_clo">#ccc</color>
+    <color name="text_clo">#333</color>
+    <color name="white">#fff</color>
+    <color name="blue">#419DE4</color>
+
+    <!-- 更新 -->
+    <color name="red">#f30001</color>
+    <color name="black">#000</color>
+    <color name="pink">#f87e7e</color>
+    <color name="login_gray">#989898</color>
+</resources>

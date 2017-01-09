@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/activity_assist_list"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@mipmap/manager_bg"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+    >
+
+    <LinearLayout style="@style/wrap_layout">
+        <!-- 全圆角-->
+        <LinearLayout
+            android:id="@+id/manager_poor"
+            style="@style/single_layout">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_menu_info_details"/>
+
+            <TextView
+                android:id="@+id/titleId"
+                style="@style/titletext"
+                android:text="帮扶对象"
+                android:textSize="22dp"/>
+
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/manager_poor11"
+        style="@style/wrap_layout"
+        android:layout_marginTop="20dp"
+        android:visibility="gone">
+        <!-- 全圆角-->
+        <LinearLayout
+            android:id="@+id/manager_poor1"
+            style="@style/single_layout">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_menu_info_details"/>
+
+            <TextView
+                android:id="@+id/titleId1"
+                style="@style/titletext"
+                android:text="未挂钩帮扶对象"
+                android:textSize="22dp"/>
+
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/wrap_layout"
+        android:layout_marginTop="20dp">
+        <!-- 全圆角-->
+        <LinearLayout
+            android:id="@+id/manager_assist"
+            style="@style/single_layout">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_menu_agenda"/>
+
+            <TextView
+                style="@style/titletext"
+                android:text="挂钩帮扶支部"
+                android:textSize="22dp"/>
+
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/wrap_layout"
+        android:layout_marginTop="20dp">
+        <!-- 全圆角-->
+        <LinearLayout
+            android:id="@+id/manager_suggset"
+            style="@style/single_layout">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_menu_send"/>
+
+            <TextView
+                style="@style/titletext"
+                android:text="意见建议反馈"
+                android:textSize="22dp"/>
+
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/wrap_layout"
+        android:layout_marginTop="20dp">
+        <!-- 全圆角-->
+        <LinearLayout
+            android:id="@+id/ttt"
+            style="@style/single_layout">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_menu_preferences"/>
+
+            <TextView
+                style="@style/titletext"
+                android:text="基金"
+                android:textSize="22dp"/>
+
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

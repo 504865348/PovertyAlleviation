@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlurGrey"
+    android:gravity="center_horizontal"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jayny.povertyalleviation.groupDetailFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:text="机构信息：" />
+    <!-- 全圆角-->
+    <LinearLayout
+        style="@style/wrap_layout"
+        android:layout_marginTop="5dp">
+        <!-- 无圆角-->
+        <LinearLayout style="@style/top_layout">
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/usertext"
+                android:text="机构名称：" />
+        </LinearLayout>
+
+        <!-- 分割线 -->
+        <View style="@style/bg_line" />
+        <!-- 上圆角-->
+        <LinearLayout style="@style/mid_layout">
+
+            <TextView
+                android:id="@+id/master"
+                style="@style/usertext"
+                android:text="机构负责人：" />
+        </LinearLayout>
+        <View style="@style/bg_line" />
+        <!-- 下圆角-->
+        <LinearLayout style="@style/bottom_layout">
+
+            <TextView
+                android:id="@+id/phone"
+                style="@style/usertext"
+                android:text="联系方式：" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/wrap_layout"
+        android:id="@+id/activess"
+        android:layout_marginTop="5dp">
+        <!-- 无圆角-->
+        <LinearLayout style="@style/top_layout">
+
+            <TextView
+                style="@style/usertext" />
+        </LinearLayout>
+
+        <!-- 分割线 -->
+        <View style="@style/bg_line" />
+        <!-- 上圆角-->
+        <LinearLayout style="@style/mid_layout">
+
+            <TextView
+                style="@style/usertext"/>
+        </LinearLayout>
+        <View style="@style/bg_line" />
+        <!-- 上圆角-->
+        <LinearLayout style="@style/mid_layout">
+
+            <TextView
+                style="@style/usertext"/>
+        </LinearLayout>
+        <View style="@style/bg_line" />
+        <!-- 上圆角-->
+        <LinearLayout style="@style/mid_layout">
+
+            <TextView
+                style="@style/usertext"/>
+        </LinearLayout>
+        <View style="@style/bg_line" />
+        <!-- 上圆角-->
+        <LinearLayout style="@style/mid_layout">
+
+            <TextView
+                style="@style/usertext"/>
+        </LinearLayout>
+        <View style="@style/bg_line" />
+        <!-- 上圆角-->
+        <LinearLayout style="@style/mid_layout">
+
+            <TextView
+                style="@style/usertext"/>
+        </LinearLayout>
+        <View style="@style/bg_line" />
+        <!-- 上圆角-->
+        <LinearLayout style="@style/mid_layout">
+
+            <TextView
+                style="@style/usertext"/>
+        </LinearLayout>
+        <View style="@style/bg_line" />
+        <!-- 上圆角-->
+        <LinearLayout style="@style/mid_layout">
+
+            <TextView
+                style="@style/usertext"/>
+        </LinearLayout>
+        <View style="@style/bg_line" />
+        <!-- 上圆角-->
+        <LinearLayout style="@style/mid_layout">
+
+            <TextView
+                style="@style/usertext"/>
+        </LinearLayout>
+        <View style="@style/bg_line" />
+        <!-- 上圆角-->
+        <LinearLayout style="@style/mid_layout">
+
+            <TextView
+                style="@style/usertext"/>
+        </LinearLayout>
+        <View style="@style/bg_line" />
+        <!-- 上圆角-->
+        <LinearLayout style="@style/mid_layout">
+
+            <TextView
+                style="@style/usertext"/>
+        </LinearLayout>
+
+
+
+        <View style="@style/bg_line" />
+        <!-- 下圆角-->
+        <LinearLayout style="@style/bottom_layout">
+
+            <TextView
+                style="@style/usertext" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

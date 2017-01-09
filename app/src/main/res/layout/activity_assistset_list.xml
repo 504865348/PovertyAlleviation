@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:fadingEdge="vertical"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:id="@+id/activity_p_suggest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlurGrey"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.jayny.povertyalleviation.AssistSetActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="四通："
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            style="@style/wrap_layout"
+            android:layout_marginTop="5dp">
+            <!-- 上圆角-->
+            <LinearLayout
+                android:id="@+id/as_1"
+                style="@style/top_layout">
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="水" />
+
+                <TextView
+                    android:id="@+id/as_1_status"
+                    style="@style/littleredtext"
+                    android:text="未完成"
+                    android:layout_marginRight="10dp"/>
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+            <!-- 分割线 -->
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout
+                android:id="@+id/as_2"
+                style="@style/mid_layout">
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="电" />
+
+                <TextView
+                    android:id="@+id/as_2_status"
+                    style="@style/littleredtext"
+                    android:text="未完成"
+                    android:layout_marginRight="10dp"/>
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+            <!-- 分割线 -->
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout
+                android:id="@+id/as_3"
+                style="@style/mid_layout">
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="气" />
+
+                <TextView
+                    android:id="@+id/as_3_status"
+                    style="@style/littleredtext"
+                    android:text="未完成"
+                    android:layout_marginRight="10dp"/>
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 下圆角-->
+            <LinearLayout
+                android:id="@+id/as_4"
+                style="@style/bottom_layout">
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="有线电视" />
+
+                <TextView
+                    android:id="@+id/as_4_status"
+                    style="@style/littleredtext"
+                    android:text="未完成"
+                    android:layout_marginRight="10dp"/>
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="四有："
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            style="@style/wrap_layout"
+            android:layout_marginTop="5dp">
+            <!-- 上圆角-->
+            <LinearLayout
+                android:id="@+id/as_5"
+                style="@style/top_layout">
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="基本生活保障" />
+
+                <TextView
+                    android:id="@+id/as_5_status"
+                    style="@style/littleredtext"
+                    android:text="未完成"
+                    android:layout_marginRight="10dp"/>
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+            <!-- 分割线 -->
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout
+                android:id="@+id/as_6"
+                style="@style/mid_layout">
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="基本生活家具" />
+
+                <TextView
+                    android:id="@+id/as_6_status"
+                    style="@style/littleredtext"
+                    android:text="未完成"
+                    android:layout_marginRight="10dp"/>
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+            <!-- 分割线 -->
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout
+                android:id="@+id/as_7"
+                style="@style/mid_layout">
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="基本生活电器" />
+
+                <TextView
+                    android:id="@+id/as_7_status"
+                    style="@style/littleredtext"
+                    android:text="未完成"
+                    android:layout_marginRight="10dp"/>
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 下圆角-->
+            <LinearLayout
+                android:id="@+id/as_8"
+                style="@style/bottom_layout">
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="基本厨卫设施" />
+
+                <TextView
+                    android:id="@+id/as_8_status"
+                    style="@style/littleredtext"
+                    android:text="未完成"
+                    android:layout_marginRight="10dp"/>
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="四结亲："
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            style="@style/wrap_layout"
+            android:layout_marginTop="5dp">
+            <!-- 上圆角-->
+            <LinearLayout
+                android:id="@+id/as_9"
+                style="@style/top_layout">
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="结对认亲" />
+
+                <TextView
+                    android:id="@+id/as_9_status"
+                    style="@style/littleredtext"
+                    android:text="未完成"
+                    android:layout_marginRight="10dp"/>
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+            <!-- 分割线 -->
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout
+                android:id="@+id/as_10"
+                style="@style/mid_layout">
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="结对帮亲" />
+
+                <TextView
+                    android:id="@+id/as_10_status"
+                    style="@style/littleredtext"
+                    android:text="未完成"
+                    android:layout_marginRight="10dp"/>
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+            <!-- 分割线 -->
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout
+                android:id="@+id/as_11"
+                style="@style/mid_layout">
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="结对暖亲" />
+
+                <TextView
+                    android:id="@+id/as_11_status"
+                    style="@style/littleredtext"
+                    android:text="未完成"
+                    android:layout_marginRight="10dp"/>
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 下圆角-->
+            <LinearLayout
+                android:id="@+id/as_12"
+                style="@style/bottom_layout">
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="结对访亲" />
+
+                <TextView
+                    android:id="@+id/as_12_status"
+                    style="@style/littleredtext"
+                    android:text="未完成"
+                    android:layout_marginRight="10dp"/>
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/wrap_layout"
+            android:layout_marginTop="15dp">
+            <LinearLayout
+                android:id="@+id/as_13"
+                style="@style/single_layout">
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="自定义事件" />
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
