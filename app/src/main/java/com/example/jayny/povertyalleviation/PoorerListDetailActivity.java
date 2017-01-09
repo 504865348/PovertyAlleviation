@@ -15,7 +15,7 @@ public class PoorerListDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_poorerlist);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle(getIntent().getStringExtra("name"));
+        toolbar.setTitle("精准扶贫-"+getIntent().getStringExtra("name")+"详细信息");
         setSupportActionBar(toolbar);
         // Show the Up button in the action bar.
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
