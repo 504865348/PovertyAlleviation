@@ -2,6 +2,7 @@ package com.example.jayny.povertyalleviation;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -13,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -43,7 +45,7 @@ public class PoorerListActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         if(Constant.usertype.equals("2")){
-            toolbar.setTitle(getIntent().getStringExtra("areaname"));
+            toolbar.setTitle("精准扶贫-"+getIntent().getStringExtra("areaname")+"贫困成员");
         }else if(Constant.usertype.equals("5")){
             toolbar.setTitle("未挂钩帮扶对象列表");
         }else{
@@ -95,6 +97,9 @@ public class PoorerListActivity extends AppCompatActivity {
 
         @Override
         public void onBindViewHolder(final ViewHolder holder, int position) {
+            if(position%2!=0){
+                holder.mPoorList.setBackgroundColor(Color.WHITE);
+            }
             holder.mItem = mValues.get(position);
             holder.mIdView.setText(String.valueOf(position));
             holder.mContentView.setText(mValues.get(position).get("name"));
@@ -123,6 +128,7 @@ public class PoorerListActivity extends AppCompatActivity {
             public final View mView;
             public final TextView mIdView;
             public final TextView mContentView;
+            public final LinearLayout mPoorList;
             public Map<String, String> mItem;
 
             public ViewHolder(View view) {
@@ -130,6 +136,7 @@ public class PoorerListActivity extends AppCompatActivity {
                 mView = view;
                 mIdView = (TextView) view.findViewById(R.id.id);
                 mContentView = (TextView) view.findViewById(R.id.content);
+                mPoorList= (LinearLayout) view.findViewById(R.id.ll_poor_list);
             }
 
             @Override

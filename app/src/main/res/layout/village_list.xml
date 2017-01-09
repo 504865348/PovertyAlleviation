@@ -9,4 +9,4 @@
     app:layoutManager="LinearLayoutManager"
     tools:context="com.example.jayny.povertyalleviation.VillageListActivity"
     tools:listitem="@layout/village_list_content"
-    android:layout_marginTop="16dp"/>
+    />

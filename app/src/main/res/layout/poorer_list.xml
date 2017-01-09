@@ -6,8 +6,6 @@
     android:name="com.example.jayny.povertyalleviation.PoorerListFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp"
     app:layoutManager="LinearLayoutManager"
     tools:context="com.example.jayny.povertyalleviation.PoorerListActivity"
     tools:listitem="@layout/poorer_list_content" />
