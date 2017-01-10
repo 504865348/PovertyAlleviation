@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+    <LinearLayout
+        android:id="@+id/activity_p_suggest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/assist_top"/>
+
+        <!--用rv和gv怕冲突，直接用ll实现了-->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/as_1"
+                style="@style/assist_ll">
+
+                <ImageView
+                    android:id="@+id/as_1_status"
+                    style="@style/assist_iv"
+                    android:src="@mipmap/tongdian"/>
+
+                <TextView
+                    style="@style/assist_tv"
+                    android:text="通电"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/login_gray"/>
+
+            <LinearLayout
+                android:id="@+id/as_2"
+                style="@style/assist_ll">
+
+                <ImageView
+                    android:id="@+id/as_2_status"
+                    style="@style/assist_iv"
+                    android:src="@mipmap/tongshui"/>
+
+                <TextView
+                    style="@style/assist_tv"
+                    android:text="通水"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/login_gray"/>
+
+            <LinearLayout
+                android:id="@+id/as_3"
+                style="@style/assist_ll">
+
+                <ImageView
+                    android:id="@+id/as_3_status"
+                    style="@style/assist_iv"
+                    android:src="@mipmap/tongqi"/>
+
+                <TextView
+                    style="@style/assist_tv"
+                    android:text="通气"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/login_gray"/>
+
+            <LinearLayout
+                android:id="@+id/as_4"
+                style="@style/assist_ll">
+
+                <ImageView
+                    android:id="@+id/as_4_status"
+                    style="@style/assist_iv"
+                    android:src="@mipmap/youxian"/>
+
+                <TextView
+                    style="@style/assist_tv"
+                    android:text="通有线电视"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/login_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/as_5"
+                style="@style/assist_ll">
+
+                <ImageView
+                    android:id="@+id/as_5_status"
+                    style="@style/assist_iv"
+                    android:src="@mipmap/shenghuo"/>
+
+                <TextView
+                    style="@style/assist_tv"
+                    android:text="基本生活保障"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/login_gray"/>
+
+            <LinearLayout
+                android:id="@+id/as_6"
+                style="@style/assist_ll">
+
+                <ImageView
+                    android:id="@+id/as_6_status"
+                    style="@style/assist_iv"
+                    android:src="@mipmap/jiaju"/>
+
+                <TextView
+                    style="@style/assist_tv"
+                    android:text="基本生活家居"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/login_gray"/>
+
+            <LinearLayout
+                android:id="@+id/as_7"
+                style="@style/assist_ll">
+
+                <ImageView
+                    android:id="@+id/as_7_status"
+                    style="@style/assist_iv"
+                    android:src="@mipmap/chuwei"/>
+
+                <TextView
+                    style="@style/assist_tv"
+                    android:text="基本生活厨卫"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/login_gray"/>
+
+            <LinearLayout
+                android:id="@+id/as_8"
+                style="@style/assist_ll">
+
+                <ImageView
+                    android:id="@+id/as_8_status"
+                    style="@style/assist_iv"
+                    android:src="@mipmap/jiadian"/>
+
+                <TextView
+                    style="@style/assist_tv"
+                    android:text="基本生活家电"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/login_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/as_9"
+                style="@style/assist_ll">
+
+                <ImageView
+                    android:id="@+id/as_9_status"
+                    style="@style/assist_iv"
+                    android:src="@mipmap/renqin"/>
+
+                <TextView
+                    style="@style/assist_tv"
+                    android:text="结对认亲"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/login_gray"/>
+
+            <LinearLayout
+                android:id="@+id/as_10"
+                style="@style/assist_ll">
+
+                <ImageView
+                    android:id="@+id/as_10_status"
+                    style="@style/assist_iv"
+                    android:src="@mipmap/nuanqi"/>
+
+                <TextView
+                    style="@style/assist_tv"
+                    android:text="结对暖亲"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/login_gray"/>
+
+            <LinearLayout
+                android:id="@+id/as_11"
+                style="@style/assist_ll">
+
+                <ImageView
+                    android:id="@+id/as_11_status"
+                    style="@style/assist_iv"
+                    android:src="@mipmap/fangqin"/>
+
+                <TextView
+                    style="@style/assist_tv"
+                    android:text="结对访亲"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/login_gray"/>
+
+            <LinearLayout
+                android:id="@+id/as_12"
+                style="@style/assist_ll">
+
+                <ImageView
+                    android:id="@+id/as_12_status"
+                    style="@style/assist_iv"
+                    android:src="@mipmap/bangqin"/>
+
+                <TextView
+                    style="@style/assist_tv"
+                    android:text="结对帮亲"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/login_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                style="@style/assist_ll">
+
+                <ImageView
+                    style="@style/assist_iv"
+                    android:src="@mipmap/qita"/>
+
+                <TextView
+                    style="@style/assist_tv"
+                    android:text="其他"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/login_gray"/>
+
+            <LinearLayout
+                style="@style/assist_ll">
+
+                <ImageView
+                    style="@style/assist_iv"
+                    android:src="@mipmap/qita"/>
+
+                <TextView
+                    style="@style/assist_tv"
+                    android:text="其他"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/login_gray"/>
+
+            <LinearLayout
+                style="@style/assist_ll">
+
+                <ImageView
+                    style="@style/assist_iv"
+                    android:src="@mipmap/qita"/>
+
+                <TextView
+                    style="@style/assist_tv"
+                    android:text="其他"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/login_gray"/>
+
+            <LinearLayout
+                android:id="@+id/as_13"
+                style="@style/assist_ll">
+
+                <ImageView
+                    style="@style/assist_iv"
+                    android:src="@mipmap/tianjia"/>
+
+                <TextView
+                    style="@style/assist_tv"
+                    android:text="添加"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/login_gray"/>
+    </LinearLayout>
+
+
+</ScrollView>
+

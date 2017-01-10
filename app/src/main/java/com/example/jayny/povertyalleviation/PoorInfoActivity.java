@@ -27,7 +27,7 @@ public class PoorInfoActivity extends AppCompatActivity {
         if(Constant.usertype.equals("1")){
             toolbar.setTitle(Constant.pname+"的信息");
         }else{
-            toolbar.setTitle(getIntent().getStringExtra("name")+"的信息");
+            toolbar.setTitle("精准扶贫-"+getIntent().getStringExtra("name")+"详细信息");
         }
         setSupportActionBar(toolbar);
         // Show the Up button in the action bar.

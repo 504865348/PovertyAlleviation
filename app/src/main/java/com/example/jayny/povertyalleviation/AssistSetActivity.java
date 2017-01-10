@@ -27,7 +27,7 @@ public class AssistSetActivity extends AppCompatActivity {
         setContentView(R.layout.activity_assistset);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        toolbar.setTitle(getTitle());
+        toolbar.setTitle("精准扶贫-"+getTitle());
         // Show the Up button in the action bar.
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {

@@ -160,7 +160,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="ce4596754c5cb1b3af69a31b0784e33e7e0c27d4">
+        sha1="4ba54ab0de713551639ec4173238599f28379c67">
         <dex dex="D:\software\AndroidStudio\Workspace\PovertyAlleviation\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_03f548c716c6a1c66b702900eb33a0b41593aa7e\classes.dex" />
     </item>
     <item
@@ -169,7 +169,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="3b953a562e06ac05091f1e2d19bfc33f5449e0c9">
+        sha1="29d5047f9f5e1275f504d6c31c32ad97cf6955d0">
         <dex dex="D:\software\AndroidStudio\Workspace\PovertyAlleviation\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_700b8ae1b5dddf8370f4a7bf5acd2a6ccd6cd2de\classes.dex" />
     </item>
     <item
@@ -192,21 +192,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="D:\software\AndroidStudio\Workspace\PovertyAlleviation\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
-        <dex dex="D:\software\AndroidStudio\Workspace\PovertyAlleviation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.8.0_250fdf857e9760fc174fb2242118b082066133fe\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="D:\software\AndroidStudio\SDK\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
         <dex dex="D:\software\AndroidStudio\Workspace\PovertyAlleviation\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_413f5426a8e34fe998e0445c8f7b5cbdfd86e842\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\software\AndroidStudio\Workspace\PovertyAlleviation\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="D:\software\AndroidStudio\Workspace\PovertyAlleviation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.8.0_250fdf857e9760fc174fb2242118b082066133fe\classes.dex" />
     </item>
     <item
         is-multidex="true"
