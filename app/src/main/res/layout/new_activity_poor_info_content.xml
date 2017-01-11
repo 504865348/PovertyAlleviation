@@ -93,7 +93,7 @@
             android:layout_marginTop="5dp">
 
             <!-- 无圆角-->
-            <LinearLayout style="@style/top_layout">
+            <LinearLayout style="@style/top_layout_2">
 
                 <TextView
                     android:id="@+id/identityCard"
@@ -103,7 +103,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/sex"
@@ -124,7 +124,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:layout_width="0dp"
@@ -145,7 +145,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/permanentAddress"
@@ -156,7 +156,7 @@
             <View style="@style/bg_line" />
 
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/agriculturalNum"
@@ -166,7 +166,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/familyIncome"
@@ -176,7 +176,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:layout_width="0dp"
@@ -197,7 +197,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/bottom_layout">
+            <LinearLayout style="@style/bottom_layout_2">
 
                 <TextView
                     android:layout_width="0dp"
@@ -230,7 +230,7 @@
             style="@style/wrap_layout"
             android:layout_marginTop="5dp">
             <!-- 无圆角-->
-            <LinearLayout style="@style/top_layout">
+            <LinearLayout style="@style/top_layout_2">
 
                 <TextView
                     android:id="@+id/eName1"
@@ -241,7 +241,7 @@
             <!-- 分割线 -->
             <View style="@style/bg_line" />
             <!-- 上圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eRelationship1"
@@ -251,7 +251,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eSex1"
@@ -261,7 +261,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eIdentityCard1"
@@ -271,7 +271,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eEducationLevels1"
@@ -281,7 +281,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eIncome1"
@@ -291,7 +291,7 @@
 
             <View style="@style/bg_line" />
             <!-- 下圆角-->
-            <LinearLayout style="@style/bottom_layout">
+            <LinearLayout style="@style/bottom_layout_2">
 
                 <TextView
                     android:id="@+id/eExpenses1"
@@ -305,7 +305,7 @@
             style="@style/wrap_layout"
             android:layout_marginTop="15dp">
             <!-- 无圆角-->
-            <LinearLayout style="@style/top_layout">
+            <LinearLayout style="@style/top_layout_2">
 
                 <TextView
                     android:id="@+id/eName2"
@@ -316,7 +316,7 @@
             <!-- 分割线 -->
             <View style="@style/bg_line" />
             <!-- 上圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eRelationship2"
@@ -326,7 +326,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eSex2"
@@ -336,7 +336,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eIdentityCard2"
@@ -346,7 +346,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eEducationLevels2"
@@ -356,7 +356,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eIncome2"
@@ -366,7 +366,7 @@
 
             <View style="@style/bg_line" />
             <!-- 下圆角-->
-            <LinearLayout style="@style/bottom_layout">
+            <LinearLayout style="@style/bottom_layout_2">
 
                 <TextView
                     android:id="@+id/eExpenses2"
@@ -380,7 +380,7 @@
             style="@style/wrap_layout"
             android:layout_marginTop="15dp">
             <!-- 无圆角-->
-            <LinearLayout style="@style/top_layout">
+            <LinearLayout style="@style/top_layout_2">
 
                 <TextView
                     android:id="@+id/eName3"
@@ -391,7 +391,7 @@
             <!-- 分割线 -->
             <View style="@style/bg_line" />
             <!-- 上圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eRelationship3"
@@ -401,7 +401,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eSex3"
@@ -411,7 +411,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eIdentityCard3"
@@ -421,7 +421,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eEducationLevels3"
@@ -431,7 +431,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eIncome3"
@@ -441,7 +441,7 @@
 
             <View style="@style/bg_line" />
             <!-- 下圆角-->
-            <LinearLayout style="@style/bottom_layout">
+            <LinearLayout style="@style/bottom_layout_2">
 
                 <TextView
                     android:id="@+id/eExpenses3"
@@ -455,7 +455,7 @@
             style="@style/wrap_layout"
             android:layout_marginTop="15dp">
             <!-- 无圆角-->
-            <LinearLayout style="@style/top_layout">
+            <LinearLayout style="@style/top_layout_2">
 
                 <TextView
                     android:id="@+id/eName4"
@@ -466,7 +466,7 @@
             <!-- 分割线 -->
             <View style="@style/bg_line" />
             <!-- 上圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eRelationship4"
@@ -476,7 +476,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eSex4"
@@ -486,7 +486,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eIdentityCard4"
@@ -496,7 +496,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eEducationLevels4"
@@ -506,7 +506,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eIncome4"
@@ -516,7 +516,7 @@
 
             <View style="@style/bg_line" />
             <!-- 下圆角-->
-            <LinearLayout style="@style/bottom_layout">
+            <LinearLayout style="@style/bottom_layout_2">
 
                 <TextView
                     android:id="@+id/eExpenses4"
@@ -530,7 +530,7 @@
             style="@style/wrap_layout"
             android:layout_marginTop="15dp">
             <!-- 无圆角-->
-            <LinearLayout style="@style/top_layout">
+            <LinearLayout style="@style/top_layout_2">
 
                 <TextView
                     android:id="@+id/eName5"
@@ -541,7 +541,7 @@
             <!-- 分割线 -->
             <View style="@style/bg_line" />
             <!-- 上圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eRelationship5"
@@ -551,7 +551,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eSex5"
@@ -561,7 +561,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eIdentityCard5"
@@ -571,7 +571,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eEducationLevels5"
@@ -581,7 +581,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eIncome5"
@@ -591,7 +591,7 @@
 
             <View style="@style/bg_line" />
             <!-- 下圆角-->
-            <LinearLayout style="@style/bottom_layout">
+            <LinearLayout style="@style/bottom_layout_2">
 
                 <TextView
                     android:id="@+id/eExpenses5"
@@ -605,7 +605,7 @@
             style="@style/wrap_layout"
             android:layout_marginTop="15dp">
             <!-- 无圆角-->
-            <LinearLayout style="@style/top_layout">
+            <LinearLayout style="@style/top_layout_2">
 
                 <TextView
                     android:id="@+id/eName6"
@@ -616,7 +616,7 @@
             <!-- 分割线 -->
             <View style="@style/bg_line" />
             <!-- 上圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eRelationship6"
@@ -626,7 +626,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eSex6"
@@ -636,7 +636,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eIdentityCard6"
@@ -646,7 +646,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eEducationLevels6"
@@ -656,7 +656,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eIncome6"
@@ -666,7 +666,7 @@
 
             <View style="@style/bg_line" />
             <!-- 下圆角-->
-            <LinearLayout style="@style/bottom_layout">
+            <LinearLayout style="@style/bottom_layout_2">
 
                 <TextView
                     android:id="@+id/eExpenses6"
@@ -680,7 +680,7 @@
             style="@style/wrap_layout"
             android:layout_marginTop="15dp">
             <!-- 无圆角-->
-            <LinearLayout style="@style/top_layout">
+            <LinearLayout style="@style/top_layout_2">
 
                 <TextView
                     android:id="@+id/eName7"
@@ -691,7 +691,7 @@
             <!-- 分割线 -->
             <View style="@style/bg_line" />
             <!-- 上圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eRelationship7"
@@ -701,7 +701,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eSex7"
@@ -711,7 +711,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eIdentityCard7"
@@ -721,7 +721,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eEducationLevels7"
@@ -731,7 +731,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eIncome7"
@@ -741,7 +741,7 @@
 
             <View style="@style/bg_line" />
             <!-- 下圆角-->
-            <LinearLayout style="@style/bottom_layout">
+            <LinearLayout style="@style/bottom_layout_2">
 
                 <TextView
                     android:id="@+id/eExpenses7"
@@ -755,7 +755,7 @@
             style="@style/wrap_layout"
             android:layout_marginTop="15dp">
             <!-- 无圆角-->
-            <LinearLayout style="@style/top_layout">
+            <LinearLayout style="@style/top_layout_2">
 
                 <TextView
                     android:id="@+id/eName8"
@@ -766,7 +766,7 @@
             <!-- 分割线 -->
             <View style="@style/bg_line" />
             <!-- 上圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eRelationship8"
@@ -776,7 +776,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eSex8"
@@ -786,7 +786,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eIdentityCard8"
@@ -796,7 +796,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eEducationLevels8"
@@ -806,7 +806,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eIncome8"
@@ -816,7 +816,7 @@
 
             <View style="@style/bg_line" />
             <!-- 下圆角-->
-            <LinearLayout style="@style/bottom_layout">
+            <LinearLayout style="@style/bottom_layout_2">
 
                 <TextView
                     android:id="@+id/eExpenses8"
@@ -830,7 +830,7 @@
             style="@style/wrap_layout"
             android:layout_marginTop="15dp">
             <!-- 无圆角-->
-            <LinearLayout style="@style/top_layout">
+            <LinearLayout style="@style/top_layout_2">
 
                 <TextView
                     android:id="@+id/eName9"
@@ -841,7 +841,7 @@
             <!-- 分割线 -->
             <View style="@style/bg_line" />
             <!-- 上圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eRelationship9"
@@ -851,7 +851,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eSex9"
@@ -861,7 +861,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eIdentityCard9"
@@ -871,7 +871,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eEducationLevels9"
@@ -881,7 +881,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eIncome9"
@@ -891,7 +891,7 @@
 
             <View style="@style/bg_line" />
             <!-- 下圆角-->
-            <LinearLayout style="@style/bottom_layout">
+            <LinearLayout style="@style/bottom_layout_2">
 
                 <TextView
                     android:id="@+id/eExpenses9"
@@ -905,7 +905,7 @@
             style="@style/wrap_layout"
             android:layout_marginTop="15dp">
             <!-- 无圆角-->
-            <LinearLayout style="@style/top_layout">
+            <LinearLayout style="@style/top_layout_2">
 
                 <TextView
                     android:id="@+id/eName10"
@@ -916,7 +916,7 @@
             <!-- 分割线 -->
             <View style="@style/bg_line" />
             <!-- 上圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eRelationship10"
@@ -926,7 +926,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eSex10"
@@ -936,7 +936,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eIdentityCard10"
@@ -946,7 +946,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eEducationLevels10"
@@ -956,7 +956,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout">
+            <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
                     android:id="@+id/eIncome10"
@@ -966,7 +966,7 @@
 
             <View style="@style/bg_line" />
             <!-- 下圆角-->
-            <LinearLayout style="@style/bottom_layout">
+            <LinearLayout style="@style/bottom_layout_2">
 
                 <TextView
                     android:id="@+id/eExpenses10"

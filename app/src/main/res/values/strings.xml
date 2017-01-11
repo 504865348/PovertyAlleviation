@@ -8,6 +8,7 @@
     <!--生产环境-->
     <!--<string name="host_port_server">http://139.196.253.171:10080/app/app/</string>-->
     <!--<string name="host_port_server_pic">http://139.196.253.171:10080/app/</string>-->
+
     <string name="app_name">精准扶贫</string>
     <string name="module_assist">精准扶贫-帮扶单位系统</string>
     <string name="module_poor">精准扶贫-帮扶对象系统</string>
