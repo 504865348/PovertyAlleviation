@@ -17,10 +17,10 @@
             android:layout_margin="8dp"
             android:orientation="horizontal">
 
-            <ImageView
+<!--            <ImageView
                 android:layout_width="138dp"
                 android:layout_height="138dp"
-                android:src="@mipmap/head_pic_test"/>
+                android:src="@mipmap/img1"/>-->
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -33,42 +33,46 @@
                 >
 
                 <TextView
+                    android:id="@+id/name"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:gravity="center_vertical"
-                    android:text="姓名：张三"
+                    android:text="姓名："
                     android:textColor="@color/black"
                     android:textSize="16sp"/>
 
                 <TextView
+                    android:id="@+id/identityCard"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:gravity="center_vertical"
-                    android:text="生日：1965.1.1"
+                    android:text="身份证："
                     android:textColor="@color/black"
                     android:textSize="16sp"/>
 
                 <TextView
+                    android:id="@+id/homeAddress"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:gravity="center_vertical"
-                    android:text="住址：上党镇上档村5组"
+                    android:text="住址："
                     android:textColor="@color/black"
                     android:textSize="16sp"/>
 
                 <TextView
+                    android:id="@+id/aUnit"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:gravity="center_vertical"
-                    android:text="帮扶单位：镇江市政府"
+                    android:text="帮扶单位："
                     android:textColor="@color/black"
                     android:textSize="16sp"/>
             </LinearLayout>
@@ -115,7 +119,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
-                    android:text="贫困户的一些介绍"
+                    android:text=""
                     android:textColor="@color/white"
                     android:textSize="16sp"/>
 
@@ -123,7 +127,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
-                    android:text="。。。。。。。。。。。。"
+                    android:text=""
                     android:textColor="@color/white"
                     android:textSize="16sp"/>
 
@@ -141,6 +145,7 @@
 
 
         <LinearLayout
+            android:id="@+id/policy_document"
             android:layout_width="match_parent"
             android:layout_height="120dp"
             android:background="@color/white"
@@ -176,7 +181,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
-                    android:text="政策文件的一些介绍"
+                    android:text=""
                     android:textColor="@color/login_gray"
                     android:textSize="16sp"/>
 
@@ -184,7 +189,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
-                    android:text="。。。。。。。。。。。。"
+                    android:text=""
                     android:textColor="@color/login_gray"
                     android:textSize="16sp"/>
 
@@ -237,7 +242,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
-                    android:text="帮助情况的一些介绍"
+                    android:text=""
                     android:textColor="@color/white"
                     android:textSize="16sp"/>
 
@@ -245,7 +250,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
-                    android:text="。。。。。。。。。。。。"
+                    android:text=""
                     android:textColor="@color/white"
                     android:textSize="16sp"/>
 
@@ -298,7 +303,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
-                    android:text="需求诉说的一些介绍"
+                    android:text=""
                     android:textColor="@color/login_gray"
                     android:textSize="16sp"/>
 
@@ -306,7 +311,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
-                    android:text="。。。。。。。。。。。。"
+                    android:text=""
                     android:textColor="@color/login_gray"
                     android:textSize="16sp"/>
 

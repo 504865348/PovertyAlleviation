@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 public class AssistListActivity extends AppCompatActivity {
 
@@ -83,5 +84,21 @@ public class AssistListActivity extends AppCompatActivity {
         // TODO Auto-generated method stub
         super.onNewIntent(intent);
         setIntent(intent);
+    }
+
+    private long mPressedTime = 0;
+
+    /**
+     * 双击退出
+     */
+    @Override
+    public void onBackPressed() {
+        long mNowTime = System.currentTimeMillis();//获取第一次按键时间
+        if ((mNowTime - mPressedTime) > 2000) {//比较两次按键时间差
+            Toast.makeText(this, "再按一次退出程序", Toast.LENGTH_SHORT).show();
+            mPressedTime = mNowTime;
+        } else {//退出程序
+            System.exit(0);
+        }
     }
 }

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
 
     <LinearLayout
@@ -10,18 +9,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:scaleType="centerCrop"
-            android:src="@mipmap/assist_top"/>
+            android:src="@mipmap/assist_top" />
 
         <!--用rv和gv怕冲突，直接用ll实现了-->
         <LinearLayout
-
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:orientation="horizontal">
@@ -33,17 +30,18 @@
                 <ImageView
                     android:id="@+id/as_1_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/tongdian"/>
+                    android:src="@mipmap/tongdian2" />
 
                 <TextView
                     style="@style/assist_tv"
-                    android:text="通电"/>
+                    android:text="通电" />
+
             </LinearLayout>
 
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:background="@color/login_gray"/>
+                android:background="@color/login_gray" />
 
             <LinearLayout
                 android:id="@+id/as_2"
@@ -52,11 +50,11 @@
                 <ImageView
                     android:id="@+id/as_2_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/tongshui"/>
+                    android:src="@mipmap/tongshui2" />
 
                 <TextView
                     style="@style/assist_tv"
-                    android:text="通水"/>
+                    android:text="通水" />
 
 
             </LinearLayout>
@@ -64,7 +62,7 @@
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:background="@color/login_gray"/>
+                android:background="@color/login_gray" />
 
             <LinearLayout
                 android:id="@+id/as_3"
@@ -73,11 +71,11 @@
                 <ImageView
                     android:id="@+id/as_3_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/tongqi"/>
+                    android:src="@mipmap/tongqi2" />
 
                 <TextView
                     style="@style/assist_tv"
-                    android:text="通气"/>
+                    android:text="通气" />
 
 
             </LinearLayout>
@@ -85,7 +83,7 @@
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:background="@color/login_gray"/>
+                android:background="@color/login_gray" />
 
             <LinearLayout
                 android:id="@+id/as_4"
@@ -94,11 +92,11 @@
                 <ImageView
                     android:id="@+id/as_4_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/youxian"/>
+                    android:src="@mipmap/youxian2" />
 
                 <TextView
                     style="@style/assist_tv"
-                    android:text="通有线电视"/>
+                    android:text="通有线电视" />
 
 
             </LinearLayout>
@@ -109,7 +107,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/login_gray"/>
+            android:background="@color/login_gray" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -123,17 +121,17 @@
                 <ImageView
                     android:id="@+id/as_5_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/shenghuo"/>
+                    android:src="@mipmap/shenghuo2" />
 
                 <TextView
                     style="@style/assist_tv"
-                    android:text="基本生活保障"/>
+                    android:text="基本生活保障" />
             </LinearLayout>
 
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:background="@color/login_gray"/>
+                android:background="@color/login_gray" />
 
             <LinearLayout
                 android:id="@+id/as_6"
@@ -142,11 +140,11 @@
                 <ImageView
                     android:id="@+id/as_6_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/jiaju"/>
+                    android:src="@mipmap/jiaju2" />
 
                 <TextView
                     style="@style/assist_tv"
-                    android:text="基本生活家居"/>
+                    android:text="基本生活家居" />
 
 
             </LinearLayout>
@@ -154,7 +152,7 @@
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:background="@color/login_gray"/>
+                android:background="@color/login_gray" />
 
             <LinearLayout
                 android:id="@+id/as_7"
@@ -163,11 +161,11 @@
                 <ImageView
                     android:id="@+id/as_7_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/chuwei"/>
+                    android:src="@mipmap/chuwei2" />
 
                 <TextView
                     style="@style/assist_tv"
-                    android:text="基本生活厨卫"/>
+                    android:text="基本生活厨卫" />
 
 
             </LinearLayout>
@@ -175,7 +173,7 @@
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:background="@color/login_gray"/>
+                android:background="@color/login_gray" />
 
             <LinearLayout
                 android:id="@+id/as_8"
@@ -184,11 +182,11 @@
                 <ImageView
                     android:id="@+id/as_8_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/jiadian"/>
+                    android:src="@mipmap/jiadian2" />
 
                 <TextView
                     style="@style/assist_tv"
-                    android:text="基本生活家电"/>
+                    android:text="基本生活家电" />
 
 
             </LinearLayout>
@@ -199,7 +197,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/login_gray"/>
+            android:background="@color/login_gray" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -213,17 +211,17 @@
                 <ImageView
                     android:id="@+id/as_9_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/renqin"/>
+                    android:src="@mipmap/renqin2" />
 
                 <TextView
                     style="@style/assist_tv"
-                    android:text="结对认亲"/>
+                    android:text="结对认亲" />
             </LinearLayout>
 
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:background="@color/login_gray"/>
+                android:background="@color/login_gray" />
 
             <LinearLayout
                 android:id="@+id/as_10"
@@ -232,11 +230,11 @@
                 <ImageView
                     android:id="@+id/as_10_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/nuanqi"/>
+                    android:src="@mipmap/nuanqi2" />
 
                 <TextView
                     style="@style/assist_tv"
-                    android:text="结对暖亲"/>
+                    android:text="结对暖亲" />
 
 
             </LinearLayout>
@@ -244,7 +242,7 @@
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:background="@color/login_gray"/>
+                android:background="@color/login_gray" />
 
             <LinearLayout
                 android:id="@+id/as_11"
@@ -253,11 +251,11 @@
                 <ImageView
                     android:id="@+id/as_11_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/fangqin"/>
+                    android:src="@mipmap/fangqin2" />
 
                 <TextView
                     style="@style/assist_tv"
-                    android:text="结对访亲"/>
+                    android:text="结对访亲" />
 
 
             </LinearLayout>
@@ -265,7 +263,7 @@
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:background="@color/login_gray"/>
+                android:background="@color/login_gray" />
 
             <LinearLayout
                 android:id="@+id/as_12"
@@ -274,11 +272,11 @@
                 <ImageView
                     android:id="@+id/as_12_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/bangqin"/>
+                    android:src="@mipmap/bangqin2" />
 
                 <TextView
                     style="@style/assist_tv"
-                    android:text="结对帮亲"/>
+                    android:text="结对帮亲" />
 
 
             </LinearLayout>
@@ -289,7 +287,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/login_gray"/>
+            android:background="@color/login_gray" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -297,55 +295,49 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                style="@style/assist_ll">
+                style="@style/assist_ll"
+                android:visibility="invisible">
 
                 <ImageView
                     style="@style/assist_iv"
-                    android:src="@mipmap/qita"/>
+                    android:src="@mipmap/qita2" />
 
                 <TextView
                     style="@style/assist_tv"
-                    android:text="其他"/>
+                    android:text="其他" />
             </LinearLayout>
-
-            <View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="@color/login_gray"/>
 
             <LinearLayout
-                style="@style/assist_ll">
+                style="@style/assist_ll"
+                android:visibility="invisible">
 
                 <ImageView
                     style="@style/assist_iv"
-                    android:src="@mipmap/qita"/>
+                    android:src="@mipmap/qita2" />
 
                 <TextView
                     style="@style/assist_tv"
-                    android:text="其他"/>
+                    android:text="其他" />
             </LinearLayout>
 
-            <View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="@color/login_gray"/>
 
             <LinearLayout
-                style="@style/assist_ll">
+                style="@style/assist_ll"
+                android:visibility="invisible">
 
                 <ImageView
                     style="@style/assist_iv"
-                    android:src="@mipmap/qita"/>
+                    android:src="@mipmap/qita2" />
 
                 <TextView
                     style="@style/assist_tv"
-                    android:text="其他"/>
+                    android:text="其他" />
             </LinearLayout>
 
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:background="@color/login_gray"/>
+                android:background="@color/login_gray" />
 
             <LinearLayout
                 android:id="@+id/as_13"
@@ -353,11 +345,11 @@
 
                 <ImageView
                     style="@style/assist_iv"
-                    android:src="@mipmap/tianjia"/>
+                    android:src="@mipmap/tianjia2" />
 
                 <TextView
                     style="@style/assist_tv"
-                    android:text="添加"/>
+                    android:text="添加" />
 
 
             </LinearLayout>
@@ -368,7 +360,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/login_gray"/>
+            android:background="@color/login_gray" />
     </LinearLayout>
 
 

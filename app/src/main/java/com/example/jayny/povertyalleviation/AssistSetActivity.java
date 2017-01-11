@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -286,65 +287,53 @@ public class AssistSetActivity extends AppCompatActivity {
                     if (!msg.equals("")) {
                         int color = getResources().getColor(R.color.font_green);
                         JSONObject dataJson = new JSONObject(msg);
-                        TextView temp = (TextView) findViewById(R.id.as_1_status);
+                        ImageView temp = (ImageView) findViewById(R.id.as_1_status);
                         if (dataJson.getString("1").equals("1")) {
-                            temp.setText("已完成");
-                            temp.setTextColor(color);
+                            temp.setImageResource(R.mipmap.tongdian);
                         }
-                        temp = (TextView) findViewById(R.id.as_2_status);
+                        temp = (ImageView) findViewById(R.id.as_2_status);
                         if (dataJson.getString("2").equals("1")) {
-                            temp.setText("已完成");
-                            temp.setTextColor(color);
+                            temp.setImageResource(R.mipmap.tongshui);
                         }
-                        temp = (TextView) findViewById(R.id.as_3_status);
+                        temp = (ImageView) findViewById(R.id.as_3_status);
                         if (dataJson.getString("3").equals("1")) {
-                            temp.setText("已完成");
-                            temp.setTextColor(color);
+                            temp.setImageResource(R.mipmap.tongqi);
                         }
-                        temp = (TextView) findViewById(R.id.as_4_status);
+                        temp = (ImageView) findViewById(R.id.as_4_status);
                         if (dataJson.getString("4").equals("1")) {
-                            temp.setText("已完成");
-                            temp.setTextColor(color);
+                            temp.setImageResource(R.mipmap.youxian);
                         }
-                        temp = (TextView) findViewById(R.id.as_5_status);
+                        temp = (ImageView) findViewById(R.id.as_5_status);
                         if (dataJson.getString("5").equals("1")) {
-                            temp.setText("已完成");
-                            temp.setTextColor(color);
+                            temp.setImageResource(R.mipmap.shenghuo);
                         }
-                        temp = (TextView) findViewById(R.id.as_6_status);
+                        temp = (ImageView) findViewById(R.id.as_6_status);
                         if (dataJson.getString("6").equals("1")) {
-                            temp.setText("已完成");
-                            temp.setTextColor(color);
+                            temp.setImageResource(R.mipmap.jiaju);
                         }
-                        temp = (TextView) findViewById(R.id.as_7_status);
+                        temp = (ImageView) findViewById(R.id.as_7_status);
                         if (dataJson.getString("7").equals("1")) {
-                            temp.setText("已完成");
-                            temp.setTextColor(color);
+                            temp.setImageResource(R.mipmap.chuwei);
                         }
-                        temp = (TextView) findViewById(R.id.as_8_status);
+                        temp = (ImageView) findViewById(R.id.as_8_status);
                         if (dataJson.getString("8").equals("1")) {
-                            temp.setText("已完成");
-                            temp.setTextColor(color);
+                            temp.setImageResource(R.mipmap.jiadian);
                         }
-                        temp = (TextView) findViewById(R.id.as_9_status);
+                        temp = (ImageView) findViewById(R.id.as_9_status);
                         if (dataJson.getString("9").equals("1")) {
-                            temp.setText("已完成");
-                            temp.setTextColor(color);
+                            temp.setImageResource(R.mipmap.renqin);
                         }
-                        temp = (TextView) findViewById(R.id.as_10_status);
+                        temp = (ImageView) findViewById(R.id.as_10_status);
                         if (dataJson.getString("10").equals("1")) {
-                            temp.setText("已完成");
-                            temp.setTextColor(color);
+                            temp.setImageResource(R.mipmap.nuanqi);
                         }
-                        temp = (TextView) findViewById(R.id.as_11_status);
+                        temp = (ImageView) findViewById(R.id.as_11_status);
                         if (dataJson.getString("11").equals("1")) {
-                            temp.setText("已完成");
-                            temp.setTextColor(color);
+                            temp.setImageResource(R.mipmap.fangqin);
                         }
-                        temp = (TextView) findViewById(R.id.as_12_status);
+                        temp = (ImageView) findViewById(R.id.as_12_status);
                         if (dataJson.getString("12").equals("1")) {
-                            temp.setText("已完成");
-                            temp.setTextColor(color);
+                            temp.setImageResource(R.mipmap.bangqin);
                         }
                     }
                 } catch (Exception e) {

@@ -3,12 +3,12 @@ package com.example.jayny.povertyalleviation;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.KeyEvent;
@@ -20,21 +20,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
-import com.google.android.gms.appindexing.Thing;
-import com.google.android.gms.common.api.GoogleApiClient;
-
 import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Map;
 
 
-
 public class LoginActivity extends AppCompatActivity {
-
-
 
     private UserLoginTask mAuthTask = null;
     private EditText mEmailView;
@@ -42,8 +34,7 @@ public class LoginActivity extends AppCompatActivity {
     private View mProgressView;
     private View mLoginFormView;
     private Intent intent;
-
-    private GoogleApiClient client;
+    private SharedPreferences sp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,15 +66,12 @@ public class LoginActivity extends AppCompatActivity {
         mProgressView = findViewById(R.id.login_progress);
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+        sp = this.getSharedPreferences("userinfo", Context.MODE_PRIVATE);
+        if (sp.getBoolean("checkboxBoolean", false)) {
+            mEmailView.setText(sp.getString("mEmail", null));
+            mPasswordView.setText(sp.getString("mPassword", null));
+        }
     }
-
-
-
-
-
-
-
 
     private void attemptLogin() {
         if (mAuthTask != null) {
@@ -160,51 +148,14 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
-    public Action getIndexApiAction() {
-        Thing object = new Thing.Builder()
-                .setName("Login Page") // TODO: Define a title for the content shown.
-                // TODO: Make sure this auto-generated URL is correct.
-                .setUrl(Uri.parse("http://[ENTER-YOUR-URL-HERE]"))
-                .build();
-        return new Action.Builder(Action.TYPE_VIEW)
-                .setObject(object)
-                .setActionStatus(Action.STATUS_TYPE_COMPLETED)
-                .build();
-    }
-
     @Override
     public void onStart() {
         super.onStart();
-
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client.connect();
-        AppIndex.AppIndexApi.start(client, getIndexApiAction());
     }
 
     @Override
     public void onStop() {
         super.onStop();
-
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        AppIndex.AppIndexApi.end(client, getIndexApiAction());
-        client.disconnect();
-    }
-
-    private interface ProfileQuery {
-        String[] PROJECTION = {
-                ContactsContract.CommonDataKinds.Email.ADDRESS,
-                ContactsContract.CommonDataKinds.Email.IS_PRIMARY,
-        };
-
-        int ADDRESS = 0;
-        int IS_PRIMARY = 1;
     }
 
     /**
@@ -253,6 +204,11 @@ public class LoginActivity extends AppCompatActivity {
                         mPasswordView.setError(getString(R.string.error_incorrect_password));
                         mPasswordView.requestFocus();
                     } else {
+                        SharedPreferences.Editor editor = sp.edit();
+                        editor.putString("mEmail", mEmail);
+                        editor.putString("mPassword", mPassword);
+                        editor.putBoolean("checkboxBoolean", true);
+                        editor.commit();
                         Constant.statusTime = dataJson.getString("statusTime");
                         Constant.userid = dataJson.getString("userid");
                         Constant.usertype = dataJson.getString("usertype");
@@ -263,10 +219,10 @@ public class LoginActivity extends AppCompatActivity {
                             Constant.fundstatus = dataJson.getString("fundstatus");
                             Constant.aid = dataJson.getString("aid");
                             intent = new Intent(LoginActivity.this, PoorListActivity.class);
-                        }else if (Constant.usertype.equals("5")) {
+                        } else if (Constant.usertype.equals("5")) {
                             Constant.fundstatus = dataJson.getString("fundstatus");
                             intent = new Intent(LoginActivity.this, PoorListActivity.class);
-                        }  else if (Constant.usertype.equals("1")) {
+                        } else if (Constant.usertype.equals("1")) {
                             Constant.fundstatus = dataJson.getString("fundstatus");
                             Constant.pname = dataJson.getString("pname");
                             intent = new Intent(LoginActivity.this, AssistListActivity.class);

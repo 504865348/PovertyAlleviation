@@ -54,7 +54,6 @@ public class VillageListActivity extends AppCompatActivity {
         }
         View recyclerView = findViewById(R.id.village_list);
         assert recyclerView != null;
-        setupRecyclerView((RecyclerView) recyclerView);
         listTask = new ListTask(recyclerView);
         listTask.executeOnExecutor(com.example.jayny.povertyalleviation.Executor.exec);
     }
@@ -90,12 +89,12 @@ public class VillageListActivity extends AppCompatActivity {
 
         @Override
         public void onBindViewHolder(final ViewHolder holder, int position) {
-            if(position%2!=0){
-                holder.mVillageList.setBackgroundColor(Color.WHITE);
-            }
+            int color = getResources().getColor(R.color.pink);
+            holder.mVillageList.setBackgroundColor(position%2!=0?Color.WHITE:color);
             holder.mItem = mValues.get(position);
             holder.mIdView.setText(String.valueOf(position));
             holder.mContentView.setText(mValues.get(position).get("name"));
+            holder.mCount.setText(mValues.get(position).get("count"));
             holder.mView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -119,6 +118,7 @@ public class VillageListActivity extends AppCompatActivity {
             public final View mView;
             public final TextView mIdView;
             public final TextView mContentView;
+            public final TextView mCount;
             public Map<String, String> mItem;
 
             public ViewHolder(View view) {
@@ -126,6 +126,7 @@ public class VillageListActivity extends AppCompatActivity {
                 mView = view;
                 mIdView = (TextView) view.findViewById(R.id.id);
                 mContentView = (TextView) view.findViewById(R.id.content);
+                mCount = (TextView) view.findViewById(R.id.count);
                 mVillageList= (LinearLayout) view.findViewById(R.id.ll_village_list);
             }
 
@@ -178,9 +179,11 @@ public class VillageListActivity extends AppCompatActivity {
                         JSONObject item = dataJson.getJSONObject(i);
                         String oid = item.getString("id");
                         String name = item.getString("name");
+                        String count = item.getString("count");
                         map = new HashMap<String, String>();
                         map.put("oid", oid);
                         map.put("name", name);
+                        map.put("count", count);
                         list.add(map);
                     }
                 } catch (Exception e) {

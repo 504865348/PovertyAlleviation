@@ -51,7 +51,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
-                    android:text="乡村机构的一些介绍"
+                    android:text=""
                     android:textColor="@color/white"
                     android:textSize="16sp"/>
 
@@ -59,7 +59,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
-                    android:text="以及他在这个系统所扮演的角色"
+                    android:text=""
                     android:textColor="@color/white"
                     android:textSize="16sp"/>
 
@@ -115,7 +115,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
-                    android:text="未挂钩帮扶对象的一些介绍"
+                    android:text=""
                     android:textColor="@color/white"
                     android:textSize="16sp"/>
 
@@ -123,7 +123,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
-                    android:text="以及他在这个系统所扮演的角色"
+                    android:text=""
                     android:textColor="@color/white"
                     android:textSize="16sp"/>
 
@@ -177,7 +177,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
-                    android:text="帮扶支部的一些介绍"
+                    android:text=""
                     android:textColor="@color/white"
                     android:textSize="16sp"/>
 
@@ -185,7 +185,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
-                    android:text="以及他在这个系统所扮演的角色"
+                    android:text=""
                     android:textColor="@color/white"
                     android:textSize="16sp"/>
 
@@ -238,7 +238,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
-                    android:text="意见反馈的一些介绍"
+                    android:text=""
                     android:textColor="@color/white"
                     android:textSize="16sp"/>
 
@@ -246,7 +246,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
-                    android:text="以及他在这个系统所扮演的角色"
+                    android:text=""
                     android:textColor="@color/white"
                     android:textSize="16sp"/>
 
@@ -300,7 +300,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
-                    android:text="基金的一些介绍"
+                    android:text=""
                     android:textColor="@color/white"
                     android:textSize="16sp"/>
 
@@ -308,7 +308,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
-                    android:text="以及他在这个系统所扮演的角色"
+                    android:text=""
                     android:textColor="@color/white"
                     android:textSize="16sp"/>
 
