@@ -43,7 +43,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
                     android:layout_marginBottom="16dp"
-                    android:text="乡村机构"
+                    android:text="挂钩帮扶对象"
                     android:textColor="@color/red"
                     android:textSize="28sp"/>
 
@@ -95,6 +95,7 @@
                 />
 
             <LinearLayout
+                android:id="@+id/manager_poor11"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"

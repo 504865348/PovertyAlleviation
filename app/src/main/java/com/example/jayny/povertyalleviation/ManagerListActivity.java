@@ -34,7 +34,7 @@ public class ManagerListActivity extends AppCompatActivity {
         } else if (Constant.usertype.equals("3")) {
             TextView tv = (TextView) findViewById(R.id.titleId1);
             tv.setText("未挂钩帮扶对象");
-            ((LinearLayout) findViewById(R.id.manager_poor11)).setVisibility(View.VISIBLE);
+            ((LinearLayout) findViewById(R.id.manager_poor1)).setVisibility(View.VISIBLE);
         }
         View policy_document = findViewById(R.id.manager_poor);
         policy_document.setOnClickListener(new View.OnClickListener() {
