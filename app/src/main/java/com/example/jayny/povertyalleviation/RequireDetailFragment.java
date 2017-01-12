@@ -64,7 +64,11 @@ public class RequireDetailFragment extends Fragment {
         editText = (EditText) rootView.findViewById(R.id.solution);
         editText.setText(getArguments().getString("solution"));
         buttonForSolution = (Button) rootView.findViewById(R.id.buttonForSolution);
-        if (Constant.usertype.equals("1")||Constant.usertype.equals("3")) {
+        if(Constant.usertype.equals("1")){
+            editText1.setFocusable(false);
+            editText1.setEnabled(false);
+        }
+        else if (Constant.usertype.equals("3")) {
             editText1.setFocusable(false);
             editText1.setEnabled(false);
             if(null!=getArguments().getString("status3")&&getArguments().getString("status3").equals("0")){

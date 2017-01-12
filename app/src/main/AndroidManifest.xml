@@ -52,6 +52,14 @@
                 android:value="com.example.jayny.povertyalleviation.AssistListActivity" />
         </activity>
         <activity
+            android:name=".PoorInfoEditActivity"
+            android:label="@string/title_p_info_edit"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jayny.povertyalleviation.AssistListActivity" />
+        </activity>
+        <activity
             android:name=".SuggestActivity"
             android:label="@string/title_p_suggest"
             android:theme="@style/AppTheme.NoActionBar">

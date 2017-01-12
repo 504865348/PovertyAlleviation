@@ -1,10 +1,10 @@
 <resources>
     <!--公司内网-->
-    <!--<string name="host_port_server">http://192.168.1.157:8081/jeesite/app/</string>-->
-    <!--<string name="host_port_server_pic">http://192.168.1.157:8081/jeesite/</string>-->
+    <string name="host_port_server">http://192.168.1.157:8081/jeesite/app/</string>
+    <string name="host_port_server_pic">http://192.168.1.157:8081/jeesite/</string>
     <!--家-->
-    <string name="host_port_server">http://192.168.199.146:8081/jeesite/app/</string>
-    <string name="host_port_server_pic">http://192.168.199.146:8081/jeesite/</string>
+    <!--<string name="host_port_server">http://192.168.199.146:8081/jeesite/app/</string>-->
+    <!--<string name="host_port_server_pic">http://192.168.199.146:8081/jeesite/</string>-->
     <!--生产环境-->
     <!--<string name="host_port_server">http://139.196.253.171:10080/app/app/</string>-->
     <!--<string name="host_port_server_pic">http://139.196.253.171:10080/app/</string>-->
@@ -32,12 +32,13 @@
     <string name="title_activity_main">上党镇帮扶项目</string>
     <string name="title_item_list">政策文件</string>
     <string name="title_item_detail">Item Detail</string>
-    <string name="title_p_info">贫困户信息</string>
+    <string name="title_p_info">帮扶对象信息</string>
+    <string name="title_p_info_edit">帮扶对象信息</string>
     <string name="title_p_suggest">意见建议</string>
     <string name="title_assis_set">帮扶情况</string>
     <string name="error_p_suggest">请填写意见建议</string>
     <string name="error_p_set">请填写</string>
-    <string name="title_require_list">贫困户需求</string>
+    <string name="title_require_list">帮扶对象需求</string>
     <string name="title_require_detail">Require Detail</string>
     <string name="title_settwelvelist_list">SetTwelveList</string>
     <string name="title_settwelvelist_detail">SetTwelveList Detail</string>

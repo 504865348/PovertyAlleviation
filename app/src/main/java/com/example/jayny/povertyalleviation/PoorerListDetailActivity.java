@@ -19,7 +19,7 @@ import java.util.Map;
 
 public class PoorerListDetailActivity extends AppCompatActivity {
     private ListTask listTask;
-
+    private String aUnit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +52,7 @@ public class PoorerListDetailActivity extends AppCompatActivity {
                                             intent.putExtra("name", getIntent().getStringExtra("name"));
                                             intent.putExtra("status3", null == getIntent().getStringExtra("status3") ? "0" : getIntent().getStringExtra("status3"));
                                             intent.putExtra("status2", null == getIntent().getStringExtra("status2") ? "0" : getIntent().getStringExtra("status2"));
+                                            intent.putExtra("aUnit",aUnit);
                                             intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                             startActivity(intent);
                                         }
@@ -153,12 +154,13 @@ public class PoorerListDetailActivity extends AppCompatActivity {
                     JSONObject dataJson = new JSONObject(msg);
                     TextView temp = (TextView) findViewById(R.id.name);
                     temp.append(dataJson.getString("name"));
-                    temp = (TextView) findViewById(R.id.identityCard);
-                    temp.append(dataJson.getString("identityCard"));
+                    temp = (TextView) findViewById(R.id.birthday);
+                    temp.append(dataJson.getString("identityCard").substring(6,14));
                     temp = (TextView) findViewById(R.id.homeAddress);
                     temp.append(dataJson.getString("homeAddress"));
                     temp = (TextView) findViewById(R.id.aUnit);
                     temp.append(dataJson.getString("aUnit"));
+                    aUnit = dataJson.getString("aUnit");
                 } catch (Exception e) {
                     Log.e("getJosn:", e.getMessage());
                     e.printStackTrace();
