@@ -89,8 +89,6 @@ public class VillageListActivity extends AppCompatActivity {
 
         @Override
         public void onBindViewHolder(final ViewHolder holder, int position) {
-            int color = getResources().getColor(R.color.pink);
-            holder.mVillageList.setBackgroundColor(position%2!=0?Color.WHITE:color);
             holder.mItem = mValues.get(position);
             holder.mIdView.setText(String.valueOf(position));
             holder.mContentView.setText(mValues.get(position).get("name"));

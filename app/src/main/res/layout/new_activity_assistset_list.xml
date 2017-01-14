@@ -1,26 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/gray">
 
 
     <LinearLayout
         android:id="@+id/activity_p_suggest"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
+        android:background="@color/gray"
         android:orientation="vertical">
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="160dp"
             android:scaleType="centerCrop"
-            android:src="@mipmap/assist_top" />
+            android:src="@mipmap/bfqk_banner" />
 
         <!--用rv和gv怕冲突，直接用ll实现了-->
-        <LinearLayout
+        <View
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="1dp"
+            android:background="@color/manager_bg"
+            android:layout_marginTop="12dp"/>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -30,7 +37,7 @@
                 <ImageView
                     android:id="@+id/as_1_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/tongdian2" />
+                    android:src="@mipmap/tongdian" />
 
                 <TextView
                     style="@style/assist_tv"
@@ -41,7 +48,7 @@
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:background="@color/login_gray" />
+                android:background="@color/manager_bg" />
 
             <LinearLayout
                 android:id="@+id/as_2"
@@ -50,7 +57,7 @@
                 <ImageView
                     android:id="@+id/as_2_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/tongshui2" />
+                    android:src="@mipmap/tongshui" />
 
                 <TextView
                     style="@style/assist_tv"
@@ -62,7 +69,7 @@
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:background="@color/login_gray" />
+                android:background="@color/manager_bg" />
 
             <LinearLayout
                 android:id="@+id/as_3"
@@ -71,7 +78,7 @@
                 <ImageView
                     android:id="@+id/as_3_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/tongqi2" />
+                    android:src="@mipmap/tongqi" />
 
                 <TextView
                     style="@style/assist_tv"
@@ -83,7 +90,7 @@
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:background="@color/login_gray" />
+                android:background="@color/manager_bg" />
 
             <LinearLayout
                 android:id="@+id/as_4"
@@ -92,7 +99,7 @@
                 <ImageView
                     android:id="@+id/as_4_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/youxian2" />
+                    android:src="@mipmap/youxian" />
 
                 <TextView
                     style="@style/assist_tv"
@@ -107,11 +114,11 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/login_gray" />
+            android:background="@color/manager_bg" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -121,7 +128,7 @@
                 <ImageView
                     android:id="@+id/as_5_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/shenghuo2" />
+                    android:src="@mipmap/shenghuo" />
 
                 <TextView
                     style="@style/assist_tv"
@@ -131,7 +138,7 @@
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:background="@color/login_gray" />
+                android:background="@color/manager_bg" />
 
             <LinearLayout
                 android:id="@+id/as_6"
@@ -140,7 +147,7 @@
                 <ImageView
                     android:id="@+id/as_6_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/jiaju2" />
+                    android:src="@mipmap/jiaju" />
 
                 <TextView
                     style="@style/assist_tv"
@@ -152,7 +159,7 @@
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:background="@color/login_gray" />
+                android:background="@color/manager_bg" />
 
             <LinearLayout
                 android:id="@+id/as_7"
@@ -161,7 +168,7 @@
                 <ImageView
                     android:id="@+id/as_7_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/chuwei2" />
+                    android:src="@mipmap/chuwei" />
 
                 <TextView
                     style="@style/assist_tv"
@@ -173,7 +180,7 @@
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:background="@color/login_gray" />
+                android:background="@color/manager_bg" />
 
             <LinearLayout
                 android:id="@+id/as_8"
@@ -182,7 +189,7 @@
                 <ImageView
                     android:id="@+id/as_8_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/jiadian2" />
+                    android:src="@mipmap/jiadian" />
 
                 <TextView
                     style="@style/assist_tv"
@@ -197,11 +204,11 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/login_gray" />
+            android:background="@color/manager_bg" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -211,7 +218,7 @@
                 <ImageView
                     android:id="@+id/as_9_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/renqin2" />
+                    android:src="@mipmap/renqin" />
 
                 <TextView
                     style="@style/assist_tv"
@@ -221,7 +228,7 @@
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:background="@color/login_gray" />
+                android:background="@color/manager_bg" />
 
             <LinearLayout
                 android:id="@+id/as_10"
@@ -230,7 +237,7 @@
                 <ImageView
                     android:id="@+id/as_10_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/nuanqi2" />
+                    android:src="@mipmap/nuanqin" />
 
                 <TextView
                     style="@style/assist_tv"
@@ -242,7 +249,7 @@
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:background="@color/login_gray" />
+                android:background="@color/manager_bg" />
 
             <LinearLayout
                 android:id="@+id/as_11"
@@ -251,7 +258,7 @@
                 <ImageView
                     android:id="@+id/as_11_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/fangqin2" />
+                    android:src="@mipmap/fangqin" />
 
                 <TextView
                     style="@style/assist_tv"
@@ -263,7 +270,7 @@
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:background="@color/login_gray" />
+                android:background="@color/manager_bg" />
 
             <LinearLayout
                 android:id="@+id/as_12"
@@ -272,7 +279,7 @@
                 <ImageView
                     android:id="@+id/as_12_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/bangqin2" />
+                    android:src="@mipmap/bangqin" />
 
                 <TextView
                     style="@style/assist_tv"
@@ -287,12 +294,26 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/login_gray" />
+            android:background="@color/manager_bg" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/as_13"
+                style="@style/assist_ll">
+
+                <ImageView
+                    style="@style/assist_iv"
+                    android:src="@mipmap/tianjia" />
+
+                <TextView
+                    style="@style/assist_tv"
+                    android:text="添加" />
+
+
+            </LinearLayout>
 
             <LinearLayout
                 style="@style/assist_ll"
@@ -337,30 +358,17 @@
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
-                android:background="@color/login_gray" />
-
-            <LinearLayout
-                android:id="@+id/as_13"
-                style="@style/assist_ll">
-
-                <ImageView
-                    style="@style/assist_iv"
-                    android:src="@mipmap/tianjia2" />
-
-                <TextView
-                    style="@style/assist_tv"
-                    android:text="添加" />
+                android:background="@color/manager_bg" />
 
 
-            </LinearLayout>
 
 
         </LinearLayout>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/login_gray" />
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/manager_bg" />-->
     </LinearLayout>
 
 

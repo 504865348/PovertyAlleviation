@@ -325,7 +325,7 @@ public class AssistSetActivity extends AppCompatActivity {
                         }
                         temp = (ImageView) findViewById(R.id.as_10_status);
                         if (dataJson.getString("10").equals("1")) {
-                            temp.setImageResource(R.mipmap.nuanqi);
+                            temp.setImageResource(R.mipmap.nuanqin);
                         }
                         temp = (ImageView) findViewById(R.id.as_11_status);
                         if (dataJson.getString("11").equals("1")) {

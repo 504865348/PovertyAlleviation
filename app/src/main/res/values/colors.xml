@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#f30001</color>
-    <color name="colorPrimaryDark">#f30001</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#35b9fe</color>
+    <color name="colorPrimaryDark">#5ec5fb</color>
+    <color name="colorAccent">#5ec5fb</color>
     <color name="colorBlurGrey">#669999</color>
     <color name="font_black">#000</color>
     <color name="font_green">#11c601</color>
@@ -13,7 +13,7 @@
     <!-- 描边颜色 -->
     <color name="border_clo">#ccc</color>
     <color name="text_clo">#333</color>
-    <color name="white">#fff</color>
+    <color name="white">#ffffff</color>
     <color name="blue">#419DE4</color>
 
     <!-- 更新 -->
@@ -24,4 +24,11 @@
     <color name="dark_red">#b12c28</color>
     <color name="new_blue">#0981f4</color>
     <color name="assist_bg">#e7f5f6</color>
+
+    <!-- 更新2.0 -->
+    <color name="latest_blue">#35baff</color>
+    <color name="manager_bg">#eeeeee</color>
+    <color name="manager_bg_1">#f5f5f5</color>
+    <color name="manager_txt_bg">#333333</color>
+    <color name="gray">#f7f7f7</color>
 </resources>

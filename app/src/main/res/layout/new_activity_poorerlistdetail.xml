@@ -7,27 +7,28 @@
         android:id="@+id/activity_assist_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
+        android:background="@color/gray"
         android:orientation="vertical"
         >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:background="@color/white">
 
             <ImageView
-                android:layout_width="138dp"
-                android:layout_height="138dp"
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:scaleType="centerCrop"
                 android:src="@mipmap/img1"/>
 
             <LinearLayout
+                android:background="@color/white"
                 android:layout_width="0dp"
-                android:layout_height="138dp"
+                android:layout_height="108dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:background="@mipmap/head_pic_bg"
                 android:gravity="center_vertical"
                 android:orientation="vertical"
                 >
@@ -41,7 +42,7 @@
                     android:gravity="center_vertical"
                     android:text="姓名："
                     android:textColor="@color/black"
-                    android:textSize="16sp"/>
+                    android:textSize="14sp"/>
 
                 <TextView
                     android:id="@+id/birthday"
@@ -52,7 +53,7 @@
                     android:gravity="center_vertical"
                     android:text="生日："
                     android:textColor="@color/black"
-                    android:textSize="16sp"/>
+                    android:textSize="14sp"/>
 
                 <TextView
                     android:id="@+id/homeAddress"
@@ -63,7 +64,7 @@
                     android:gravity="center_vertical"
                     android:text="住址："
                     android:textColor="@color/black"
-                    android:textSize="16sp"/>
+                    android:textSize="14sp"/>
 
                 <TextView
                     android:id="@+id/aUnit"
@@ -74,7 +75,7 @@
                     android:gravity="center_vertical"
                     android:text="帮扶单位："
                     android:textColor="@color/black"
-                    android:textSize="16sp"/>
+                    android:textSize="14sp"/>
             </LinearLayout>
 
 
@@ -84,184 +85,106 @@
         <LinearLayout
             android:id="@+id/p_detail"
             android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:background="@color/pink"
+            android:layout_height="98dp"
             android:orientation="horizontal"
             >
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="76dp"
+                android:layout_height="28dp"
                 android:layout_gravity="center"
-                android:layout_weight="1"
-                android:src="@mipmap/poor_detail_1"
+                android:layout_weight="2"
+                android:src="@mipmap/pkh_p_icon"
                 />
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/titleId"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="8dp"
-                android:layout_weight="3"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/titleId"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:layout_marginBottom="16dp"
-                    android:text="贫困户详细信息"
-                    android:textColor="@color/black"
-                    android:textSize="24sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:text=""
-                    android:textColor="@color/white"
-                    android:textSize="16sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:text=""
-                    android:textColor="@color/white"
-                    android:textSize="16sp"/>
-
-            </LinearLayout>
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:gravity="left"
+                android:text="家庭情况"
+                android:textColor="@color/manager_txt_bg"
+                android:textSize="20sp"/>
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="44dp"
+                android:layout_height="20dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:src="@mipmap/poor_detail_icon"
+                android:src="@mipmap/arrow1"
                 />
-
         </LinearLayout>
 
 
         <LinearLayout
             android:id="@+id/policy_document"
             android:layout_width="match_parent"
-            android:layout_height="120dp"
+            android:layout_height="98dp"
             android:background="@color/white"
             android:orientation="horizontal"
             >
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="76dp"
+                android:layout_height="28dp"
                 android:layout_gravity="center"
-                android:layout_weight="1"
-                android:src="@mipmap/poor_detail_2"
+                android:layout_weight="2"
+                android:src="@mipmap/pkh_p_icon1"
                 />
 
-            <LinearLayout
+            <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="8dp"
-                android:layout_weight="3"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:layout_marginBottom="16dp"
-                    android:text="政策文件"
-                    android:textColor="@color/black"
-                    android:textSize="24sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:text=""
-                    android:textColor="@color/login_gray"
-                    android:textSize="16sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:text=""
-                    android:textColor="@color/login_gray"
-                    android:textSize="16sp"/>
-
-            </LinearLayout>
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:gravity="left"
+                android:text="政策文件"
+                android:textColor="@color/manager_txt_bg"
+                android:textSize="20sp"/>
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="44dp"
+                android:layout_height="20dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:src="@mipmap/poor_detail_icon"
+                android:src="@mipmap/arrow1"
                 />
-
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/assist_set"
             android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:background="@color/pink"
+            android:layout_height="98dp"
+
             android:orientation="horizontal"
             >
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="76dp"
+                android:layout_height="28dp"
                 android:layout_gravity="center"
-                android:layout_weight="1"
-                android:src="@mipmap/poor_detail_3"
+                android:layout_weight="2"
+                android:src="@mipmap/pkh_p_icon2"
                 />
 
-            <LinearLayout
+            <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="8dp"
-                android:layout_weight="3"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:layout_marginBottom="16dp"
-                    android:text="帮助情况"
-                    android:textColor="@color/black"
-                    android:textSize="24sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:text=""
-                    android:textColor="@color/white"
-                    android:textSize="16sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:text=""
-                    android:textColor="@color/white"
-                    android:textSize="16sp"/>
-
-            </LinearLayout>
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:gravity="left"
+                android:text="帮助要求"
+                android:textColor="@color/manager_txt_bg"
+                android:textSize="20sp"/>
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="44dp"
+                android:layout_height="20dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:src="@mipmap/poor_detail_icon"
+                android:src="@mipmap/arrow1"
                 />
         </LinearLayout>
 
@@ -269,182 +192,106 @@
         <LinearLayout
             android:id="@+id/p_need"
             android:layout_width="match_parent"
-            android:layout_height="120dp"
+            android:layout_height="98dp"
             android:background="@color/white"
             android:orientation="horizontal"
             >
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="76dp"
+                android:layout_height="28dp"
                 android:layout_gravity="center"
-                android:layout_weight="1"
-                android:src="@mipmap/poor_detail_4"
+                android:layout_weight="2"
+                android:src="@mipmap/pkh_p_icon4"
                 />
 
-            <LinearLayout
+            <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="8dp"
-                android:layout_weight="3"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:layout_marginBottom="16dp"
-                    android:text="需求诉说"
-                    android:textColor="@color/black"
-                    android:textSize="24sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:text=""
-                    android:textColor="@color/login_gray"
-                    android:textSize="16sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:text=""
-                    android:textColor="@color/login_gray"
-                    android:textSize="16sp"/>
-
-            </LinearLayout>
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:gravity="left"
+                android:text="需求诉说"
+                android:textColor="@color/manager_txt_bg"
+                android:textSize="20sp"/>
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="44dp"
+                android:layout_height="20dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:src="@mipmap/poor_detail_icon"
+                android:src="@mipmap/arrow1"
                 />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/p_fund"
             android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:background="@color/pink"
+            android:layout_height="98dp"
             android:orientation="horizontal"
             android:visibility="gone"
             >
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="76dp"
+                android:layout_height="28dp"
                 android:layout_gravity="center"
-                android:layout_weight="1"
-                android:src="@mipmap/poor_detail_4"
+                android:layout_weight="2"
+                android:src="@mipmap/pkh_p_icon4"
                 />
 
-            <LinearLayout
+            <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="8dp"
-                android:layout_weight="3"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:layout_marginBottom="16dp"
-                    android:text="基金"
-                    android:textColor="@color/black"
-                    android:textSize="24sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:text=""
-                    android:textColor="@color/login_gray"
-                    android:textSize="16sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:text=""
-                    android:textColor="@color/login_gray"
-                    android:textSize="16sp"/>
-
-            </LinearLayout>
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:gravity="left"
+                android:text="基金"
+                android:textColor="@color/manager_txt_bg"
+                android:textSize="20sp"/>
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="44dp"
+                android:layout_height="20dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:src="@mipmap/poor_detail_icon"
+                android:src="@mipmap/arrow1"
                 />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/p_suggest"
             android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:background="@color/pink"
+            android:layout_height="98dp"
+            android:background="@color/white"
             android:orientation="horizontal"
             android:visibility="gone"
             >
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="76dp"
+                android:layout_height="28dp"
                 android:layout_gravity="center"
-                android:layout_weight="1"
-                android:src="@mipmap/poor_detail_4"
+                android:layout_weight="2"
+                android:src="@mipmap/pkh_p_icon4"
                 />
 
-            <LinearLayout
+            <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="8dp"
-                android:layout_weight="3"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:layout_marginBottom="16dp"
-                    android:text="意见建议"
-                    android:textColor="@color/black"
-                    android:textSize="24sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:text=""
-                    android:textColor="@color/login_gray"
-                    android:textSize="16sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:text=""
-                    android:textColor="@color/login_gray"
-                    android:textSize="16sp"/>
-
-            </LinearLayout>
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:gravity="left"
+                android:text="意见建议"
+                android:textColor="@color/manager_txt_bg"
+                android:textSize="20sp"/>
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="44dp"
+                android:layout_height="20dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:src="@mipmap/poor_detail_icon"
+                android:src="@mipmap/arrow1"
                 />
         </LinearLayout>
     </LinearLayout>
