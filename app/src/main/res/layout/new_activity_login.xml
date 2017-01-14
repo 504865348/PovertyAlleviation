@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@mipmap/login_bg"
+    android:background="@mipmap/bj"
     tools:context="com.example.jayny.povertyalleviation.LoginActivity"
     android:orientation="vertical">
     <!-- Login progress -->
@@ -16,7 +16,7 @@
         android:id="@+id/login_form"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="32dp"
         >
 
         <LinearLayout
@@ -25,9 +25,14 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:src="@mipmap/jzfp_tit"
+    android:layout_marginBottom="36dp"/>
 
                 <EditText
+                    android:padding="12dp"
                     android:id="@+id/email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -42,6 +47,7 @@
                      />
 
                 <EditText
+                    android:padding="12dp"
                     android:layout_marginTop="16dp"
                     android:id="@+id/password"
                     android:layout_width="match_parent"
@@ -63,20 +69,21 @@
                 style="?android:textAppearanceSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="40dp"
                 android:text="@string/action_sign_in"
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 android:textSize="20dp"
-                android:background="@drawable/btn_red_bg"/>
+                android:background="@drawable/btn_latest_blue_bg"/>
             <TextView
                 android:paddingTop="16dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="忘记密码？"
-                android:textSize="16sp"
-                android:textColor="#000"
-                android:layout_gravity="center"/>
+                android:layout_marginEnd="6dp"
+                android:textSize="14sp"
+                android:textColor="#333333"
+                android:layout_gravity="right"/>
         </LinearLayout>
 
 

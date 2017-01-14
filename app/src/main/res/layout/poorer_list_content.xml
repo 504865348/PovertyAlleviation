@@ -1,74 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:id="@+id/ll_poor_list"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:background="@color/pink"
-              android:orientation="horizontal"
+              android:orientation="vertical"
     >
 
-    <ImageView
-        android:layout_width="0dp"
+
+    <LinearLayout
+        android:id="@+id/ll_poor_list"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_weight="1"
-        android:scaleType="center"
-        android:src="@mipmap/poor_icon"
-        />
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:background="@mipmap/pkh_icon"
+            />
 
 
-    <TextView
-        android:id="@+id/content"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="@dimen/text_margin"
-        android:layout_weight="2"
-        android:text="张三"
-        android:textColor="@color/dark_red"
-        android:textSize="22sp"
-        />
-
-    <RelativeLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="3">
-
-        <FrameLayout
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            >
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/text_margin"
+            android:layout_weight="2"
+            android:text="张三"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
 
-            <TextView
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <FrameLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="6dp"
-                android:background="@drawable/btn_blue_bg"
-                android:gravity="center"
-                android:text="贫困户"
-                android:textColor="@color/white"
-                android:textSize="18sp"/>
+                android:layout_centerInParent="true"
+                >
 
-        </FrameLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:background="@drawable/btn_latest_blue_bg"
+                    android:gravity="center"
+                    android:text="低保贫困户"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"/>
 
-    </RelativeLayout>
+            </FrameLayout>
+
+        </RelativeLayout>
 
 
-    <ImageView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_weight="1"
-        android:gravity="right"
-        android:src="@mipmap/village_icon_goto"
-        />
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:gravity="right"
+            android:src="@mipmap/pkh_arrow"
+            />
 
-    <TextView
-        android:id="@+id/id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:textAppearance="?attr/textAppearanceListItem"
-        android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@color/manager_bg"/>
 </LinearLayout>

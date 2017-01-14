@@ -7,135 +7,89 @@
     <LinearLayout
         android:id="@+id/activity_assist_list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@mipmap/manager_bg"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
         android:gravity="center_horizontal"
         android:orientation="vertical"
         >
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@mipmap/bfqk_banner"/>
+
         <LinearLayout
             android:id="@+id/manager_poor"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="80dp"
             android:layout_marginTop="6dp"
-            android:background="@mipmap/manager_bg_1"
+            android:background="@color/manager_bg"
             android:orientation="horizontal"
             >
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="76dp"
+                android:layout_height="28dp"
                 android:layout_gravity="center"
                 android:layout_weight="2"
-                android:src="@mipmap/manager_bg_item_1"
+                android:src="@mipmap/xtgl_icon"
                 />
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/titleId"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="3"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/titleId"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:layout_marginBottom="16dp"
-                    android:text="挂钩帮扶对象"
-                    android:textColor="@color/red"
-                    android:textSize="28sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:text=""
-                    android:textColor="@color/white"
-                    android:textSize="16sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:text=""
-                    android:textColor="@color/white"
-                    android:textSize="16sp"/>
-
-            </LinearLayout>
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:gravity="left"
+                android:text="帮扶对象"
+                android:textColor="@color/manager_txt_bg"
+                android:textSize="20sp"/>
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="66dp"
+                android:layout_height="20dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:src="@mipmap/manager_bg_item"
+                android:src="@mipmap/arrow1"
                 />
-
         </LinearLayout>
 
 
         <LinearLayout
             android:id="@+id/manager_poor1"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginTop="6dp"
-            android:background="@mipmap/manager_bg_2"
+            android:layout_height="80dp"
             android:orientation="horizontal"
             android:visibility="gone"
             >
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="76dp"
+                android:layout_height="28dp"
                 android:layout_gravity="center"
                 android:layout_weight="2"
-                android:src="@mipmap/manager_bg_item_4"
+                android:src="@mipmap/xtgl_icon1"
                 />
 
-            <LinearLayout
-                android:id="@+id/manager_poor11"
+            <TextView
+                android:id="@+id/titleId1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="3"
-                android:orientation="vertical">
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:gravity="left"
+                android:text="未挂钩帮扶对象"
+                android:textColor="@color/manager_txt_bg"
+                android:textSize="20sp"/>
 
-                <TextView
-                    android:id="@+id/titleId1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:layout_marginBottom="16dp"
-                    android:text="未挂钩帮扶对象"
-                    android:textColor="@color/red"
-                    android:textSize="28sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:text=""
-                    android:textColor="@color/white"
-                    android:textSize="16sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:text=""
-                    android:textColor="@color/white"
-                    android:textSize="16sp"/>
-
-            </LinearLayout>
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="66dp"
+                android:layout_height="20dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:src="@mipmap/manager_bg_item"
+                android:src="@mipmap/arrow1"
                 />
 
         </LinearLayout>
@@ -144,60 +98,37 @@
         <LinearLayout
             android:id="@+id/manager_assist"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginTop="6dp"
-            android:background="@mipmap/manager_bg_2"
+            android:layout_height="80dp"
+            android:background="@color/manager_bg_1"
             android:orientation="horizontal"
             >
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="76dp"
+                android:layout_height="28dp"
                 android:layout_gravity="center"
                 android:layout_weight="2"
-                android:src="@mipmap/manager_bg_item_2"
+                android:src="@mipmap/xtgl_icon1"
                 />
 
-            <LinearLayout
+
+            <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="3"
-                android:orientation="vertical">
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:gravity="left"
+                android:text="帮扶对象"
+                android:textColor="@color/manager_txt_bg"
+                android:textSize="20sp"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:layout_marginBottom="16dp"
-                    android:text="帮扶支部信息"
-                    android:textColor="@color/red"
-                    android:textSize="28sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:text=""
-                    android:textColor="@color/white"
-                    android:textSize="16sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:text=""
-                    android:textColor="@color/white"
-                    android:textSize="16sp"/>
-
-            </LinearLayout>
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="66dp"
+                android:layout_height="20dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:src="@mipmap/manager_bg_item"
+                android:src="@mipmap/arrow1"
                 />
 
         </LinearLayout>
@@ -205,60 +136,35 @@
         <LinearLayout
             android:id="@+id/manager_suggset"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginTop="6dp"
-            android:background="@mipmap/manager_bg_3"
+            android:layout_height="80dp"
+            android:background="@color/manager_bg"
             android:orientation="horizontal"
             >
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="76dp"
+                android:layout_height="28dp"
                 android:layout_gravity="center"
                 android:layout_weight="2"
-                android:src="@mipmap/manager_bg_item_3"
+                android:src="@mipmap/xtgl_icon2"
                 />
 
-            <LinearLayout
+            <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="3"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:layout_marginBottom="16dp"
-                    android:text="意见反馈"
-                    android:textColor="@color/red"
-                    android:textSize="28sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:text=""
-                    android:textColor="@color/white"
-                    android:textSize="16sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:text=""
-                    android:textColor="@color/white"
-                    android:textSize="16sp"/>
-
-            </LinearLayout>
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:gravity="left"
+                android:text="意见反馈"
+                android:textColor="@color/latest_blue"
+                android:textSize="20sp"/>
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="66dp"
+                android:layout_height="20dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:src="@mipmap/manager_bg_item"
+                android:src="@mipmap/arrow"
                 />
 
         </LinearLayout>
@@ -267,62 +173,38 @@
         <LinearLayout
             android:id="@+id/ttt"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginTop="6dp"
-            android:background="@mipmap/manager_bg_5"
+            android:layout_height="80dp"
+            android:background="@color/manager_bg_1"
             android:orientation="horizontal"
             >
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="76dp"
+                android:layout_height="28dp"
                 android:layout_gravity="center"
                 android:layout_weight="2"
-                android:src="@mipmap/manager_bg_item_5"
+                android:src="@mipmap/xtgl_icon"
                 />
 
-            <LinearLayout
+
+            <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="3"
-                android:orientation="vertical">
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:gravity="left"
+                android:text="基金"
+                android:textColor="@color/manager_txt_bg"
+                android:textSize="20sp"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:layout_marginBottom="16dp"
-                    android:text="基金"
-                    android:textColor="@color/red"
-                    android:textSize="28sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:text=""
-                    android:textColor="@color/white"
-                    android:textSize="16sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="left"
-                    android:text=""
-                    android:textColor="@color/white"
-                    android:textSize="16sp"/>
-
-            </LinearLayout>
 
             <ImageView
                 android:layout_width="0dp"
-                android:layout_height="66dp"
+                android:layout_height="20dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:src="@mipmap/manager_bg_item"
+                android:src="@mipmap/arrow1"
                 />
-
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
