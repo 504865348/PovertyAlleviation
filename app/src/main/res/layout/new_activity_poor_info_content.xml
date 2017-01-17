@@ -158,10 +158,20 @@
 
             <View style="@style/bg_line" />
 
-            <!-- 无圆角-->
             <LinearLayout style="@style/mid_layout_2">
 
                 <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/poorType"
+                    style="@style/usertext"
+                    android:text="贫困户属性：" />
+
+                <View style="@style/bg_line_vertical" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
                     android:id="@+id/agriculturalNum"
                     style="@style/usertext"
                     android:text="从事农业人数：" />
@@ -215,6 +225,153 @@
                     android:id="@+id/enjoyAllowance"
                     style="@style/usertext"
                     android:text="是否享受低保：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout style="@style/bottom_layout_2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/agriculturalArea"
+                    style="@style/usertext"
+                    android:text="耕地面积：" />
+                <View style="@style/bg_line_vertical" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/aquacultureArea"
+                    style="@style/usertext"
+                    android:text="水产养殖面积：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout style="@style/bottom_layout_2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/landArea"
+                    style="@style/usertext"
+                    android:text="土地流转面积：" />
+                <View style="@style/bg_line_vertical" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/landRent"
+                    style="@style/usertext"
+                    android:text="土地流转租金：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout style="@style/bottom_layout_2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/housingType"
+                    style="@style/usertext"
+                    android:text="住房类型：" />
+                <View style="@style/bg_line_vertical" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/housingArea"
+                    style="@style/usertext"
+                    android:text="住房面积：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout style="@style/bottom_layout_2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/familyYear"
+                    style="@style/usertext"
+                    android:text="家庭年总收入：" />
+                <View style="@style/bg_line_vertical" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/wageIncome"
+                    style="@style/usertext"
+                    android:text="工资性收入：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout style="@style/bottom_layout_2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/operatingIncome"
+                    style="@style/usertext"
+                    android:text="经营性收入：" />
+                <View style="@style/bg_line_vertical" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/propertyIncome"
+                    style="@style/usertext"
+                    android:text="财产性收入：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout style="@style/bottom_layout_2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/transferIncome"
+                    style="@style/usertext"
+                    android:text="转移性收入：" />
+                <View style="@style/bg_line_vertical" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout style="@style/bottom_layout_2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/poorCauses"
+                    style="@style/usertext"
+                    android:text="致贫原因及现状："/>
+                    <View style="@style/bg_line_vertical" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout style="@style/bottom_layout_2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/poorNeed"
+                    style="@style/usertext"
+                    android:text="急需急盼："/>
+                <View style="@style/bg_line_vertical" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout style="@style/bottom_layout_2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/poorSuggest"
+                    style="@style/usertext"
+                    android:text="意见建议："/>
+                <View style="@style/bg_line_vertical" />
             </LinearLayout>
 
         </LinearLayout>
@@ -297,10 +454,41 @@
             <LinearLayout style="@style/bottom_layout_2">
 
                 <TextView
-                    android:id="@+id/eExpenses1"
+                    android:id="@+id/eHealth1"
                     style="@style/usertext"
-                    android:text="亲属支出：" />
+                    android:text="亲属健康状况：" />
             </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 下圆角-->
+            <LinearLayout style="@style/bottom_layout_2">
+
+                <TextView
+                    android:id="@+id/eJob1"
+                    style="@style/usertext"
+                    android:text="亲属工作：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 下圆角-->
+            <LinearLayout style="@style/bottom_layout_2">
+
+                <TextView
+                    android:id="@+id/eWorkspace1"
+                    style="@style/usertext"
+                    android:text="亲属务工地：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 下圆角-->
+            <LinearLayout style="@style/bottom_layout_2">
+
+                <TextView
+                    android:id="@+id/eSplitting1"
+                    style="@style/usertext"
+                    android:text="是否分户：" />
+            </LinearLayout>
+
         </LinearLayout>
 
         <LinearLayout
@@ -372,9 +560,39 @@
             <LinearLayout style="@style/bottom_layout_2">
 
                 <TextView
-                    android:id="@+id/eExpenses2"
+                    android:id="@+id/eHealth2"
                     style="@style/usertext"
-                    android:text="亲属支出：" />
+                    android:text="亲属健康状况：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 下圆角-->
+            <LinearLayout style="@style/bottom_layout_2">
+
+                <TextView
+                    android:id="@+id/eJob2"
+                    style="@style/usertext"
+                    android:text="亲属工作：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 下圆角-->
+            <LinearLayout style="@style/bottom_layout_2">
+
+                <TextView
+                    android:id="@+id/eWorkspace2"
+                    style="@style/usertext"
+                    android:text="亲属务工地：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 下圆角-->
+            <LinearLayout style="@style/bottom_layout_2">
+
+                <TextView
+                    android:id="@+id/eSplitting2"
+                    style="@style/usertext"
+                    android:text="是否分户：" />
             </LinearLayout>
         </LinearLayout>
 
@@ -447,9 +665,39 @@
             <LinearLayout style="@style/bottom_layout_2">
 
                 <TextView
-                    android:id="@+id/eExpenses3"
+                    android:id="@+id/eHealth3"
                     style="@style/usertext"
-                    android:text="亲属支出：" />
+                    android:text="亲属健康状况：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 下圆角-->
+            <LinearLayout style="@style/bottom_layout_2">
+
+                <TextView
+                    android:id="@+id/eJob3"
+                    style="@style/usertext"
+                    android:text="亲属工作：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 下圆角-->
+            <LinearLayout style="@style/bottom_layout_2">
+
+                <TextView
+                    android:id="@+id/eWorkspace3"
+                    style="@style/usertext"
+                    android:text="亲属务工地：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 下圆角-->
+            <LinearLayout style="@style/bottom_layout_2">
+
+                <TextView
+                    android:id="@+id/eSplitting3"
+                    style="@style/usertext"
+                    android:text="是否分户：" />
             </LinearLayout>
         </LinearLayout>
 
@@ -522,74 +770,9 @@
             <LinearLayout style="@style/bottom_layout_2">
 
                 <TextView
-                    android:id="@+id/eExpenses4"
+                    android:id="@+id/eHealth4"
                     style="@style/usertext"
-                    android:text="亲属支出：" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/temp_linelayout5"
-            style="@style/wrap_layout"
-            android:layout_marginTop="15dp">
-            <!-- 无圆角-->
-            <LinearLayout style="@style/top_layout_2">
-
-                <TextView
-                    android:id="@+id/eName5"
-                    style="@style/usertext"
-                    android:text="亲属姓名：" />
-            </LinearLayout>
-
-            <!-- 分割线 -->
-            <View style="@style/bg_line" />
-            <!-- 上圆角-->
-            <LinearLayout style="@style/mid_layout_2">
-
-                <TextView
-                    android:id="@+id/eRelationship5"
-                    style="@style/usertext"
-                    android:text="亲属与户主关系：" />
-            </LinearLayout>
-
-            <View style="@style/bg_line" />
-            <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
-
-                <TextView
-                    android:id="@+id/eSex5"
-                    style="@style/usertext"
-                    android:text="亲属性别：" />
-            </LinearLayout>
-
-            <View style="@style/bg_line" />
-            <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
-
-                <TextView
-                    android:id="@+id/eIdentityCard5"
-                    style="@style/usertext"
-                    android:text="亲属身份证号码：" />
-            </LinearLayout>
-
-            <View style="@style/bg_line" />
-            <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
-
-                <TextView
-                    android:id="@+id/eEducationLevels5"
-                    style="@style/usertext"
-                    android:text="亲属文化程度：" />
-            </LinearLayout>
-
-            <View style="@style/bg_line" />
-            <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
-
-                <TextView
-                    android:id="@+id/eIncome5"
-                    style="@style/usertext"
-                    android:text="亲属收入：" />
+                    android:text="亲属健康状况：" />
             </LinearLayout>
 
             <View style="@style/bg_line" />
@@ -597,74 +780,9 @@
             <LinearLayout style="@style/bottom_layout_2">
 
                 <TextView
-                    android:id="@+id/eExpenses5"
+                    android:id="@+id/eJob4"
                     style="@style/usertext"
-                    android:text="亲属支出：" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/temp_linelayout6"
-            style="@style/wrap_layout"
-            android:layout_marginTop="15dp">
-            <!-- 无圆角-->
-            <LinearLayout style="@style/top_layout_2">
-
-                <TextView
-                    android:id="@+id/eName6"
-                    style="@style/usertext"
-                    android:text="亲属姓名：" />
-            </LinearLayout>
-
-            <!-- 分割线 -->
-            <View style="@style/bg_line" />
-            <!-- 上圆角-->
-            <LinearLayout style="@style/mid_layout_2">
-
-                <TextView
-                    android:id="@+id/eRelationship6"
-                    style="@style/usertext"
-                    android:text="亲属与户主关系：" />
-            </LinearLayout>
-
-            <View style="@style/bg_line" />
-            <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
-
-                <TextView
-                    android:id="@+id/eSex6"
-                    style="@style/usertext"
-                    android:text="亲属性别：" />
-            </LinearLayout>
-
-            <View style="@style/bg_line" />
-            <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
-
-                <TextView
-                    android:id="@+id/eIdentityCard6"
-                    style="@style/usertext"
-                    android:text="亲属身份证号码：" />
-            </LinearLayout>
-
-            <View style="@style/bg_line" />
-            <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
-
-                <TextView
-                    android:id="@+id/eEducationLevels6"
-                    style="@style/usertext"
-                    android:text="亲属文化程度：" />
-            </LinearLayout>
-
-            <View style="@style/bg_line" />
-            <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
-
-                <TextView
-                    android:id="@+id/eIncome6"
-                    style="@style/usertext"
-                    android:text="亲属收入：" />
+                    android:text="亲属工作：" />
             </LinearLayout>
 
             <View style="@style/bg_line" />
@@ -672,74 +790,9 @@
             <LinearLayout style="@style/bottom_layout_2">
 
                 <TextView
-                    android:id="@+id/eExpenses6"
+                    android:id="@+id/eWorkspace4"
                     style="@style/usertext"
-                    android:text="亲属支出：" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/temp_linelayout7"
-            style="@style/wrap_layout"
-            android:layout_marginTop="15dp">
-            <!-- 无圆角-->
-            <LinearLayout style="@style/top_layout_2">
-
-                <TextView
-                    android:id="@+id/eName7"
-                    style="@style/usertext"
-                    android:text="亲属姓名：" />
-            </LinearLayout>
-
-            <!-- 分割线 -->
-            <View style="@style/bg_line" />
-            <!-- 上圆角-->
-            <LinearLayout style="@style/mid_layout_2">
-
-                <TextView
-                    android:id="@+id/eRelationship7"
-                    style="@style/usertext"
-                    android:text="亲属与户主关系：" />
-            </LinearLayout>
-
-            <View style="@style/bg_line" />
-            <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
-
-                <TextView
-                    android:id="@+id/eSex7"
-                    style="@style/usertext"
-                    android:text="亲属性别：" />
-            </LinearLayout>
-
-            <View style="@style/bg_line" />
-            <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
-
-                <TextView
-                    android:id="@+id/eIdentityCard7"
-                    style="@style/usertext"
-                    android:text="亲属身份证号码：" />
-            </LinearLayout>
-
-            <View style="@style/bg_line" />
-            <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
-
-                <TextView
-                    android:id="@+id/eEducationLevels7"
-                    style="@style/usertext"
-                    android:text="亲属文化程度：" />
-            </LinearLayout>
-
-            <View style="@style/bg_line" />
-            <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
-
-                <TextView
-                    android:id="@+id/eIncome7"
-                    style="@style/usertext"
-                    android:text="亲属收入：" />
+                    android:text="亲属务工地：" />
             </LinearLayout>
 
             <View style="@style/bg_line" />
@@ -747,236 +800,461 @@
             <LinearLayout style="@style/bottom_layout_2">
 
                 <TextView
-                    android:id="@+id/eExpenses7"
+                    android:id="@+id/eSplitting4"
                     style="@style/usertext"
-                    android:text="亲属支出：" />
+                    android:text="是否分户：" />
             </LinearLayout>
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/temp_linelayout8"
-            style="@style/wrap_layout"
-            android:layout_marginTop="15dp">
-            <!-- 无圆角-->
-            <LinearLayout style="@style/top_layout_2">
+        <!--<LinearLayout-->
+            <!--android:id="@+id/temp_linelayout5"-->
+            <!--style="@style/wrap_layout"-->
+            <!--android:layout_marginTop="15dp">-->
+            <!--&lt;!&ndash; 无圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/top_layout_2">-->
 
-                <TextView
-                    android:id="@+id/eName8"
-                    style="@style/usertext"
-                    android:text="亲属姓名：" />
-            </LinearLayout>
+                <!--<TextView-->
+                    <!--android:id="@+id/eName5"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属姓名：" />-->
+            <!--</LinearLayout>-->
 
-            <!-- 分割线 -->
-            <View style="@style/bg_line" />
-            <!-- 上圆角-->
-            <LinearLayout style="@style/mid_layout_2">
+            <!--&lt;!&ndash; 分割线 &ndash;&gt;-->
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 上圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/mid_layout_2">-->
 
-                <TextView
-                    android:id="@+id/eRelationship8"
-                    style="@style/usertext"
-                    android:text="亲属与户主关系：" />
-            </LinearLayout>
+                <!--<TextView-->
+                    <!--android:id="@+id/eRelationship5"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属与户主关系：" />-->
+            <!--</LinearLayout>-->
 
-            <View style="@style/bg_line" />
-            <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 无圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/mid_layout_2">-->
 
-                <TextView
-                    android:id="@+id/eSex8"
-                    style="@style/usertext"
-                    android:text="亲属性别：" />
-            </LinearLayout>
+                <!--<TextView-->
+                    <!--android:id="@+id/eSex5"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属性别：" />-->
+            <!--</LinearLayout>-->
 
-            <View style="@style/bg_line" />
-            <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 无圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/mid_layout_2">-->
 
-                <TextView
-                    android:id="@+id/eIdentityCard8"
-                    style="@style/usertext"
-                    android:text="亲属身份证号码：" />
-            </LinearLayout>
+                <!--<TextView-->
+                    <!--android:id="@+id/eIdentityCard5"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属身份证号码：" />-->
+            <!--</LinearLayout>-->
 
-            <View style="@style/bg_line" />
-            <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 无圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/mid_layout_2">-->
 
-                <TextView
-                    android:id="@+id/eEducationLevels8"
-                    style="@style/usertext"
-                    android:text="亲属文化程度：" />
-            </LinearLayout>
+                <!--<TextView-->
+                    <!--android:id="@+id/eEducationLevels5"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属文化程度：" />-->
+            <!--</LinearLayout>-->
 
-            <View style="@style/bg_line" />
-            <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 无圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/mid_layout_2">-->
 
-                <TextView
-                    android:id="@+id/eIncome8"
-                    style="@style/usertext"
-                    android:text="亲属收入：" />
-            </LinearLayout>
+                <!--<TextView-->
+                    <!--android:id="@+id/eIncome5"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属收入：" />-->
+            <!--</LinearLayout>-->
 
-            <View style="@style/bg_line" />
-            <!-- 下圆角-->
-            <LinearLayout style="@style/bottom_layout_2">
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 下圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/bottom_layout_2">-->
 
-                <TextView
-                    android:id="@+id/eExpenses8"
-                    style="@style/usertext"
-                    android:text="亲属支出：" />
-            </LinearLayout>
-        </LinearLayout>
+                <!--<TextView-->
+                    <!--android:id="@+id/eExpenses5"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属支出：" />-->
+            <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
 
-        <LinearLayout
-            android:id="@+id/temp_linelayout9"
-            style="@style/wrap_layout"
-            android:layout_marginTop="15dp">
-            <!-- 无圆角-->
-            <LinearLayout style="@style/top_layout_2">
+        <!--<LinearLayout-->
+            <!--android:id="@+id/temp_linelayout6"-->
+            <!--style="@style/wrap_layout"-->
+            <!--android:layout_marginTop="15dp">-->
+            <!--&lt;!&ndash; 无圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/top_layout_2">-->
 
-                <TextView
-                    android:id="@+id/eName9"
-                    style="@style/usertext"
-                    android:text="亲属姓名：" />
-            </LinearLayout>
+                <!--<TextView-->
+                    <!--android:id="@+id/eName6"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属姓名：" />-->
+            <!--</LinearLayout>-->
 
-            <!-- 分割线 -->
-            <View style="@style/bg_line" />
-            <!-- 上圆角-->
-            <LinearLayout style="@style/mid_layout_2">
+            <!--&lt;!&ndash; 分割线 &ndash;&gt;-->
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 上圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/mid_layout_2">-->
 
-                <TextView
-                    android:id="@+id/eRelationship9"
-                    style="@style/usertext"
-                    android:text="亲属与户主关系：" />
-            </LinearLayout>
+                <!--<TextView-->
+                    <!--android:id="@+id/eRelationship6"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属与户主关系：" />-->
+            <!--</LinearLayout>-->
 
-            <View style="@style/bg_line" />
-            <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 无圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/mid_layout_2">-->
 
-                <TextView
-                    android:id="@+id/eSex9"
-                    style="@style/usertext"
-                    android:text="亲属性别：" />
-            </LinearLayout>
+                <!--<TextView-->
+                    <!--android:id="@+id/eSex6"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属性别：" />-->
+            <!--</LinearLayout>-->
 
-            <View style="@style/bg_line" />
-            <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 无圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/mid_layout_2">-->
 
-                <TextView
-                    android:id="@+id/eIdentityCard9"
-                    style="@style/usertext"
-                    android:text="亲属身份证号码：" />
-            </LinearLayout>
+                <!--<TextView-->
+                    <!--android:id="@+id/eIdentityCard6"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属身份证号码：" />-->
+            <!--</LinearLayout>-->
 
-            <View style="@style/bg_line" />
-            <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 无圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/mid_layout_2">-->
 
-                <TextView
-                    android:id="@+id/eEducationLevels9"
-                    style="@style/usertext"
-                    android:text="亲属文化程度：" />
-            </LinearLayout>
+                <!--<TextView-->
+                    <!--android:id="@+id/eEducationLevels6"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属文化程度：" />-->
+            <!--</LinearLayout>-->
 
-            <View style="@style/bg_line" />
-            <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 无圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/mid_layout_2">-->
 
-                <TextView
-                    android:id="@+id/eIncome9"
-                    style="@style/usertext"
-                    android:text="亲属收入：" />
-            </LinearLayout>
+                <!--<TextView-->
+                    <!--android:id="@+id/eIncome6"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属收入：" />-->
+            <!--</LinearLayout>-->
 
-            <View style="@style/bg_line" />
-            <!-- 下圆角-->
-            <LinearLayout style="@style/bottom_layout_2">
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 下圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/bottom_layout_2">-->
 
-                <TextView
-                    android:id="@+id/eExpenses9"
-                    style="@style/usertext"
-                    android:text="亲属支出：" />
-            </LinearLayout>
-        </LinearLayout>
+                <!--<TextView-->
+                    <!--android:id="@+id/eExpenses6"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属支出：" />-->
+            <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
 
-        <LinearLayout
-            android:id="@+id/temp_linelayout10"
-            style="@style/wrap_layout"
-            android:layout_marginTop="15dp">
-            <!-- 无圆角-->
-            <LinearLayout style="@style/top_layout_2">
+        <!--<LinearLayout-->
+            <!--android:id="@+id/temp_linelayout7"-->
+            <!--style="@style/wrap_layout"-->
+            <!--android:layout_marginTop="15dp">-->
+            <!--&lt;!&ndash; 无圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/top_layout_2">-->
 
-                <TextView
-                    android:id="@+id/eName10"
-                    style="@style/usertext"
-                    android:text="亲属姓名：" />
-            </LinearLayout>
+                <!--<TextView-->
+                    <!--android:id="@+id/eName7"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属姓名：" />-->
+            <!--</LinearLayout>-->
 
-            <!-- 分割线 -->
-            <View style="@style/bg_line" />
-            <!-- 上圆角-->
-            <LinearLayout style="@style/mid_layout_2">
+            <!--&lt;!&ndash; 分割线 &ndash;&gt;-->
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 上圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/mid_layout_2">-->
 
-                <TextView
-                    android:id="@+id/eRelationship10"
-                    style="@style/usertext"
-                    android:text="亲属与户主关系：" />
-            </LinearLayout>
+                <!--<TextView-->
+                    <!--android:id="@+id/eRelationship7"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属与户主关系：" />-->
+            <!--</LinearLayout>-->
 
-            <View style="@style/bg_line" />
-            <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 无圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/mid_layout_2">-->
 
-                <TextView
-                    android:id="@+id/eSex10"
-                    style="@style/usertext"
-                    android:text="亲属性别：" />
-            </LinearLayout>
+                <!--<TextView-->
+                    <!--android:id="@+id/eSex7"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属性别：" />-->
+            <!--</LinearLayout>-->
 
-            <View style="@style/bg_line" />
-            <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 无圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/mid_layout_2">-->
 
-                <TextView
-                    android:id="@+id/eIdentityCard10"
-                    style="@style/usertext"
-                    android:text="亲属身份证号码：" />
-            </LinearLayout>
+                <!--<TextView-->
+                    <!--android:id="@+id/eIdentityCard7"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属身份证号码：" />-->
+            <!--</LinearLayout>-->
 
-            <View style="@style/bg_line" />
-            <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 无圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/mid_layout_2">-->
 
-                <TextView
-                    android:id="@+id/eEducationLevels10"
-                    style="@style/usertext"
-                    android:text="亲属文化程度：" />
-            </LinearLayout>
+                <!--<TextView-->
+                    <!--android:id="@+id/eEducationLevels7"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属文化程度：" />-->
+            <!--</LinearLayout>-->
 
-            <View style="@style/bg_line" />
-            <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 无圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/mid_layout_2">-->
 
-                <TextView
-                    android:id="@+id/eIncome10"
-                    style="@style/usertext"
-                    android:text="亲属收入：" />
-            </LinearLayout>
+                <!--<TextView-->
+                    <!--android:id="@+id/eIncome7"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属收入：" />-->
+            <!--</LinearLayout>-->
 
-            <View style="@style/bg_line" />
-            <!-- 下圆角-->
-            <LinearLayout style="@style/bottom_layout_2">
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 下圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/bottom_layout_2">-->
 
-                <TextView
-                    android:id="@+id/eExpenses10"
-                    style="@style/usertext"
-                    android:text="亲属支出：" />
-            </LinearLayout>
-        </LinearLayout>
+                <!--<TextView-->
+                    <!--android:id="@+id/eExpenses7"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属支出：" />-->
+            <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/temp_linelayout8"-->
+            <!--style="@style/wrap_layout"-->
+            <!--android:layout_marginTop="15dp">-->
+            <!--&lt;!&ndash; 无圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/top_layout_2">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/eName8"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属姓名：" />-->
+            <!--</LinearLayout>-->
+
+            <!--&lt;!&ndash; 分割线 &ndash;&gt;-->
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 上圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/mid_layout_2">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/eRelationship8"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属与户主关系：" />-->
+            <!--</LinearLayout>-->
+
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 无圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/mid_layout_2">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/eSex8"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属性别：" />-->
+            <!--</LinearLayout>-->
+
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 无圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/mid_layout_2">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/eIdentityCard8"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属身份证号码：" />-->
+            <!--</LinearLayout>-->
+
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 无圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/mid_layout_2">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/eEducationLevels8"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属文化程度：" />-->
+            <!--</LinearLayout>-->
+
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 无圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/mid_layout_2">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/eIncome8"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属收入：" />-->
+            <!--</LinearLayout>-->
+
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 下圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/bottom_layout_2">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/eExpenses8"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属支出：" />-->
+            <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/temp_linelayout9"-->
+            <!--style="@style/wrap_layout"-->
+            <!--android:layout_marginTop="15dp">-->
+            <!--&lt;!&ndash; 无圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/top_layout_2">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/eName9"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属姓名：" />-->
+            <!--</LinearLayout>-->
+
+            <!--&lt;!&ndash; 分割线 &ndash;&gt;-->
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 上圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/mid_layout_2">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/eRelationship9"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属与户主关系：" />-->
+            <!--</LinearLayout>-->
+
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 无圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/mid_layout_2">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/eSex9"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属性别：" />-->
+            <!--</LinearLayout>-->
+
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 无圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/mid_layout_2">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/eIdentityCard9"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属身份证号码：" />-->
+            <!--</LinearLayout>-->
+
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 无圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/mid_layout_2">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/eEducationLevels9"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属文化程度：" />-->
+            <!--</LinearLayout>-->
+
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 无圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/mid_layout_2">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/eIncome9"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属收入：" />-->
+            <!--</LinearLayout>-->
+
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 下圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/bottom_layout_2">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/eExpenses9"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属支出：" />-->
+            <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/temp_linelayout10"-->
+            <!--style="@style/wrap_layout"-->
+            <!--android:layout_marginTop="15dp">-->
+            <!--&lt;!&ndash; 无圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/top_layout_2">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/eName10"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属姓名：" />-->
+            <!--</LinearLayout>-->
+
+            <!--&lt;!&ndash; 分割线 &ndash;&gt;-->
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 上圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/mid_layout_2">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/eRelationship10"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属与户主关系：" />-->
+            <!--</LinearLayout>-->
+
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 无圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/mid_layout_2">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/eSex10"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属性别：" />-->
+            <!--</LinearLayout>-->
+
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 无圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/mid_layout_2">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/eIdentityCard10"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属身份证号码：" />-->
+            <!--</LinearLayout>-->
+
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 无圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/mid_layout_2">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/eEducationLevels10"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属文化程度：" />-->
+            <!--</LinearLayout>-->
+
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 无圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/mid_layout_2">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/eIncome10"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属收入：" />-->
+            <!--</LinearLayout>-->
+
+            <!--<View style="@style/bg_line" />-->
+            <!--&lt;!&ndash; 下圆角&ndash;&gt;-->
+            <!--<LinearLayout style="@style/bottom_layout_2">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/eExpenses10"-->
+                    <!--style="@style/usertext"-->
+                    <!--android:text="亲属支出：" />-->
+            <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
 
         <Button
             android:id="@+id/editButton"

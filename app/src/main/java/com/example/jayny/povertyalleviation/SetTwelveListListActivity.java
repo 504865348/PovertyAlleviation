@@ -157,7 +157,6 @@ public class SetTwelveListListActivity extends AppCompatActivity {
         @Override
         public void onBindViewHolder(final ViewHolder holder, int position) {
             holder.mItem = mValues.get(position);
-            holder.mIdView.setText(String.valueOf(position));
             holder.mContentView.setText(mValues.get(position).get("title"));
 
             holder.mView.setOnClickListener(new View.OnClickListener() {
@@ -205,14 +204,12 @@ public class SetTwelveListListActivity extends AppCompatActivity {
 
         public class ViewHolder extends RecyclerView.ViewHolder {
             public final View mView;
-            public final TextView mIdView;
             public final TextView mContentView;
             public Map<String, String> mItem;
 
             public ViewHolder(View view) {
                 super(view);
                 mView = view;
-                mIdView = (TextView) view.findViewById(R.id.id);
                 mContentView = (TextView) view.findViewById(R.id.content);
             }
 

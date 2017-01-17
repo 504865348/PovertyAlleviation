@@ -114,7 +114,7 @@
 
             <TextView
                 style="@style/titletext"
-                android:text="基金"
+                android:text="基金明细"
                 android:textSize="22dp"/>
 
             <ImageView style="@style/img_arrow"/>

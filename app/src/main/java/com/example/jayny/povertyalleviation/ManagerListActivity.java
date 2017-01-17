@@ -2,6 +2,7 @@ package com.example.jayny.povertyalleviation;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -16,6 +17,13 @@ public class ManagerListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.new_activity_manager_list);
         View policy_document1 = findViewById(R.id.manager_poor1);
+        if(Constant.usertype.equals("2")){
+
+        }else if(Constant.usertype.equals("3")){
+            policy_document1.setBackgroundColor(Color.WHITE);
+        }else if(Constant.usertype.equals("4")){
+
+        }
         policy_document1.setOnClickListener(new View.OnClickListener() {
                                                 @Override
                                                 public void onClick(View view) {
@@ -54,6 +62,13 @@ public class ManagerListActivity extends AppCompatActivity {
                                            }
         );
         View p_detail = findViewById(R.id.manager_suggset);
+        if(Constant.usertype.equals("2")){
+
+        }else if(Constant.usertype.equals("3")){
+            p_detail.setBackgroundColor(Color.WHITE);
+        }else if(Constant.usertype.equals("4")){
+            p_detail.setBackgroundColor(Color.WHITE);
+        }
         p_detail.setOnClickListener(new View.OnClickListener() {
                                         @Override
                                         public void onClick(View view) {
@@ -64,6 +79,11 @@ public class ManagerListActivity extends AppCompatActivity {
                                     }
         );
         View p_assist = findViewById(R.id.manager_assist);
+        if(Constant.usertype.equals("2")){
+            p_assist.setBackgroundColor(Color.WHITE);
+        }else if(Constant.usertype.equals("3")){
+        }else if(Constant.usertype.equals("4")){
+        }
         p_assist.setOnClickListener(new View.OnClickListener() {
                                         @Override
                                         public void onClick(View view) {

@@ -152,9 +152,39 @@ public class PoorInfoActivity extends AppCompatActivity {
                         temp.append(dataJson.getString("enjoyResidual"));
                         temp = (TextView) findViewById(R.id.medicalExpenses);
                         temp.append(dataJson.getString("medicalExpenses"));
+                        temp = (TextView) findViewById(R.id.agriculturalArea);
+                        temp.append(dataJson.getString("agriculturalArea"));
+                        temp = (TextView) findViewById(R.id.aquacultureArea);
+                        temp.append(dataJson.getString("aquacultureArea"));
+                        temp = (TextView) findViewById(R.id.landArea);
+                        temp.append(dataJson.getString("landArea"));
+                        temp = (TextView) findViewById(R.id.landRent);
+                        temp.append(dataJson.getString("landRent"));
+                        temp = (TextView) findViewById(R.id.housingType);
+                        temp.append(dataJson.getString("housingType"));
+                        temp = (TextView) findViewById(R.id.housingArea);
+                        temp.append(dataJson.getString("housingArea"));
+                        temp = (TextView) findViewById(R.id.familyYear);
+                        temp.append(dataJson.getString("familyYear"));
+                        temp = (TextView) findViewById(R.id.wageIncome);
+                        temp.append(dataJson.getString("wageIncome"));
+                        temp = (TextView) findViewById(R.id.operatingIncome);
+                        temp.append(dataJson.getString("operatingIncome"));
+                        temp = (TextView) findViewById(R.id.propertyIncome);
+                        temp.append(dataJson.getString("propertyIncome"));
+                        temp = (TextView) findViewById(R.id.transferIncome);
+                        temp.append(dataJson.getString("transferIncome"));
+                        temp = (TextView) findViewById(R.id.poorCauses);
+                        temp.append(dataJson.getString("poorCauses"));
+                        temp = (TextView) findViewById(R.id.poorNeed);
+                        temp.append(dataJson.getString("poorNeed"));
+                        temp = (TextView) findViewById(R.id.poorSuggest);
+                        temp.append(dataJson.getString("poorSuggest"));
+                        temp = (TextView) findViewById(R.id.poorType);
+                        temp.append(dataJson.getString("poorType"));
                         LinearLayout tempLineLayOut;
 
-                        if (dataJson.getString("eName1").equals("") && dataJson.getString("eName2").equals("") && dataJson.getString("eName3").equals("") && dataJson.getString("eName4").equals("") && dataJson.getString("eName5").equals("") && dataJson.getString("eName6").equals("") && dataJson.getString("eName7").equals("") && dataJson.getString("eName8").equals("") && dataJson.getString("eName9").equals("") && dataJson.getString("eName10").equals("")) {
+                        if (dataJson.getString("eName1").equals("") && dataJson.getString("eName2").equals("") && dataJson.getString("eName3").equals("") && dataJson.getString("eName4").equals("") /*&& dataJson.getString("eName5").equals("") && dataJson.getString("eName6").equals("") && dataJson.getString("eName7").equals("") && dataJson.getString("eName8").equals("") && dataJson.getString("eName9").equals("") && dataJson.getString("eName10").equals("")*/) {
                             View vvv = (View) findViewById(R.id.temp_textview);
                             vvv.setVisibility(View.GONE);
                         }
@@ -175,8 +205,14 @@ public class PoorInfoActivity extends AppCompatActivity {
                             temp.append(dataJson.getString("eEducationLevels1"));
                             temp = (TextView) findViewById(R.id.eIncome1);
                             temp.append(dataJson.getString("eIncome1"));
-                            temp = (TextView) findViewById(R.id.eExpenses1);
-                            temp.append(dataJson.getString("eExpenses1"));
+                            temp = (TextView) findViewById(R.id.eHealth1);
+                            temp.append(dataJson.getString("eHealth1"));
+                            temp = (TextView) findViewById(R.id.eJob1);
+                            temp.append(dataJson.getString("eJob1"));
+                            temp = (TextView) findViewById(R.id.eWorkspace1);
+                            temp.append(dataJson.getString("eWorkspace1"));
+                            temp = (TextView) findViewById(R.id.eSplitting1);
+                            temp.append(dataJson.getString("eSplitting1"));
                         }
 
                         if (dataJson.getString("eName2").equals("")) {
@@ -195,8 +231,14 @@ public class PoorInfoActivity extends AppCompatActivity {
                             temp.append(dataJson.getString("eEducationLevels2"));
                             temp = (TextView) findViewById(R.id.eIncome2);
                             temp.append(dataJson.getString("eIncome2"));
-                            temp = (TextView) findViewById(R.id.eExpenses2);
-                            temp.append(dataJson.getString("eExpenses2"));
+                            temp = (TextView) findViewById(R.id.eHealth2);
+                            temp.append(dataJson.getString("eHealth2"));
+                            temp = (TextView) findViewById(R.id.eJob2);
+                            temp.append(dataJson.getString("eJob2"));
+                            temp = (TextView) findViewById(R.id.eWorkspace2);
+                            temp.append(dataJson.getString("eWorkspace2"));
+                            temp = (TextView) findViewById(R.id.eSplitting2);
+                            temp.append(dataJson.getString("eSplitting2"));
                         }
 
                         if (dataJson.getString("eName3").equals("")) {
@@ -215,8 +257,14 @@ public class PoorInfoActivity extends AppCompatActivity {
                             temp.append(dataJson.getString("eEducationLevels3"));
                             temp = (TextView) findViewById(R.id.eIncome3);
                             temp.append(dataJson.getString("eIncome3"));
-                            temp = (TextView) findViewById(R.id.eExpenses3);
-                            temp.append(dataJson.getString("eExpenses3"));
+                            temp = (TextView) findViewById(R.id.eHealth3);
+                            temp.append(dataJson.getString("eHealth3"));
+                            temp = (TextView) findViewById(R.id.eJob3);
+                            temp.append(dataJson.getString("eJob3"));
+                            temp = (TextView) findViewById(R.id.eWorkspace3);
+                            temp.append(dataJson.getString("eWorkspace3"));
+                            temp = (TextView) findViewById(R.id.eSplitting3);
+                            temp.append(dataJson.getString("eSplitting3"));
                         }
 
                         if (dataJson.getString("eName4").equals("")) {
@@ -235,10 +283,16 @@ public class PoorInfoActivity extends AppCompatActivity {
                             temp.append(dataJson.getString("eEducationLevels4"));
                             temp = (TextView) findViewById(R.id.eIncome4);
                             temp.append(dataJson.getString("eIncome4"));
-                            temp = (TextView) findViewById(R.id.eExpenses4);
-                            temp.append(dataJson.getString("eExpenses4"));
+                            temp = (TextView) findViewById(R.id.eHealth4);
+                            temp.append(dataJson.getString("eHealth4"));
+                            temp = (TextView) findViewById(R.id.eJob4);
+                            temp.append(dataJson.getString("eJob4"));
+                            temp = (TextView) findViewById(R.id.eWorkspace4);
+                            temp.append(dataJson.getString("eWorkspace4"));
+                            temp = (TextView) findViewById(R.id.eSplitting4);
+                            temp.append(dataJson.getString("eSplitting4"));
                         }
-
+/*
                         if (dataJson.getString("eName5").equals("")) {
                             tempLineLayOut = (LinearLayout) findViewById(R.id.temp_linelayout5);
                             tempLineLayOut.setVisibility(View.GONE);
@@ -357,7 +411,7 @@ public class PoorInfoActivity extends AppCompatActivity {
                             temp.append(dataJson.getString("eIncome10"));
                             temp = (TextView) findViewById(R.id.eExpenses10);
                             temp.append(dataJson.getString("eExpenses10"));
-                        }
+                        }*/
 
                     }
                 } catch (Exception e) {

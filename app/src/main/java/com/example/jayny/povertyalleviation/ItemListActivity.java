@@ -38,6 +38,7 @@ public class ItemListActivity extends AppCompatActivity {
     List<Map<String, String>> list = new ArrayList<Map<String, String>>();
     Map<String, String> map = null;
     private ListTask listTask;
+    private String gettype;
     /**
      * Whether or not the activity is in two-pane mode, i.e. running on a tablet
      * device.
@@ -48,17 +49,24 @@ public class ItemListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item_list);
+        gettype = getIntent().getStringExtra("getDocType");
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+
+        if(gettype.equals("0")){
+            toolbar.setTitle("政策文件");
+        }else{
+            toolbar.setTitle("扶贫动态");
+        }
+
         setSupportActionBar(toolbar);
-        toolbar.setTitle(getTitle());
+
         // Show the Up button in the action bar.
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
             actionBar.setHomeButtonEnabled(true);
         }
-
         View recyclerView = findViewById(R.id.item_list);
         assert recyclerView != null;
         listTask = new ListTask(recyclerView);
@@ -170,7 +178,7 @@ public class ItemListActivity extends AppCompatActivity {
             } catch (InterruptedException e) {
                 return "";
             }
-            String result = MyUtils.postGetJson(getResources().getString(R.string.host_port_server) + "findDocumentList", "GET", null);
+            String result = MyUtils.postGetJson(getResources().getString(R.string.host_port_server) + "findDocumentList/"+gettype, "GET", null);
             return result;
         }
 
@@ -216,5 +224,12 @@ public class ItemListActivity extends AppCompatActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        // TODO Auto-generated method stub
+        super.onNewIntent(intent);
+        setIntent(intent);
     }
 }

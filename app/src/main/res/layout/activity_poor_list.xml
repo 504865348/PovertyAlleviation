@@ -49,7 +49,7 @@
 
             <TextView
                 style="@style/titletext"
-                android:text="帮扶情况"
+                android:text="帮扶要求"
                 android:textSize="22dp"/>
 
             <ImageView style="@style/img_arrow" />
@@ -93,7 +93,7 @@
 
             <TextView
                 style="@style/titletext"
-                android:text="基金"
+                android:text="基金明细"
                 android:textSize="22dp"/>
 
             <ImageView style="@style/img_arrow" />

@@ -8,7 +8,7 @@
         android:id="@+id/activity_assist_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
+        android:background="@color/gray"
         android:gravity="center_horizontal"
         android:orientation="vertical"
         >
@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:layout_marginTop="6dp"
-            android:background="@color/manager_bg"
+            android:background="@color/manager_bg_1"
             android:orientation="horizontal"
             >
 
@@ -32,7 +32,7 @@
                 android:layout_height="28dp"
                 android:layout_gravity="center"
                 android:layout_weight="2"
-                android:src="@mipmap/xtgl_icon"
+                android:src="@mipmap/pkh_p_icon4"
                 />
 
             <TextView
@@ -69,7 +69,7 @@
                 android:layout_height="28dp"
                 android:layout_gravity="center"
                 android:layout_weight="2"
-                android:src="@mipmap/xtgl_icon1"
+                android:src="@mipmap/pkh_p_icon4"
                 />
 
             <TextView
@@ -108,7 +108,7 @@
                 android:layout_height="28dp"
                 android:layout_gravity="center"
                 android:layout_weight="2"
-                android:src="@mipmap/xtgl_icon1"
+                android:src="@mipmap/xtgl_icon"
                 />
 
 
@@ -118,7 +118,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="4"
                 android:gravity="left"
-                android:text="帮扶对象"
+                android:text="帮扶支部"
                 android:textColor="@color/manager_txt_bg"
                 android:textSize="20sp"/>
 
@@ -137,7 +137,7 @@
             android:id="@+id/manager_suggset"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:background="@color/manager_bg"
+            android:background="@color/manager_bg_1"
             android:orientation="horizontal"
             >
 
@@ -146,7 +146,7 @@
                 android:layout_height="28dp"
                 android:layout_gravity="center"
                 android:layout_weight="2"
-                android:src="@mipmap/xtgl_icon2"
+                android:src="@mipmap/xtgl_icon1"
                 />
 
             <TextView
@@ -156,7 +156,7 @@
                 android:layout_weight="4"
                 android:gravity="left"
                 android:text="意见反馈"
-                android:textColor="@color/latest_blue"
+                android:textColor="@color/manager_txt_bg"
                 android:textSize="20sp"/>
 
             <ImageView
@@ -164,7 +164,7 @@
                 android:layout_height="20dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:src="@mipmap/arrow"
+                android:src="@mipmap/arrow1"
                 />
 
         </LinearLayout>
@@ -183,7 +183,7 @@
                 android:layout_height="28dp"
                 android:layout_gravity="center"
                 android:layout_weight="2"
-                android:src="@mipmap/xtgl_icon"
+                android:src="@mipmap/pkh_p_icon2"
                 />
 
 
@@ -193,7 +193,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="4"
                 android:gravity="left"
-                android:text="基金"
+                android:text="基金明细"
                 android:textColor="@color/manager_txt_bg"
                 android:textSize="20sp"/>
 

@@ -30,9 +30,23 @@ public class AssistListActivity extends AppCompatActivity {
                     public void onClick(View view) {
                         Context context = view.getContext();
                         Intent intent = new Intent(context, ItemListActivity.class);
+                        intent.putExtra("getDocType","0");
+                        intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
                         startActivity(intent);
                     }
                 }
+        );
+        View new_info = findViewById(R.id.new_info);
+        new_info.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View view) {
+                                            Context context = view.getContext();
+                                            Intent intent = new Intent(context, ItemListActivity.class);
+                                            intent.putExtra("getDocType","1");
+                                            intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                                            startActivity(intent);
+                                        }
+                                    }
         );
         View p_detail = findViewById(R.id.p_detail);
         p_detail.setOnClickListener(new View.OnClickListener() {
@@ -166,8 +180,8 @@ public class AssistListActivity extends AppCompatActivity {
                     JSONObject dataJson = new JSONObject(msg);
                     TextView temp = (TextView) findViewById(R.id.name);
                     temp.append(dataJson.getString("name"));
-                    temp = (TextView) findViewById(R.id.identityCard);
-                    temp.append(dataJson.getString("identityCard"));
+                    temp = (TextView) findViewById(R.id.birthday);
+                    temp.append(dataJson.getString("identityCard").substring(6,14));
                     temp = (TextView) findViewById(R.id.homeAddress);
                     temp.append(dataJson.getString("homeAddress"));
                     temp = (TextView) findViewById(R.id.aUnit);

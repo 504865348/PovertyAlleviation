@@ -39,6 +39,20 @@ public class PoorerListDetailActivity extends AppCompatActivity {
                                                public void onClick(View view) {
                                                    Context context = view.getContext();
                                                    Intent intent = new Intent(context, ItemListActivity.class);
+                                                   intent.putExtra("getDocType","0");
+                                                   intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                                                   startActivity(intent);
+                                               }
+                                           }
+        );
+        View new_info = findViewById(R.id.new_info);
+        new_info.setOnClickListener(new View.OnClickListener() {
+                                               @Override
+                                               public void onClick(View view) {
+                                                   Context context = view.getContext();
+                                                   Intent intent = new Intent(context, ItemListActivity.class);
+                                                   intent.putExtra("getDocType","1");
+                                                   intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                                    startActivity(intent);
                                                }
                                            }

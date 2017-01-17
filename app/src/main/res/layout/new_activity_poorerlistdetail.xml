@@ -117,12 +117,45 @@
                 />
         </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/assist_set"
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:src="@mipmap/pkh_p_icon2"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:gravity="left"
+                android:text="帮扶任务"
+                android:textColor="@color/manager_txt_bg"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@mipmap/arrow1"
+                />
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/policy_document"
             android:layout_width="match_parent"
             android:layout_height="98dp"
-            android:background="@color/white"
             android:orientation="horizontal"
             >
 
@@ -152,12 +185,11 @@
                 android:src="@mipmap/arrow1"
                 />
         </LinearLayout>
-
         <LinearLayout
-            android:id="@+id/assist_set"
+            android:id="@+id/new_info"
             android:layout_width="match_parent"
             android:layout_height="98dp"
-
+            android:background="@color/white"
             android:orientation="horizontal"
             >
 
@@ -166,7 +198,7 @@
                 android:layout_height="28dp"
                 android:layout_gravity="center"
                 android:layout_weight="2"
-                android:src="@mipmap/pkh_p_icon2"
+                android:src="@mipmap/pkh_p_icon1"
                 />
 
             <TextView
@@ -175,7 +207,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="4"
                 android:gravity="left"
-                android:text="帮助要求"
+                android:text="扶贫动态"
                 android:textColor="@color/manager_txt_bg"
                 android:textSize="20sp"/>
 
@@ -188,12 +220,10 @@
                 />
         </LinearLayout>
 
-
         <LinearLayout
             android:id="@+id/p_need"
             android:layout_width="match_parent"
             android:layout_height="98dp"
-            android:background="@color/white"
             android:orientation="horizontal"
             >
 
@@ -246,7 +276,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="4"
                 android:gravity="left"
-                android:text="基金"
+                android:text="基金明细"
                 android:textColor="@color/manager_txt_bg"
                 android:textSize="20sp"/>
 
