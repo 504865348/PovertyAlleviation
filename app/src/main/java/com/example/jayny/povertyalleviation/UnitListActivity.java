@@ -151,7 +151,10 @@ public class UnitListActivity extends AppCompatActivity {
                 return "";
             }
             String result = "";
-            result = MyUtils.postGetJson(getResources().getString(R.string.host_port_server) + "findAllOfficeIsUnit", "GET", null);
+            Map<String, String> map = new HashMap<String, String>();
+            map.put("userid", Constant.userid);
+            map.put("usertype", Constant.usertype);
+            result = MyUtils.postGetJson(getResources().getString(R.string.host_port_server) + "findAllOfficeIsUnit", "POST", map);
             return result;
         }
 

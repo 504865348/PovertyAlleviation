@@ -28,6 +28,7 @@
             >
 
             <ImageView
+                android:id="@+id/titleSrc"
                 android:layout_width="0dp"
                 android:layout_height="28dp"
                 android:layout_gravity="center"
@@ -108,7 +109,7 @@
                 android:layout_height="28dp"
                 android:layout_gravity="center"
                 android:layout_weight="2"
-                android:src="@mipmap/xtgl_icon"
+                android:src="@mipmap/bangfudanwei"
                 />
 
 
@@ -146,7 +147,7 @@
                 android:layout_height="28dp"
                 android:layout_gravity="center"
                 android:layout_weight="2"
-                android:src="@mipmap/xtgl_icon1"
+                android:src="@mipmap/xtgl_icon2_2"
                 />
 
             <TextView
@@ -183,7 +184,7 @@
                 android:layout_height="28dp"
                 android:layout_gravity="center"
                 android:layout_weight="2"
-                android:src="@mipmap/pkh_p_icon2"
+                android:src="@mipmap/jijinmingxi"
                 />
 
 

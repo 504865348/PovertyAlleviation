@@ -1,10 +1,10 @@
 <resources>
     <!--公司内网-->
-    <string name="host_port_server">http://192.168.1.125:8081/jeesite/app/</string>
-    <string name="host_port_server_pic">http://192.168.1.125:8081/jeesite/</string>
+    <!--<string name="host_port_server">http://192.168.1.125:8081/jeesite/app/</string>-->
+    <!--<string name="host_port_server_pic">http://192.168.1.125:8081/jeesite/</string>-->
     <!--家-->
-    <!--<string name="host_port_server">http://192.168.199.146:8081/jeesite/app/</string>-->
-    <!--<string name="host_port_server_pic">http://192.168.199.146:8081/jeesite/</string>-->
+    <string name="host_port_server">http://192.168.199.146:8081/jeesite/app/</string>
+    <string name="host_port_server_pic">http://192.168.199.146:8081/jeesite/</string>
     <!--生产环境-->
     <!--<string name="host_port_server">http://139.196.253.171:10080/app/app/</string>-->
     <!--<string name="host_port_server_pic">http://139.196.253.171:10080/app/</string>-->

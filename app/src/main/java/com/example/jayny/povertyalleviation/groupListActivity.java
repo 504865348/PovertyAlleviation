@@ -145,32 +145,38 @@ public class groupListActivity extends AppCompatActivity {
         }
     }
 
-    /**
-     * Represents an asynchronous login/registration task used to authenticate
-     * the user.
-     */
-    public class ListTask extends AsyncTask<Void, Void, String> {
+                /**
+                 * Represents an asynchronous login/registration task used to authenticate
+                 * the user.
+                 */
+                public class ListTask extends AsyncTask<Void, Void, String> {
 
-        private final View view;
+                    private final View view;
 
-        ListTask(View view) {
-            this.view = view;
-        }
+                    ListTask(View view) {
+                        this.view = view;
+                    }
 
-        @Override
-        protected String doInBackground(Void... params) {
-            // TODO: attempt authentication against a network service.
+                    @Override
+                    protected String doInBackground(Void... params) {
+                        // TODO: attempt authentication against a network service.
 
-            try {
-                // Simulate network access.
-                Thread.sleep(100);
-            } catch (InterruptedException e) {
-                return "";
-            }
-            Map<String, String> map = new HashMap<String, String>();
-            map.put("officeid", getIntent().getStringExtra("oid"));
-            String result = MyUtils.postGetJson(getResources().getString(R.string.host_port_server) + "findGroupByOfficeid", "POST", map);
-            return result;
+                        try {
+                            // Simulate network access.
+                            Thread.sleep(100);
+                        } catch (InterruptedException e) {
+                            return "";
+                        }
+                        Map<String, String> map = new HashMap<String, String>();
+                        if(Constant.usertype.equals("4")){
+                            map.put("officeid", getIntent().getStringExtra("oid"));
+                            return MyUtils.postGetJson(getResources().getString(R.string.host_port_server) + "findGroupByOfficeid", "POST", map);
+                        }else{
+                            map.put("officeid", getIntent().getStringExtra("oid"));
+                            map.put("userid", Constant.userid);
+                            map.put("usertype", Constant.usertype);
+                            return MyUtils.postGetJson(getResources().getString(R.string.host_port_server) + "findGroupByMap", "POST", map);
+                        }
         }
 
         @Override

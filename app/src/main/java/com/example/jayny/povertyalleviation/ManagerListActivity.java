@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -38,7 +39,9 @@ public class ManagerListActivity extends AppCompatActivity {
         );
         if (Constant.usertype.equals("2")) {
             TextView tv = (TextView) findViewById(R.id.titleId);
+            ImageView iv = (ImageView) findViewById(R.id.titleSrc);
             tv.setText("乡村机构");
+            iv.setImageResource(R.mipmap.xtgl_icon);
         } else if (Constant.usertype.equals("3")) {
             TextView tv = (TextView) findViewById(R.id.titleId1);
             tv.setText("未挂钩帮扶对象");

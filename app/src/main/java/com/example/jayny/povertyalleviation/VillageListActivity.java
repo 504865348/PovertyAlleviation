@@ -116,6 +116,18 @@ public class VillageListActivity extends AppCompatActivity {
                         }
                     }
             );
+            holder.mContentView.setOnClickListener(
+                    new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Context context = v.getContext();
+                            Intent intent = new Intent(context, VillageInfoActivity.class);
+                            intent.putExtra("areaid",holder.mItem.get("oid"));
+                            intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                            context.startActivity(intent);
+                        }
+                    }
+            );
         }
 
         @Override

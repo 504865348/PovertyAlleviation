@@ -198,7 +198,7 @@
                 android:layout_height="28dp"
                 android:layout_gravity="center"
                 android:layout_weight="2"
-                android:src="@mipmap/pkh_p_icon1"
+                android:src="@mipmap/fupingdongtai"
                 />
 
             <TextView
@@ -268,7 +268,7 @@
                 android:layout_height="28dp"
                 android:layout_gravity="center"
                 android:layout_weight="2"
-                android:src="@mipmap/pkh_p_icon4"
+                android:src="@mipmap/jijinmingxi"
                 />
 
             <TextView
@@ -303,7 +303,7 @@
                 android:layout_height="28dp"
                 android:layout_gravity="center"
                 android:layout_weight="2"
-                android:src="@mipmap/pkh_p_icon4"
+                android:src="@mipmap/xtgl_icon2_2"
                 />
 
             <TextView
