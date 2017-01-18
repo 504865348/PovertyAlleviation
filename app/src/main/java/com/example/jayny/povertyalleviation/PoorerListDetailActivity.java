@@ -57,6 +57,10 @@ public class PoorerListDetailActivity extends AppCompatActivity {
                                                }
                                            }
         );
+        if(null!=getIntent().getStringExtra("statusForDocs")&&getIntent().getStringExtra("statusForDocs").equals("1")){
+            policy_document.setVisibility(View.GONE);
+            new_info.setVisibility(View.GONE);
+        }
         View p_detail = findViewById(R.id.p_detail);
         p_detail.setOnClickListener(new View.OnClickListener() {
                                         @Override

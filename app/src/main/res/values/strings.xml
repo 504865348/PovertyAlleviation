@@ -1,7 +1,7 @@
 <resources>
     <!--公司内网-->
-    <string name="host_port_server">http://192.168.1.131:8081/jeesite/app/</string>
-    <string name="host_port_server_pic">http://192.168.1.131:8081/jeesite/</string>
+    <string name="host_port_server">http://192.168.1.125:8081/jeesite/app/</string>
+    <string name="host_port_server_pic">http://192.168.1.125:8081/jeesite/</string>
     <!--家-->
     <!--<string name="host_port_server">http://192.168.199.146:8081/jeesite/app/</string>-->
     <!--<string name="host_port_server_pic">http://192.168.199.146:8081/jeesite/</string>-->
@@ -10,7 +10,7 @@
     <!--<string name="host_port_server_pic">http://139.196.253.171:10080/app/</string>-->
 
     <string name="app_name">精准扶贫</string>
-    <string name="module_assist">精准扶贫-帮扶单位系统</string>
+    <string name="module_assist">精准扶贫-帮扶支部系统</string>
     <string name="module_poor">精准扶贫-帮扶对象系统</string>
     <string name="module_manager">精准扶贫-管理系统</string>
 
@@ -45,6 +45,8 @@
     <string name="title_village_list">Village</string>
     <string name="title_village_detail">Village Detail</string>
     <string name="title_poorer_list">Poorer</string>
+    <string name="title_unit_list">unit</string>
+    <string name="title_vi_list">乡村信息</string>
     <string name="title_poorer_detail">Poorer Detail</string>
     <string name="title_suggestretrun_list">suggestRetrun</string>
     <string name="title_suggestretrun_detail">suggestRetrun Detail</string>

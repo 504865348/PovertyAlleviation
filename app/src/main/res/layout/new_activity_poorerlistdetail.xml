@@ -73,7 +73,7 @@
                     android:layout_gravity="left"
                     android:layout_weight="1"
                     android:gravity="center_vertical"
-                    android:text="帮扶单位："
+                    android:text="帮扶支部："
                     android:textColor="@color/black"
                     android:textSize="14sp"/>
             </LinearLayout>
@@ -259,6 +259,7 @@
             android:layout_width="match_parent"
             android:layout_height="98dp"
             android:orientation="horizontal"
+            android:background="@color/white"
             android:visibility="gone"
             >
 
@@ -293,7 +294,6 @@
             android:id="@+id/p_suggest"
             android:layout_width="match_parent"
             android:layout_height="98dp"
-            android:background="@color/white"
             android:orientation="horizontal"
             android:visibility="gone"
             >

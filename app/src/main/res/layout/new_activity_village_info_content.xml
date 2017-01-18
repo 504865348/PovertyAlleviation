@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:fadingEdge="vertical"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:text="乡村基本信息："
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+
+        <LinearLayout
+            style="@style/wrap_layout"
+            android:layout_marginTop="5dp">
+
+            <!-- 无圆角-->
+            <LinearLayout style="@style/top_layout_2">
+
+                <TextView
+                    android:id="@+id/registeredPopulation"
+                    style="@style/usertext"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="户籍人口：" />
+
+                <View style="@style/bg_line_vertical" />
+
+                <TextView
+                    android:id="@+id/residentPopulation"
+                    style="@style/usertext"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="常住人口：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout style="@style/mid_layout_2">
+
+                <TextView
+                    android:id="@+id/participatoryPopulation"
+                    style="@style/usertext"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="建档立卡人口：" />
+
+                <View style="@style/bg_line_vertical" />
+
+                <TextView
+                    android:id="@+id/totalHouseholds"
+                    style="@style/usertext"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="总户数：" />
+            </LinearLayout>
+
+            <!-- 无圆角-->
+
+            <!-- 无圆角-->
+
+            <View style="@style/bg_line" />
+
+            <LinearLayout style="@style/mid_layout_2">
+
+                <TextView
+                    android:id="@+id/filingHouseholds"
+                    style="@style/usertext"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="建档立卡户数：" />
+
+                <View style="@style/bg_line_vertical" />
+
+                <TextView
+                    android:id="@+id/groupsNumber"
+                    style="@style/usertext"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="村民小组个数：" />
+            </LinearLayout>
+
+            <!-- 无圆角-->
+
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout style="@style/mid_layout_2">
+
+                <TextView
+                    android:id="@+id/naturalVillages"
+                    style="@style/usertext"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="自然村个数：" />
+
+                <View style="@style/bg_line_vertical" />
+
+                <TextView
+                    android:id="@+id/migrantWorkers"
+                    style="@style/usertext"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="外出务工人数：" />
+            </LinearLayout>
+
+
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout style="@style/bottom_layout_2">
+
+                <TextView
+                    android:id="@+id/generalVillages"
+                    style="@style/usertext"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="一般村个数：" />
+
+                <View style="@style/bg_line_vertical" />
+
+                <TextView
+                    android:id="@+id/labourForce"
+                    style="@style/usertext"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="劳动力人数：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout style="@style/bottom_layout_2">
+
+                <TextView
+                    android:id="@+id/developmentVillages"
+                    style="@style/usertext"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="规划发展村个数：" />
+
+                <View style="@style/bg_line_vertical" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+
+            <LinearLayout style="@style/bottom_layout_2">
+
+                <TextView
+                    android:id="@+id/disposableIncome"
+                    style="@style/usertext"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="2016年末人均可支配收入：" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:text="村级干部及党建情况："
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        <!-- 全圆角-->
+        <LinearLayout
+            style="@style/wrap_layout"
+            android:layout_marginTop="5dp">
+            <!-- 无圆角-->
+            <LinearLayout style="@style/top_layout_2">
+
+                <TextView
+                    android:id="@+id/villageCadres"
+                    style="@style/usertext"
+                    android:text="2016年末村干部人数：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+
+            <LinearLayout style="@style/bottom_layout_2">
+
+                <TextView
+                    android:id="@+id/partyMembers"
+                    style="@style/usertext"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="2016年末全村党员人数：" />
+            </LinearLayout>
+
+            <!-- 分割线 -->
+            <View style="@style/bg_line" />
+
+            <!-- 上圆角-->
+            <LinearLayout style="@style/mid_layout_2">
+
+                <TextView
+                    android:id="@+id/partyBranches"
+                    style="@style/usertext"
+                    android:text="2016年末党支部个数：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout style="@style/mid_layout_2">
+
+                <TextView
+                    android:id="@+id/villageOfficial"
+                    style="@style/usertext"
+                    android:text="2016年末大学生村官人数：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout style="@style/bottom_layout_2">
+
+                <TextView
+                    android:id="@+id/activityRoom"
+                    style="@style/usertext"
+                    android:text="2016年末党员活动室面积（平方米）：" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:text="公共服务及社会保障情况："
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        <!-- 全圆角-->
+        <LinearLayout
+            style="@style/wrap_layout"
+            android:layout_marginTop="5dp">
+            <!-- 无圆角-->
+            <LinearLayout style="@style/top_layout_2">
+
+                <TextView
+                    android:id="@+id/roadPavement"
+                    style="@style/usertext"
+                    android:text="2016年村内主要道路路面：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+
+            <LinearLayout style="@style/bottom_layout_2">
+
+                <TextView
+                    android:id="@+id/isPassthbus"
+                    style="@style/usertext"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="是否通公共交通：" />
+            </LinearLayout>
+
+            <!-- 分割线 -->
+            <View style="@style/bg_line" />
+
+            <!-- 上圆角-->
+            <LinearLayout style="@style/mid_layout_2">
+
+                <TextView
+                    android:id="@+id/cooperativeMedical"
+                    style="@style/usertext"
+                    android:text="新型农村合作医疗参保人数：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout style="@style/mid_layout_2">
+
+                <TextView
+                    android:id="@+id/endowmentInsurance"
+                    style="@style/usertext"
+                    android:text="城乡居民基本养老保险参保人数：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout style="@style/mid_layout_2">
+
+                <TextView
+                    android:id="@+id/lowestGuarantee"
+                    style="@style/usertext"
+                    android:text="农村居民最低生活保障人数：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout style="@style/mid_layout_2">
+
+                <TextView
+                    android:id="@+id/fiveGuarantees"
+                    style="@style/usertext"
+                    android:text="农村五保供养人数：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout style="@style/mid_layout_2">
+
+                <TextView
+                    android:id="@+id/administrativeCenter"
+                    style="@style/usertext"
+                    android:text="村级行政服务中心面积（平方米）：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout style="@style/bottom_layout_2">
+
+                <TextView
+                    android:id="@+id/practicingDoctor"
+                    style="@style/usertext"
+                    android:text="执业（助理）医师人数：" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:text="工商业经营情况："
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        <!-- 全圆角-->
+        <LinearLayout
+            style="@style/wrap_layout"
+            android:layout_marginTop="5dp">
+            <!-- 无圆角-->
+            <LinearLayout style="@style/top_layout_2">
+
+                <TextView
+                    android:id="@+id/industrialEnterprise"
+                    style="@style/usertext"
+                    android:text="村内工业企业和个体户数量：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+
+            <LinearLayout style="@style/bottom_layout_2">
+
+                <TextView
+                    android:id="@+id/serviceEnterprises"
+                    style="@style/usertext"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="商业及服务业企业和个体户数量：" />
+            </LinearLayout>
+
+            <!-- 分割线 -->
+            <View style="@style/bg_line" />
+
+            <!-- 上圆角-->
+            <LinearLayout style="@style/mid_layout_2">
+
+                <TextView
+                    android:id="@+id/onlineStore"
+                    style="@style/usertext"
+                    android:text="网点数量：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout style="@style/bottom_layout_2">
+
+                <TextView
+                    android:id="@+id/commercialService"
+                    style="@style/usertext"
+                    android:text="公商务物业及网店从业人数：" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:text="土地及农业经营情况："
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        <!-- 全圆角-->
+        <LinearLayout
+            style="@style/wrap_layout"
+            android:layout_marginTop="5dp">
+            <!-- 无圆角-->
+            <LinearLayout style="@style/top_layout_2">
+
+                <TextView
+                    android:id="@+id/agriculturalAcreage"
+                    style="@style/usertext"
+                    android:text="截至2016年末全村耕地面积（亩）：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+
+            <LinearLayout style="@style/bottom_layout_2">
+
+                <TextView
+                    android:id="@+id/landTransfer"
+                    style="@style/usertext"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="截至2016年末流转耕地面积（亩）：" />
+            </LinearLayout>
+
+            <!-- 分割线 -->
+            <View style="@style/bg_line" />
+
+            <!-- 上圆角-->
+            <LinearLayout style="@style/mid_layout_2">
+
+                <TextView
+                    android:id="@+id/familyFarm"
+                    style="@style/usertext"
+                    android:text="家庭农场数量及规模（个丶亩）：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout style="@style/mid_layout_2">
+
+                <TextView
+                    android:id="@+id/farmersCooperative"
+                    style="@style/usertext"
+                    android:text="农民合作社数量及规模（个丶万元）：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout style="@style/bottom_layout_2_2">
+
+                <TextView
+                    android:id="@+id/efficiencyAgriculture"
+                    style="@style/usertext"
+                    android:text="主要高效农业和渔业品种及面积（品种丶亩）：" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:text="村集体经济组织财务情况："
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        <!-- 全圆角-->
+        <LinearLayout
+            style="@style/wrap_layout"
+            android:layout_marginTop="5dp">
+            <!-- 无圆角-->
+            <LinearLayout style="@style/top_layout_2">
+
+                <TextView
+                    android:id="@+id/collectiveIncome"
+                    style="@style/usertext"
+                    android:text="2016年全村集体收入（万元）：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+
+            <LinearLayout style="@style/bottom_layout_2">
+
+                <TextView
+                    android:id="@+id/mainSource"
+                    style="@style/usertext"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="村集体收入主要来源及金额（万元）：" />
+            </LinearLayout>
+
+            <!-- 分割线 -->
+            <View style="@style/bg_line" />
+
+            <!-- 上圆角-->
+            <LinearLayout style="@style/mid_layout_2">
+
+                <TextView
+                    android:id="@+id/generalAssets"
+                    style="@style/usertext"
+                    android:text="2016年末村集体资产总额（万元）：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout style="@style/mid_layout_2">
+
+                <TextView
+                    android:id="@+id/mainComposition"
+                    style="@style/usertext"
+                    android:text="村集体资产主要构成及金额（万元）：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout style="@style/bottom_layout_2_2">
+
+                <TextView
+                    android:id="@+id/liabilitiesAmount"
+                    style="@style/usertext"
+                    android:text="2016年末村集体负债金额及原因（万元）：" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:text="本村存在的主要困难和发展对策建议："
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        <!-- 全圆角-->
+        <LinearLayout
+            style="@style/wrap_layout"
+            android:layout_marginTop="5dp">
+            <!-- 无圆角-->
+            <LinearLayout style="@style/top_layout_2_2">
+
+                <TextView
+                    android:id="@+id/partyConstruction"
+                    style="@style/usertext"
+                    android:text="基层党建方面建议：" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout style="@style/bottom_layout_2_2">
+
+                <TextView
+                    android:id="@+id/economicDevelopment"
+                    style="@style/usertext"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="村级经济发展方面建议：" />
+
+                <View style="@style/bg_line_vertical" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout style="@style/bottom_layout_2_2">
+
+                <TextView
+                    android:id="@+id/publicService"
+                    style="@style/usertext"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="公共服务方面建议：" />
+
+                <View style="@style/bg_line_vertical" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout style="@style/bottom_layout_2_2">
+
+                <TextView
+                    android:id="@+id/employment"
+                    style="@style/usertext"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="就业创业方面建议：" />
+
+                <View style="@style/bg_line_vertical" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout style="@style/bottom_layout_2_2">
+
+                <TextView
+                    android:id="@+id/others"
+                    style="@style/usertext"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="其他方面建议：" />
+
+                <View style="@style/bg_line_vertical" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,30 +26,24 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * An activity representing a list of group. This activity
+ * An activity representing a list of Poorer. This activity
  * has different presentations for handset and tablet-size devices. On
  * handsets, the activity presents a list of items, which when touched,
- * lead to a {@link groupDetailActivity} representing
  * item details. On tablets, the activity presents the list of items and
  * item details side-by-side using two vertical panes.
  */
-public class groupListActivity extends AppCompatActivity {
+public class UnitListActivity extends AppCompatActivity {
     List<Map<String, String>> list = new ArrayList<Map<String, String>>();
     Map<String, String> map = null;
     private ListTask listTask;
-    /**
-     * Whether or not the activity is in two-pane mode, i.e. running on a tablet
-     * device.
-     */
-    private boolean mTwoPane;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_group_list);
+        setContentView(R.layout.activity_unit_list);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("下属帮扶支部");
+        toolbar.setTitle("帮扶单位列表");
         setSupportActionBar(toolbar);
         // Show the Up button in the action bar.
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
@@ -57,18 +52,20 @@ public class groupListActivity extends AppCompatActivity {
             actionBar.setHomeButtonEnabled(true);
         }
 
-        View recyclerView = findViewById(R.id.group_list);
+        View recyclerView = findViewById(R.id.unit_list);
         assert recyclerView != null;
+        setupRecyclerView((RecyclerView) recyclerView);
         listTask = new ListTask(recyclerView);
-        listTask.executeOnExecutor(com.example.jayny.povertyalleviation.Executor.exec);
+        listTask.executeOnExecutor(Executor.exec);
+    }
 
-        if (findViewById(R.id.group_detail_container) != null) {
-            // The detail container view will be present only in the
-            // large-screen layouts (res/values-w900dp).
-            // If this view is present, then the
-            // activity should be in two-pane mode.
-            mTwoPane = true;
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            finish();
+            return true;
         }
+        return super.onOptionsItemSelected(item);
     }
 
     private void setupRecyclerView(@NonNull RecyclerView recyclerView) {
@@ -87,7 +84,7 @@ public class groupListActivity extends AppCompatActivity {
         @Override
         public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             View view = LayoutInflater.from(parent.getContext())
-                    .inflate(R.layout.group_list_content, parent, false);
+                    .inflate(R.layout.unit_list_content, parent, false);
             return new ViewHolder(view);
         }
 
@@ -99,25 +96,11 @@ public class groupListActivity extends AppCompatActivity {
             holder.mView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if (mTwoPane) {
-                        Bundle arguments = new Bundle();
-                        arguments.putString("name", holder.mItem.get("name"));
-                        arguments.putString("master", holder.mItem.get("master"));
-                        arguments.putString("phone", holder.mItem.get("phone"));
-                        groupDetailFragment fragment = new groupDetailFragment();
-                        fragment.setArguments(arguments);
-                        getSupportFragmentManager().beginTransaction()
-                                .replace(R.id.group_detail_container, fragment)
-                                .commit();
-                    } else {
-                        Context context = v.getContext();
-                        Intent intent = new Intent(context, groupDetailActivity.class);
-                        intent.putExtra("name", holder.mItem.get("name"));
-                        intent.putExtra("master", holder.mItem.get("master"));
-                        intent.putExtra("phone", holder.mItem.get("phone"));
-
-                        context.startActivity(intent);
-                    }
+                    Context context = v.getContext();
+                    Intent intent = new Intent(context, groupListActivity.class);
+                    intent.putExtra("oid", holder.mItem.get("oid"));
+                    intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    context.startActivity(intent);
                 }
             });
         }
@@ -167,9 +150,8 @@ public class groupListActivity extends AppCompatActivity {
             } catch (InterruptedException e) {
                 return "";
             }
-            Map<String, String> map = new HashMap<String, String>();
-            map.put("officeid", getIntent().getStringExtra("oid"));
-            String result = MyUtils.postGetJson(getResources().getString(R.string.host_port_server) + "findGroupByOfficeid", "POST", map);
+            String result = "";
+            result = MyUtils.postGetJson(getResources().getString(R.string.host_port_server) + "findAllOfficeIsUnit", "GET", null);
             return result;
         }
 
@@ -178,25 +160,23 @@ public class groupListActivity extends AppCompatActivity {
             //showProgress(false);
 
             if (msg.equals("") || msg.equals("error")) {
-                Toast.makeText(groupListActivity.this, getString(R.string.error_remote), Toast.LENGTH_LONG).show();
+                Toast.makeText(UnitListActivity.this, getString(R.string.error_remote), Toast.LENGTH_LONG).show();
             } else {
                 try {
                     JSONArray dataJson = new JSONArray(msg);
                     for (int i = 0; i < dataJson.length(); i++) {
+                        map = new HashMap<String, String>();
                         JSONObject item = dataJson.getJSONObject(i);
                         String name = item.getString("name");
-                        String master = item.getString("master");
-                        String phone = item.getString("phone");
-                        map = new HashMap<String, String>();
+                        String oid = item.getString("id");
                         map.put("name", name);
-                        map.put("master", master);
-                        map.put("phone", phone);
+                        map.put("oid", oid);
                         list.add(map);
                     }
                 } catch (Exception e) {
                     Log.e("getJosn:", e.getMessage());
                     e.printStackTrace();
-                    Toast.makeText(groupListActivity.this, getString(R.string.error_local), Toast.LENGTH_LONG).show();
+                    Toast.makeText(UnitListActivity.this, getString(R.string.error_local), Toast.LENGTH_LONG).show();
                 }
                 setupRecyclerView((RecyclerView) view);
             }
@@ -209,11 +189,9 @@ public class groupListActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == android.R.id.home) {
-            finish();
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
+    protected void onNewIntent(Intent intent) {
+        // TODO Auto-generated method stub
+        super.onNewIntent(intent);
+        setIntent(intent);
     }
 }

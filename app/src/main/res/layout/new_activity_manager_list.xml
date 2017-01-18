@@ -118,7 +118,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="4"
                 android:gravity="left"
-                android:text="帮扶支部"
+                android:text="帮扶单位"
                 android:textColor="@color/manager_txt_bg"
                 android:textSize="20sp"/>
 

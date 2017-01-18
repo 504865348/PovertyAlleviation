@@ -2,13 +2,11 @@ package com.example.jayny.povertyalleviation;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -105,7 +103,7 @@ public class AssistListActivity extends AppCompatActivity {
         );
         if(Constant.fundstatus.equals("1")){
             p_fund.setVisibility(View.VISIBLE);
-            p_suggest.setBackgroundColor(Color.WHITE);
+            p_suggest.setBackgroundColor(getResources().getColor(R.color.gray));
         }
         listTask = new ListTask();
         listTask.executeOnExecutor(com.example.jayny.povertyalleviation.Executor.exec);

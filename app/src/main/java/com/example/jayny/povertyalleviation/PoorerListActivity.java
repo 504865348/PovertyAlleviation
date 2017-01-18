@@ -107,6 +107,7 @@ public class PoorerListActivity extends AppCompatActivity {
                     Context context = v.getContext();
                     Intent intent = new Intent(context, PoorerListDetailActivity.class);
                     intent.putExtra("name",holder.mContentView.getText());
+                    intent.putExtra("statusForDocs", "1");
                     intent.putExtra("status3",null==getIntent().getStringExtra("status3")?"0":getIntent().getStringExtra("status3"));
                     intent.putExtra("status2", holder.mItem.get("status2"));
                     intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);

@@ -104,6 +104,18 @@ public class VillageListActivity extends AppCompatActivity {
                     context.startActivity(intent);
                 }
             });
+            holder.mCheckDetail.setOnClickListener(
+                    new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Context context = v.getContext();
+                            Intent intent = new Intent(context, VillageInfoActivity.class);
+                            intent.putExtra("areaid",holder.mItem.get("oid"));
+                            intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                            context.startActivity(intent);
+                        }
+                    }
+            );
         }
 
         @Override
@@ -117,6 +129,7 @@ public class VillageListActivity extends AppCompatActivity {
             public final TextView mIdView;
             public final TextView mContentView;
             public final TextView mCount;
+            public final TextView mCheckDetail;
             public Map<String, String> mItem;
 
             public ViewHolder(View view) {
@@ -126,6 +139,7 @@ public class VillageListActivity extends AppCompatActivity {
                 mContentView = (TextView) view.findViewById(R.id.content);
                 mCount = (TextView) view.findViewById(R.id.count);
                 mVillageList= (LinearLayout) view.findViewById(R.id.ll_village_list);
+                mCheckDetail= (TextView) view.findViewById(R.id.check);
             }
 
             @Override

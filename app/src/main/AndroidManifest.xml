@@ -139,6 +139,22 @@
                 android:value="com.example.jayny.povertyalleviation.ManagerListActivity" />
         </activity>
         <activity
+            android:name=".VillageInfoActivity"
+            android:label="@string/title_vi_list"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jayny.povertyalleviation.VillageListActivity" />
+        </activity>
+        <activity
+            android:name=".UnitListActivity"
+            android:label="@string/title_unit_list"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jayny.povertyalleviation.ManagerListActivity" />
+        </activity>
+        <activity
             android:name=".PoorerListActivity"
             android:label="@string/title_poorer_list"
             android:theme="@style/AppTheme.NoActionBar">
@@ -173,7 +189,7 @@
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.jayny.povertyalleviation.ManagerListActivity" />
+                android:value="com.example.jayny.povertyalleviation.UnitListActivity" />
         </activity>
         <activity
             android:name=".groupDetailActivity"
