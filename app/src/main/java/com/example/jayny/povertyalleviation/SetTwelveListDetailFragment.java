@@ -1,6 +1,7 @@
 package com.example.jayny.povertyalleviation;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
@@ -61,7 +62,7 @@ public class SetTwelveListDetailFragment extends Fragment {
     private EditText editText2;
     Button buttonFor12;
     private SendSetTask sendSetTask;
-
+    private ProgressDialog pd;
     public SetTwelveListDetailFragment() {
     }
 
@@ -445,6 +446,17 @@ public class SetTwelveListDetailFragment extends Fragment {
         }
 
         @Override
+        protected void onPreExecute() {
+            pd = new ProgressDialog(getActivity());
+            pd.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+            pd.setMessage("正在上传，请稍后...");
+            pd.setCancelable(false);
+            pd.setMax(100);
+            pd.incrementProgressBy(20);
+            pd.show();
+        }
+
+        @Override
         protected String doInBackground(Void... params) {
             // TODO: attempt authentication against a network service.
 
@@ -459,7 +471,7 @@ public class SetTwelveListDetailFragment extends Fragment {
 
         @Override
         protected void onPostExecute(String msg) {
-
+            pd.dismiss();
             if (msg.equals("") || msg.equals("error")) {
                 Toast.makeText(getActivity(), getString(R.string.error_remote), Toast.LENGTH_LONG).show();
             } else {
@@ -616,15 +628,21 @@ public class SetTwelveListDetailFragment extends Fragment {
                     dos.write(bytes, 0, len);
                 }
                 is.close();
+                pd.incrementProgressBy(20);
+
                 dos.write(LINE_END.getBytes());
                 byte[] end_data = (PREFIX + BOUNDARY + PREFIX + LINE_END)
                         .getBytes();
                 dos.write(end_data);
                 dos.flush();
+                pd.incrementProgressBy(20);
+
                 /**
                  * 获取响应码 200=成功 当响应成功，获取响应的流
                  */
                 res = conn.getResponseCode();
+                pd.incrementProgressBy(20);
+
                 Log.d("respondCode", "response code:" + res);
                 if (res == 200) {
                     Log.d("success", "request success");

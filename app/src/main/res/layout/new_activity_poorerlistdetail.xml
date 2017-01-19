@@ -18,6 +18,7 @@
             android:background="@color/white">
 
             <ImageView
+                android:id="@+id/lllSrc"
                 android:layout_width="108dp"
                 android:layout_height="108dp"
                 android:scaleType="centerCrop"
@@ -295,6 +296,7 @@
             android:layout_width="match_parent"
             android:layout_height="98dp"
             android:orientation="horizontal"
+            android:background="@color/white"
             android:visibility="gone"
             >
 

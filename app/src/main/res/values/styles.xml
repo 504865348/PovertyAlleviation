@@ -129,6 +129,9 @@
     <style name="mid_layout_2" parent="base_layout_2">
         <item name="android:background">@drawable/mid_layout_selector</item>
     </style>
+    <style name="mid_layout_2_2" parent="base_layout_2_2">
+        <item name="android:background">@drawable/mid_layout_selector</item>
+    </style>
     <!-- 下圆角样式 -->
     <style name="bottom_layout" parent="base_layout">
         <item name="android:background">@drawable/bottom_layout_selector</item>

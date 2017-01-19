@@ -26,7 +26,7 @@
             android:layout_marginTop="5dp">
 
             <!-- 无圆角-->
-            <LinearLayout style="@style/top_layout_2">
+            <LinearLayout style="@style/top_layout_2_2">
 
                 <TextView
                     android:id="@+id/registeredPopulation"
@@ -47,7 +47,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
+            <LinearLayout style="@style/mid_layout_2_2">
 
                 <TextView
                     android:id="@+id/participatoryPopulation"
@@ -72,7 +72,7 @@
 
             <View style="@style/bg_line" />
 
-            <LinearLayout style="@style/mid_layout_2">
+            <LinearLayout style="@style/mid_layout_2_2">
 
                 <TextView
                     android:id="@+id/filingHouseholds"
@@ -95,7 +95,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
+            <LinearLayout style="@style/mid_layout_2_2">
 
                 <TextView
                     android:id="@+id/naturalVillages"
@@ -117,7 +117,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/bottom_layout_2">
+            <LinearLayout style="@style/mid_layout_2_2">
 
                 <TextView
                     android:id="@+id/generalVillages"
@@ -138,7 +138,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/bottom_layout_2">
+            <LinearLayout style="@style/mid_layout_2_2">
 
                 <TextView
                     android:id="@+id/developmentVillages"
@@ -152,7 +152,7 @@
 
             <View style="@style/bg_line" />
 
-            <LinearLayout style="@style/bottom_layout_2">
+            <LinearLayout style="@style/bottom_layout_2_2">
 
                 <TextView
                     android:id="@+id/disposableIncome"
@@ -176,7 +176,7 @@
             style="@style/wrap_layout"
             android:layout_marginTop="5dp">
             <!-- 无圆角-->
-            <LinearLayout style="@style/top_layout_2">
+            <LinearLayout style="@style/top_layout_2_2">
 
                 <TextView
                     android:id="@+id/villageCadres"
@@ -186,7 +186,7 @@
 
             <View style="@style/bg_line" />
 
-            <LinearLayout style="@style/bottom_layout_2">
+            <LinearLayout style="@style/mid_layout_2_2">
 
                 <TextView
                     android:id="@+id/partyMembers"
@@ -200,7 +200,7 @@
             <View style="@style/bg_line" />
 
             <!-- 上圆角-->
-            <LinearLayout style="@style/mid_layout_2">
+            <LinearLayout style="@style/mid_layout_2_2">
 
                 <TextView
                     android:id="@+id/partyBranches"
@@ -210,7 +210,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
+            <LinearLayout style="@style/mid_layout_2_2">
 
                 <TextView
                     android:id="@+id/villageOfficial"
@@ -220,7 +220,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/bottom_layout_2">
+            <LinearLayout style="@style/bottom_layout_2_2">
 
                 <TextView
                     android:id="@+id/activityRoom"
@@ -241,7 +241,7 @@
             style="@style/wrap_layout"
             android:layout_marginTop="5dp">
             <!-- 无圆角-->
-            <LinearLayout style="@style/top_layout_2">
+            <LinearLayout style="@style/top_layout_2_2">
 
                 <TextView
                     android:id="@+id/roadPavement"
@@ -251,7 +251,7 @@
 
             <View style="@style/bg_line" />
 
-            <LinearLayout style="@style/bottom_layout_2">
+            <LinearLayout style="@style/mid_layout_2_2">
 
                 <TextView
                     android:id="@+id/isPassthbus"
@@ -265,7 +265,7 @@
             <View style="@style/bg_line" />
 
             <!-- 上圆角-->
-            <LinearLayout style="@style/mid_layout_2">
+            <LinearLayout style="@style/mid_layout_2_2">
 
                 <TextView
                     android:id="@+id/cooperativeMedical"
@@ -275,7 +275,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
+            <LinearLayout style="@style/mid_layout_2_2">
 
                 <TextView
                     android:id="@+id/endowmentInsurance"
@@ -285,7 +285,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
+            <LinearLayout style="@style/mid_layout_2_2">
 
                 <TextView
                     android:id="@+id/lowestGuarantee"
@@ -295,7 +295,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
+            <LinearLayout style="@style/mid_layout_2_2">
 
                 <TextView
                     android:id="@+id/fiveGuarantees"
@@ -305,7 +305,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
+            <LinearLayout style="@style/mid_layout_2_2">
 
                 <TextView
                     android:id="@+id/administrativeCenter"
@@ -315,7 +315,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/bottom_layout_2">
+            <LinearLayout style="@style/bottom_layout_2_2">
 
                 <TextView
                     android:id="@+id/practicingDoctor"
@@ -336,7 +336,7 @@
             style="@style/wrap_layout"
             android:layout_marginTop="5dp">
             <!-- 无圆角-->
-            <LinearLayout style="@style/top_layout_2">
+            <LinearLayout style="@style/top_layout_2_2">
 
                 <TextView
                     android:id="@+id/industrialEnterprise"
@@ -346,7 +346,7 @@
 
             <View style="@style/bg_line" />
 
-            <LinearLayout style="@style/bottom_layout_2">
+            <LinearLayout style="@style/mid_layout_2_2">
 
                 <TextView
                     android:id="@+id/serviceEnterprises"
@@ -360,7 +360,7 @@
             <View style="@style/bg_line" />
 
             <!-- 上圆角-->
-            <LinearLayout style="@style/mid_layout_2">
+            <LinearLayout style="@style/mid_layout_2_2">
 
                 <TextView
                     android:id="@+id/onlineStore"
@@ -370,7 +370,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/bottom_layout_2">
+            <LinearLayout style="@style/bottom_layout_2_2">
 
                 <TextView
                     android:id="@+id/commercialService"
@@ -391,7 +391,7 @@
             style="@style/wrap_layout"
             android:layout_marginTop="5dp">
             <!-- 无圆角-->
-            <LinearLayout style="@style/top_layout_2">
+            <LinearLayout style="@style/top_layout_2_2">
 
                 <TextView
                     android:id="@+id/agriculturalAcreage"
@@ -401,7 +401,7 @@
 
             <View style="@style/bg_line" />
 
-            <LinearLayout style="@style/bottom_layout_2">
+            <LinearLayout style="@style/mid_layout_2_2">
 
                 <TextView
                     android:id="@+id/landTransfer"
@@ -415,7 +415,7 @@
             <View style="@style/bg_line" />
 
             <!-- 上圆角-->
-            <LinearLayout style="@style/mid_layout_2">
+            <LinearLayout style="@style/mid_layout_2_2">
 
                 <TextView
                     android:id="@+id/familyFarm"
@@ -425,7 +425,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
+            <LinearLayout style="@style/mid_layout_2_2">
 
                 <TextView
                     android:id="@+id/farmersCooperative"
@@ -456,7 +456,7 @@
             style="@style/wrap_layout"
             android:layout_marginTop="5dp">
             <!-- 无圆角-->
-            <LinearLayout style="@style/top_layout_2">
+            <LinearLayout style="@style/top_layout_2_2">
 
                 <TextView
                     android:id="@+id/collectiveIncome"
@@ -466,7 +466,7 @@
 
             <View style="@style/bg_line" />
 
-            <LinearLayout style="@style/bottom_layout_2">
+            <LinearLayout style="@style/mid_layout_2_2">
 
                 <TextView
                     android:id="@+id/mainSource"
@@ -480,7 +480,7 @@
             <View style="@style/bg_line" />
 
             <!-- 上圆角-->
-            <LinearLayout style="@style/mid_layout_2">
+            <LinearLayout style="@style/mid_layout_2_2">
 
                 <TextView
                     android:id="@+id/generalAssets"
@@ -490,7 +490,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/mid_layout_2">
+            <LinearLayout style="@style/mid_layout_2_2">
 
                 <TextView
                     android:id="@+id/mainComposition"
@@ -531,7 +531,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/bottom_layout_2_2">
+            <LinearLayout style="@style/mid_layout_2_2">
 
                 <TextView
                     android:id="@+id/economicDevelopment"
@@ -545,7 +545,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/bottom_layout_2_2">
+            <LinearLayout style="@style/mid_layout_2_2">
 
                 <TextView
                     android:id="@+id/publicService"
@@ -559,7 +559,7 @@
 
             <View style="@style/bg_line" />
             <!-- 无圆角-->
-            <LinearLayout style="@style/bottom_layout_2_2">
+            <LinearLayout style="@style/mid_layout_2_2">
 
                 <TextView
                     android:id="@+id/employment"

@@ -123,294 +123,294 @@ public class PoorInfoActivity extends AppCompatActivity {
                     if (!msg.equals("")) {
                         JSONObject dataJson = new JSONObject(msg);
                         TextView temp = (TextView) findViewById(R.id.name);
-                        temp.append(dataJson.getString("name"));
+                        temp.append(dataJson.optString("name"));
                         temp = (TextView) findViewById(R.id.birthday);
-                        temp.append(dataJson.getString("identityCard").substring(6,14));
+                        temp.append(dataJson.optString("identityCard").substring(6,14));
                         temp = (TextView) findViewById(R.id.identityCard);
-                        temp.append(dataJson.getString("identityCard"));
+                        temp.append(dataJson.optString("identityCard"));
                         temp = (TextView) findViewById(R.id.sex);
-                        temp.append(dataJson.getString("sex"));
+                        temp.append(dataJson.optString("sex"));
                         temp = (TextView) findViewById(R.id.homeAddress);
-                        temp.append(dataJson.getString("homeAddress"));
+                        temp.append(dataJson.optString("homeAddress"));
                         temp = (TextView) findViewById(R.id.permanentAddress);
-                        temp.append(dataJson.getString("permanentAddress"));
+                        temp.append(dataJson.optString("permanentAddress"));
                         temp = (TextView) findViewById(R.id.educationLevels);
-                        temp.append(dataJson.getString("educationLevels"));
+                        temp.append(dataJson.optString("educationLevels"));
                         temp = (TextView) findViewById(R.id.familyPopulation);
-                        temp.append(dataJson.getString("familyPopulation"));
+                        temp.append(dataJson.optString("familyPopulation"));
                         temp = (TextView) findViewById(R.id.labourForce);
-                        temp.append(dataJson.getString("labourForce"));
+                        temp.append(dataJson.optString("labourForce"));
                         temp = (TextView) findViewById(R.id.agriculturalNum);
-                        temp.append(dataJson.getString("agriculturalNum"));
+                        temp.append(dataJson.optString("agriculturalNum"));
                         temp = (TextView) findViewById(R.id.familyIncome);
-                        temp.append(dataJson.getString("familyIncome"));
+                        temp.append(dataJson.optString("familyIncome"));
                         temp = (TextView) findViewById(R.id.lowIncome);
-                        temp.append(dataJson.getString("lowIncome"));
+                        temp.append(dataJson.optString("lowIncome"));
                         temp = (TextView) findViewById(R.id.enjoyAllowance);
-                        temp.append(dataJson.getString("enjoyAllowance"));
+                        temp.append(dataJson.optString("enjoyAllowance"));
                         temp = (TextView) findViewById(R.id.enjoyResidual);
-                        temp.append(dataJson.getString("enjoyResidual"));
+                        temp.append(dataJson.optString("enjoyResidual"));
                         temp = (TextView) findViewById(R.id.medicalExpenses);
-                        temp.append(dataJson.getString("medicalExpenses"));
+                        temp.append(dataJson.optString("medicalExpenses"));
                         temp = (TextView) findViewById(R.id.agriculturalArea);
-                        temp.append(dataJson.getString("agriculturalArea"));
+                        temp.append(dataJson.optString("agriculturalArea"));
                         temp = (TextView) findViewById(R.id.aquacultureArea);
-                        temp.append(dataJson.getString("aquacultureArea"));
+                        temp.append(dataJson.optString("aquacultureArea"));
                         temp = (TextView) findViewById(R.id.landArea);
-                        temp.append(dataJson.getString("landArea"));
+                        temp.append(dataJson.optString("landArea"));
                         temp = (TextView) findViewById(R.id.landRent);
-                        temp.append(dataJson.getString("landRent"));
+                        temp.append(dataJson.optString("landRent"));
                         temp = (TextView) findViewById(R.id.housingType);
-                        temp.append(dataJson.getString("housingType"));
+                        temp.append(dataJson.optString("housingType"));
                         temp = (TextView) findViewById(R.id.housingArea);
-                        temp.append(dataJson.getString("housingArea"));
+                        temp.append(dataJson.optString("housingArea"));
                         temp = (TextView) findViewById(R.id.familyYear);
-                        temp.append(dataJson.getString("familyYear"));
+                        temp.append(dataJson.optString("familyYear"));
                         temp = (TextView) findViewById(R.id.wageIncome);
-                        temp.append(dataJson.getString("wageIncome"));
+                        temp.append(dataJson.optString("wageIncome"));
                         temp = (TextView) findViewById(R.id.operatingIncome);
-                        temp.append(dataJson.getString("operatingIncome"));
+                        temp.append(dataJson.optString("operatingIncome"));
                         temp = (TextView) findViewById(R.id.propertyIncome);
-                        temp.append(dataJson.getString("propertyIncome"));
+                        temp.append(dataJson.optString("propertyIncome"));
                         temp = (TextView) findViewById(R.id.transferIncome);
-                        temp.append(dataJson.getString("transferIncome"));
+                        temp.append(dataJson.optString("transferIncome"));
                         temp = (TextView) findViewById(R.id.poorCauses);
-                        temp.append(dataJson.getString("poorCauses"));
+                        temp.append(dataJson.optString("poorCauses"));
                         temp = (TextView) findViewById(R.id.poorNeed);
-                        temp.append(dataJson.getString("poorNeed"));
+                        temp.append(dataJson.optString("poorNeed"));
                         temp = (TextView) findViewById(R.id.poorSuggest);
-                        temp.append(dataJson.getString("poorSuggest"));
+                        temp.append(dataJson.optString("poorSuggest"));
                         temp = (TextView) findViewById(R.id.poorType);
-                        temp.append(dataJson.getString("poorType"));
+                        temp.append(dataJson.optString("poorType"));
                         LinearLayout tempLineLayOut;
 
-                        if (dataJson.getString("eName1").equals("") && dataJson.getString("eName2").equals("") && dataJson.getString("eName3").equals("") && dataJson.getString("eName4").equals("") /*&& dataJson.getString("eName5").equals("") && dataJson.getString("eName6").equals("") && dataJson.getString("eName7").equals("") && dataJson.getString("eName8").equals("") && dataJson.getString("eName9").equals("") && dataJson.getString("eName10").equals("")*/) {
+                        if (dataJson.optString("eName1").equals("") && dataJson.optString("eName2").equals("") && dataJson.optString("eName3").equals("") && dataJson.optString("eName4").equals("") /*&& dataJson.optString("eName5").equals("") && dataJson.optString("eName6").equals("") && dataJson.optString("eName7").equals("") && dataJson.optString("eName8").equals("") && dataJson.optString("eName9").equals("") && dataJson.optString("eName10").equals("")*/) {
                             View vvv = (View) findViewById(R.id.temp_textview);
                             vvv.setVisibility(View.GONE);
                         }
 
-                        if (dataJson.getString("eName1").equals("")) {
+                        if (dataJson.optString("eName1").equals("")) {
                             tempLineLayOut = (LinearLayout) findViewById(R.id.temp_linelayout1);
                             tempLineLayOut.setVisibility(View.GONE);
                         } else {
                             temp = (TextView) findViewById(R.id.eRelationship1);
-                            temp.append(dataJson.getString("eRelationship1"));
+                            temp.append(dataJson.optString("eRelationship1"));
                             temp = (TextView) findViewById(R.id.eName1);
-                            temp.append(dataJson.getString("eName1"));
+                            temp.append(dataJson.optString("eName1"));
                             temp = (TextView) findViewById(R.id.eSex1);
-                            temp.append(dataJson.getString("eSex1"));
+                            temp.append(dataJson.optString("eSex1"));
                             temp = (TextView) findViewById(R.id.eIdentityCard1);
-                            temp.append(dataJson.getString("eIdentityCard1"));
+                            temp.append(dataJson.optString("eIdentityCard1"));
                             temp = (TextView) findViewById(R.id.eEducationLevels1);
-                            temp.append(dataJson.getString("eEducationLevels1"));
+                            temp.append(dataJson.optString("eEducationLevels1"));
                             temp = (TextView) findViewById(R.id.eIncome1);
-                            temp.append(dataJson.getString("eIncome1"));
+                            temp.append(dataJson.optString("eIncome1"));
                             temp = (TextView) findViewById(R.id.eHealth1);
-                            temp.append(dataJson.getString("eHealth1"));
+                            temp.append(dataJson.optString("eHealth1"));
                             temp = (TextView) findViewById(R.id.eJob1);
-                            temp.append(dataJson.getString("eJob1"));
+                            temp.append(dataJson.optString("eJob1"));
                             temp = (TextView) findViewById(R.id.eWorkspace1);
-                            temp.append(dataJson.getString("eWorkspace1"));
+                            temp.append(dataJson.optString("eWorkspace1"));
                             temp = (TextView) findViewById(R.id.eSplitting1);
-                            temp.append(dataJson.getString("eSplitting1"));
+                            temp.append(dataJson.optString("eSplitting1"));
                         }
 
-                        if (dataJson.getString("eName2").equals("")) {
+                        if (dataJson.optString("eName2").equals("")) {
                             tempLineLayOut = (LinearLayout) findViewById(R.id.temp_linelayout2);
                             tempLineLayOut.setVisibility(View.GONE);
                         } else {
                             temp = (TextView) findViewById(R.id.eRelationship2);
-                            temp.append(dataJson.getString("eRelationship2"));
+                            temp.append(dataJson.optString("eRelationship2"));
                             temp = (TextView) findViewById(R.id.eName2);
-                            temp.append(dataJson.getString("eName2"));
+                            temp.append(dataJson.optString("eName2"));
                             temp = (TextView) findViewById(R.id.eSex2);
-                            temp.append(dataJson.getString("eSex2"));
+                            temp.append(dataJson.optString("eSex2"));
                             temp = (TextView) findViewById(R.id.eIdentityCard2);
-                            temp.append(dataJson.getString("eIdentityCard2"));
+                            temp.append(dataJson.optString("eIdentityCard2"));
                             temp = (TextView) findViewById(R.id.eEducationLevels2);
-                            temp.append(dataJson.getString("eEducationLevels2"));
+                            temp.append(dataJson.optString("eEducationLevels2"));
                             temp = (TextView) findViewById(R.id.eIncome2);
-                            temp.append(dataJson.getString("eIncome2"));
+                            temp.append(dataJson.optString("eIncome2"));
                             temp = (TextView) findViewById(R.id.eHealth2);
-                            temp.append(dataJson.getString("eHealth2"));
+                            temp.append(dataJson.optString("eHealth2"));
                             temp = (TextView) findViewById(R.id.eJob2);
-                            temp.append(dataJson.getString("eJob2"));
+                            temp.append(dataJson.optString("eJob2"));
                             temp = (TextView) findViewById(R.id.eWorkspace2);
-                            temp.append(dataJson.getString("eWorkspace2"));
+                            temp.append(dataJson.optString("eWorkspace2"));
                             temp = (TextView) findViewById(R.id.eSplitting2);
-                            temp.append(dataJson.getString("eSplitting2"));
+                            temp.append(dataJson.optString("eSplitting2"));
                         }
 
-                        if (dataJson.getString("eName3").equals("")) {
+                        if (dataJson.optString("eName3").equals("")) {
                             tempLineLayOut = (LinearLayout) findViewById(R.id.temp_linelayout3);
                             tempLineLayOut.setVisibility(View.GONE);
                         } else {
                             temp = (TextView) findViewById(R.id.eRelationship3);
-                            temp.append(dataJson.getString("eRelationship3"));
+                            temp.append(dataJson.optString("eRelationship3"));
                             temp = (TextView) findViewById(R.id.eName3);
-                            temp.append(dataJson.getString("eName3"));
+                            temp.append(dataJson.optString("eName3"));
                             temp = (TextView) findViewById(R.id.eSex3);
-                            temp.append(dataJson.getString("eSex3"));
+                            temp.append(dataJson.optString("eSex3"));
                             temp = (TextView) findViewById(R.id.eIdentityCard3);
-                            temp.append(dataJson.getString("eIdentityCard3"));
+                            temp.append(dataJson.optString("eIdentityCard3"));
                             temp = (TextView) findViewById(R.id.eEducationLevels3);
-                            temp.append(dataJson.getString("eEducationLevels3"));
+                            temp.append(dataJson.optString("eEducationLevels3"));
                             temp = (TextView) findViewById(R.id.eIncome3);
-                            temp.append(dataJson.getString("eIncome3"));
+                            temp.append(dataJson.optString("eIncome3"));
                             temp = (TextView) findViewById(R.id.eHealth3);
-                            temp.append(dataJson.getString("eHealth3"));
+                            temp.append(dataJson.optString("eHealth3"));
                             temp = (TextView) findViewById(R.id.eJob3);
-                            temp.append(dataJson.getString("eJob3"));
+                            temp.append(dataJson.optString("eJob3"));
                             temp = (TextView) findViewById(R.id.eWorkspace3);
-                            temp.append(dataJson.getString("eWorkspace3"));
+                            temp.append(dataJson.optString("eWorkspace3"));
                             temp = (TextView) findViewById(R.id.eSplitting3);
-                            temp.append(dataJson.getString("eSplitting3"));
+                            temp.append(dataJson.optString("eSplitting3"));
                         }
 
-                        if (dataJson.getString("eName4").equals("")) {
+                        if (dataJson.optString("eName4").equals("")) {
                             tempLineLayOut = (LinearLayout) findViewById(R.id.temp_linelayout4);
                             tempLineLayOut.setVisibility(View.GONE);
                         } else {
                             temp = (TextView) findViewById(R.id.eRelationship4);
-                            temp.append(dataJson.getString("eRelationship4"));
+                            temp.append(dataJson.optString("eRelationship4"));
                             temp = (TextView) findViewById(R.id.eName4);
-                            temp.append(dataJson.getString("eName4"));
+                            temp.append(dataJson.optString("eName4"));
                             temp = (TextView) findViewById(R.id.eSex4);
-                            temp.append(dataJson.getString("eSex4"));
+                            temp.append(dataJson.optString("eSex4"));
                             temp = (TextView) findViewById(R.id.eIdentityCard4);
-                            temp.append(dataJson.getString("eIdentityCard4"));
+                            temp.append(dataJson.optString("eIdentityCard4"));
                             temp = (TextView) findViewById(R.id.eEducationLevels4);
-                            temp.append(dataJson.getString("eEducationLevels4"));
+                            temp.append(dataJson.optString("eEducationLevels4"));
                             temp = (TextView) findViewById(R.id.eIncome4);
-                            temp.append(dataJson.getString("eIncome4"));
+                            temp.append(dataJson.optString("eIncome4"));
                             temp = (TextView) findViewById(R.id.eHealth4);
-                            temp.append(dataJson.getString("eHealth4"));
+                            temp.append(dataJson.optString("eHealth4"));
                             temp = (TextView) findViewById(R.id.eJob4);
-                            temp.append(dataJson.getString("eJob4"));
+                            temp.append(dataJson.optString("eJob4"));
                             temp = (TextView) findViewById(R.id.eWorkspace4);
-                            temp.append(dataJson.getString("eWorkspace4"));
+                            temp.append(dataJson.optString("eWorkspace4"));
                             temp = (TextView) findViewById(R.id.eSplitting4);
-                            temp.append(dataJson.getString("eSplitting4"));
+                            temp.append(dataJson.optString("eSplitting4"));
                         }
 /*
-                        if (dataJson.getString("eName5").equals("")) {
+                        if (dataJson.optString("eName5").equals("")) {
                             tempLineLayOut = (LinearLayout) findViewById(R.id.temp_linelayout5);
                             tempLineLayOut.setVisibility(View.GONE);
                         } else {
                             temp = (TextView) findViewById(R.id.eRelationship5);
-                            temp.append(dataJson.getString("eRelationship5"));
+                            temp.append(dataJson.optString("eRelationship5"));
                             temp = (TextView) findViewById(R.id.eName5);
-                            temp.append(dataJson.getString("eName5"));
+                            temp.append(dataJson.optString("eName5"));
                             temp = (TextView) findViewById(R.id.eSex5);
-                            temp.append(dataJson.getString("eSex5"));
+                            temp.append(dataJson.optString("eSex5"));
                             temp = (TextView) findViewById(R.id.eIdentityCard5);
-                            temp.append(dataJson.getString("eIdentityCard5"));
+                            temp.append(dataJson.optString("eIdentityCard5"));
                             temp = (TextView) findViewById(R.id.eEducationLevels5);
-                            temp.append(dataJson.getString("eEducationLevels5"));
+                            temp.append(dataJson.optString("eEducationLevels5"));
                             temp = (TextView) findViewById(R.id.eIncome5);
-                            temp.append(dataJson.getString("eIncome5"));
+                            temp.append(dataJson.optString("eIncome5"));
                             temp = (TextView) findViewById(R.id.eExpenses5);
-                            temp.append(dataJson.getString("eExpenses5"));
+                            temp.append(dataJson.optString("eExpenses5"));
                         }
 
-                        if (dataJson.getString("eName6").equals("")) {
+                        if (dataJson.optString("eName6").equals("")) {
                             tempLineLayOut = (LinearLayout) findViewById(R.id.temp_linelayout6);
                             tempLineLayOut.setVisibility(View.GONE);
                         } else {
                             temp = (TextView) findViewById(R.id.eRelationship6);
-                            temp.append(dataJson.getString("eRelationship6"));
+                            temp.append(dataJson.optString("eRelationship6"));
                             temp = (TextView) findViewById(R.id.eName6);
-                            temp.append(dataJson.getString("eName6"));
+                            temp.append(dataJson.optString("eName6"));
                             temp = (TextView) findViewById(R.id.eSex6);
-                            temp.append(dataJson.getString("eSex6"));
+                            temp.append(dataJson.optString("eSex6"));
                             temp = (TextView) findViewById(R.id.eIdentityCard6);
-                            temp.append(dataJson.getString("eIdentityCard6"));
+                            temp.append(dataJson.optString("eIdentityCard6"));
                             temp = (TextView) findViewById(R.id.eEducationLevels6);
-                            temp.append(dataJson.getString("eEducationLevels6"));
+                            temp.append(dataJson.optString("eEducationLevels6"));
                             temp = (TextView) findViewById(R.id.eIncome6);
-                            temp.append(dataJson.getString("eIncome6"));
+                            temp.append(dataJson.optString("eIncome6"));
                             temp = (TextView) findViewById(R.id.eExpenses6);
-                            temp.append(dataJson.getString("eExpenses6"));
+                            temp.append(dataJson.optString("eExpenses6"));
                         }
 
-                        if (dataJson.getString("eName7").equals("")) {
+                        if (dataJson.optString("eName7").equals("")) {
                             tempLineLayOut = (LinearLayout) findViewById(R.id.temp_linelayout7);
                             tempLineLayOut.setVisibility(View.GONE);
                         } else {
                             temp = (TextView) findViewById(R.id.eRelationship7);
-                            temp.append(dataJson.getString("eRelationship7"));
+                            temp.append(dataJson.optString("eRelationship7"));
                             temp = (TextView) findViewById(R.id.eName7);
-                            temp.append(dataJson.getString("eName7"));
+                            temp.append(dataJson.optString("eName7"));
                             temp = (TextView) findViewById(R.id.eSex7);
-                            temp.append(dataJson.getString("eSex7"));
+                            temp.append(dataJson.optString("eSex7"));
                             temp = (TextView) findViewById(R.id.eIdentityCard7);
-                            temp.append(dataJson.getString("eIdentityCard7"));
+                            temp.append(dataJson.optString("eIdentityCard7"));
                             temp = (TextView) findViewById(R.id.eEducationLevels7);
-                            temp.append(dataJson.getString("eEducationLevels7"));
+                            temp.append(dataJson.optString("eEducationLevels7"));
                             temp = (TextView) findViewById(R.id.eIncome7);
-                            temp.append(dataJson.getString("eIncome7"));
+                            temp.append(dataJson.optString("eIncome7"));
                             temp = (TextView) findViewById(R.id.eExpenses7);
-                            temp.append(dataJson.getString("eExpenses7"));
+                            temp.append(dataJson.optString("eExpenses7"));
                         }
 
-                        if (dataJson.getString("eName8").equals("")) {
+                        if (dataJson.optString("eName8").equals("")) {
                             tempLineLayOut = (LinearLayout) findViewById(R.id.temp_linelayout8);
                             tempLineLayOut.setVisibility(View.GONE);
                         } else {
                             temp = (TextView) findViewById(R.id.eRelationship8);
-                            temp.append(dataJson.getString("eRelationship8"));
+                            temp.append(dataJson.optString("eRelationship8"));
                             temp = (TextView) findViewById(R.id.eName8);
-                            temp.append(dataJson.getString("eName8"));
+                            temp.append(dataJson.optString("eName8"));
                             temp = (TextView) findViewById(R.id.eSex8);
-                            temp.append(dataJson.getString("eSex8"));
+                            temp.append(dataJson.optString("eSex8"));
                             temp = (TextView) findViewById(R.id.eIdentityCard8);
-                            temp.append(dataJson.getString("eIdentityCard8"));
+                            temp.append(dataJson.optString("eIdentityCard8"));
                             temp = (TextView) findViewById(R.id.eEducationLevels8);
-                            temp.append(dataJson.getString("eEducationLevels8"));
+                            temp.append(dataJson.optString("eEducationLevels8"));
                             temp = (TextView) findViewById(R.id.eIncome8);
-                            temp.append(dataJson.getString("eIncome8"));
+                            temp.append(dataJson.optString("eIncome8"));
                             temp = (TextView) findViewById(R.id.eExpenses8);
-                            temp.append(dataJson.getString("eExpenses8"));
+                            temp.append(dataJson.optString("eExpenses8"));
                         }
 
-                        if (dataJson.getString("eName9").equals("")) {
+                        if (dataJson.optString("eName9").equals("")) {
                             tempLineLayOut = (LinearLayout) findViewById(R.id.temp_linelayout9);
                             tempLineLayOut.setVisibility(View.GONE);
                         } else {
                             temp = (TextView) findViewById(R.id.eRelationship9);
-                            temp.append(dataJson.getString("eRelationship9"));
+                            temp.append(dataJson.optString("eRelationship9"));
                             temp = (TextView) findViewById(R.id.eName9);
-                            temp.append(dataJson.getString("eName9"));
+                            temp.append(dataJson.optString("eName9"));
                             temp = (TextView) findViewById(R.id.eSex9);
-                            temp.append(dataJson.getString("eSex9"));
+                            temp.append(dataJson.optString("eSex9"));
                             temp = (TextView) findViewById(R.id.eIdentityCard9);
-                            temp.append(dataJson.getString("eIdentityCard9"));
+                            temp.append(dataJson.optString("eIdentityCard9"));
                             temp = (TextView) findViewById(R.id.eEducationLevels9);
-                            temp.append(dataJson.getString("eEducationLevels9"));
+                            temp.append(dataJson.optString("eEducationLevels9"));
                             temp = (TextView) findViewById(R.id.eIncome9);
-                            temp.append(dataJson.getString("eIncome9"));
+                            temp.append(dataJson.optString("eIncome9"));
                             temp = (TextView) findViewById(R.id.eExpenses9);
-                            temp.append(dataJson.getString("eExpenses9"));
+                            temp.append(dataJson.optString("eExpenses9"));
                         }
 
-                        if (dataJson.getString("eName10").equals("")) {
+                        if (dataJson.optString("eName10").equals("")) {
                             tempLineLayOut = (LinearLayout) findViewById(R.id.temp_linelayout10);
                             tempLineLayOut.setVisibility(View.GONE);
                         } else {
                             temp = (TextView) findViewById(R.id.eRelationship10);
-                            temp.append(dataJson.getString("eRelationship10"));
+                            temp.append(dataJson.optString("eRelationship10"));
                             temp = (TextView) findViewById(R.id.eName10);
-                            temp.append(dataJson.getString("eName10"));
+                            temp.append(dataJson.optString("eName10"));
                             temp = (TextView) findViewById(R.id.eSex10);
-                            temp.append(dataJson.getString("eSex10"));
+                            temp.append(dataJson.optString("eSex10"));
                             temp = (TextView) findViewById(R.id.eIdentityCard10);
-                            temp.append(dataJson.getString("eIdentityCard10"));
+                            temp.append(dataJson.optString("eIdentityCard10"));
                             temp = (TextView) findViewById(R.id.eEducationLevels10);
-                            temp.append(dataJson.getString("eEducationLevels10"));
+                            temp.append(dataJson.optString("eEducationLevels10"));
                             temp = (TextView) findViewById(R.id.eIncome10);
-                            temp.append(dataJson.getString("eIncome10"));
+                            temp.append(dataJson.optString("eIncome10"));
                             temp = (TextView) findViewById(R.id.eExpenses10);
-                            temp.append(dataJson.getString("eExpenses10"));
+                            temp.append(dataJson.optString("eExpenses10"));
                         }*/
 
                     }

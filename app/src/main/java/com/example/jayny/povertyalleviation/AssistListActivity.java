@@ -2,26 +2,38 @@ package com.example.jayny.povertyalleviation;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import org.json.JSONObject;
 
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
 public class AssistListActivity extends AppCompatActivity {
     private ListTask listTask;
     private String aUnit;
+    private String tmpUrl;
+    private ImageView lllSrc;
+    private Handler pic_hdl;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.new_activity_poorerlistdetail);
+        lllSrc = (ImageView) findViewById(R.id.lllSrc);
         View policy_document = findViewById(R.id.policy_document);
         policy_document.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -185,6 +197,13 @@ public class AssistListActivity extends AppCompatActivity {
                     temp = (TextView) findViewById(R.id.aUnit);
                     temp.append(dataJson.getString("aUnit"));
                     aUnit = dataJson.getString("aUnit");
+                    tmpUrl = dataJson.optString("photo");
+                    if(tmpUrl!=null&&!tmpUrl.equals("")){
+                        pic_hdl = new PicHandler();
+                        Thread t = new LoadPicThread();
+                        t.start();
+                    }
+
                 } catch (Exception e) {
                     Log.e("getJosn:", e.getMessage());
                     e.printStackTrace();
@@ -197,5 +216,50 @@ public class AssistListActivity extends AppCompatActivity {
         protected void onCancelled() {
             // showProgress(false);
         }
+    }
+
+    class LoadPicThread extends Thread {
+        @Override
+        public void run() {
+            android.os.Process.setThreadPriority(android.os.Process.THREAD_PRIORITY_URGENT_AUDIO);
+            Bitmap img = getUrlImage(getResources().getString(R.string.host_port) + tmpUrl);
+            if(img!=null){
+                Message msg = pic_hdl.obtainMessage();
+                msg.what = 0;
+                msg.obj = img;
+                pic_hdl.sendMessage(msg);
+            }
+        }
+
+        //加载图片
+        public Bitmap getUrlImage(String url) {
+            Bitmap img = null;
+            try {
+                URL picurl = new URL(url);
+                // 获得连接
+                HttpURLConnection conn = (HttpURLConnection) picurl.openConnection();
+                conn.setDoInput(true);
+                conn.setUseCaches(false);//不缓存
+                conn.connect();
+                InputStream is = conn.getInputStream();//获得图片的数据流
+                img = BitmapFactory.decodeStream(is);
+                is.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            return img;
+        }
+    }
+    class PicHandler extends Handler {
+
+        PicHandler() {
+        }
+
+        @Override
+        public void handleMessage(Message msg) {
+            // TODO Auto-generated method stub
+            lllSrc.setImageBitmap((Bitmap) msg.obj);
+        }
+
     }
 }

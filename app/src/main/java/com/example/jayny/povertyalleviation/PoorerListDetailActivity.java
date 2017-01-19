@@ -20,6 +20,7 @@ import java.util.Map;
 public class PoorerListDetailActivity extends AppCompatActivity {
     private ListTask listTask;
     private String aUnit;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -179,6 +180,7 @@ public class PoorerListDetailActivity extends AppCompatActivity {
                     temp = (TextView) findViewById(R.id.aUnit);
                     temp.append(dataJson.getString("aUnit"));
                     aUnit = dataJson.getString("aUnit");
+
                 } catch (Exception e) {
                     Log.e("getJosn:", e.getMessage());
                     e.printStackTrace();
