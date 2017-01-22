@@ -426,7 +426,7 @@ public class AssistSetPhotoActivity extends AppCompatActivity {
             } else {
                 try {
                     JSONObject dataJson = new JSONObject(msg);
-                    if (dataJson.getString("status").equals("ok")) {
+                    if (dataJson.optString("status").equals("ok")) {
                         Toast.makeText(AssistSetPhotoActivity.this, "保存成功！", Toast.LENGTH_LONG).show();
                         navigateUpTo(new Intent(AssistSetPhotoActivity.this, AssistSetActivity.class).putExtra("status3",null==getIntent().getStringExtra("status3")?"0":getIntent().getStringExtra("status3")));
                     } else {
@@ -496,10 +496,10 @@ public class AssistSetPhotoActivity extends AppCompatActivity {
                 try {
                     if (!msg.equals("")) {
                         JSONObject dataJson = new JSONObject(msg);
-                        editText.setText(dataJson.getString("words"));
-                        if (!TextUtils.isEmpty(dataJson.getString("pic"))) {
-                            tmpUrl = dataJson.getString("pic");
-                            pi = dataJson.getString("remarks");
+                        editText.setText(dataJson.optString("words"));
+                        if (!TextUtils.isEmpty(dataJson.optString("pic"))) {
+                            tmpUrl = dataJson.optString("pic");
+                            pi = dataJson.optString("remarks");
                             pic_hdl = new PicHandler();
                             Thread t = new LoadPicThread();
                             t.start();

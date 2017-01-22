@@ -225,7 +225,7 @@ public class fundDetailFragment extends Fragment {
             } else {
                 try {
                     JSONObject dataJson = new JSONObject(msg);
-                    if (dataJson.getString("status").equals("ok")) {
+                    if (dataJson.optString("status").equals("ok")) {
                         Toast.makeText(getActivity(), "保存成功！", Toast.LENGTH_LONG).show();
                         getActivity().navigateUpTo(new Intent(getActivity(), fundListActivity.class));
                     } else {
@@ -290,8 +290,8 @@ public class fundDetailFragment extends Fragment {
                     strs2 = new String[dataJson.length()];
                     for (int i = 0; i < dataJson.length(); i++) {
                         JSONObject item = dataJson.getJSONObject(i);
-                        strs1[i]=item.getString("id");
-                        strs2[i]=item.getString("name");
+                        strs1[i]=item.optString("id");
+                        strs2[i]=item.optString("name");
                     }
                     arrayAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, strs2);
                     mListView.setAdapter(arrayAdapter);

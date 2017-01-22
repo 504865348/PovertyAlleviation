@@ -201,9 +201,9 @@ public class VillageListActivity extends AppCompatActivity {
                     JSONArray dataJson = new JSONArray(msg);
                     for (int i = 0; i < dataJson.length(); i++) {
                         JSONObject item = dataJson.getJSONObject(i);
-                        String oid = item.getString("id");
-                        String name = item.getString("name");
-                        String count = item.getString("count");
+                        String oid = item.optString("id");
+                        String name = item.optString("name");
+                        String count = item.optString("count");
                         map = new HashMap<String, String>();
                         map.put("oid", oid);
                         map.put("name", name);

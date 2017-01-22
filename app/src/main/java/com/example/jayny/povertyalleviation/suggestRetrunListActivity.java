@@ -187,8 +187,8 @@ public class suggestRetrunListActivity extends AppCompatActivity {
                     JSONArray dataJson = new JSONArray(msg);
                     for (int i = 0; i < dataJson.length(); i++) {
                         JSONObject item = dataJson.getJSONObject(i);
-                        String oid = item.getString("pid");
-                        String suggestionContent = item.getString("suggestionContent");
+                        String oid = item.optString("pid");
+                        String suggestionContent = item.optString("suggestionContent");
                         map = new HashMap<String, String>();
                         map.put("aid", oid);
                         map.put("suggestionContent", suggestionContent);

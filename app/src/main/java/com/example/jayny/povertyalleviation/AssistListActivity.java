@@ -189,14 +189,16 @@ public class AssistListActivity extends AppCompatActivity {
                 try {
                     JSONObject dataJson = new JSONObject(msg);
                     TextView temp = (TextView) findViewById(R.id.name);
-                    temp.append(dataJson.getString("name"));
+                    temp.append(dataJson.optString("name"));
                     temp = (TextView) findViewById(R.id.birthday);
-                    temp.append(dataJson.getString("identityCard").substring(6,14));
+                    if(dataJson.optString("identityCard").length()>14) {
+                        temp.append(dataJson.optString("identityCard").substring(6, 14));
+                    }
                     temp = (TextView) findViewById(R.id.homeAddress);
-                    temp.append(dataJson.getString("homeAddress"));
+                    temp.append(dataJson.optString("homeAddress"));
                     temp = (TextView) findViewById(R.id.aUnit);
-                    temp.append(dataJson.getString("aUnit"));
-                    aUnit = dataJson.getString("aUnit");
+                    temp.append(dataJson.optString("aUnit"));
+                    aUnit = dataJson.optString("aUnit");
                     tmpUrl = dataJson.optString("photo");
                     if(tmpUrl!=null&&!tmpUrl.equals("")){
                         pic_hdl = new PicHandler();

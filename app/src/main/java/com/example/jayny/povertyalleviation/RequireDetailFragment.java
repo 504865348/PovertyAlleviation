@@ -180,7 +180,7 @@ public class RequireDetailFragment extends Fragment {
             } else {
                 try {
                     JSONObject dataJson = new JSONObject(msg);
-                    if (dataJson.getString("status").equals("ok")) {
+                    if (dataJson.optString("status").equals("ok")) {
                         Toast.makeText(getActivity(), "保存成功！", Toast.LENGTH_LONG).show();
                         getActivity().navigateUpTo(new Intent(getActivity(), RequireListActivity.class).putExtra("name",getArguments().getString("name")));
                     } else {

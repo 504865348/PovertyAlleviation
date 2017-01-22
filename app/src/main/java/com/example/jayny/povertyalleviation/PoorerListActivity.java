@@ -100,6 +100,7 @@ public class PoorerListActivity extends AppCompatActivity {
             holder.mItem = mValues.get(position);
             holder.mIdView.setText(String.valueOf(position));
             holder.mContentView.setText(mValues.get(position).get("name"));
+            holder.mContentType.setText(mValues.get(position).get("poorType"));
 
             holder.mView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -126,6 +127,7 @@ public class PoorerListActivity extends AppCompatActivity {
             public final View mView;
             public final TextView mIdView;
             public final TextView mContentView;
+            public final TextView mContentType;
             public final LinearLayout mPoorList;
             public Map<String, String> mItem;
 
@@ -134,6 +136,7 @@ public class PoorerListActivity extends AppCompatActivity {
                 mView = view;
                 mIdView = (TextView) view.findViewById(R.id.id);
                 mContentView = (TextView) view.findViewById(R.id.content);
+                mContentType = (TextView) view.findViewById(R.id.contentType);
                 mPoorList= (LinearLayout) view.findViewById(R.id.ll_poor_list);
             }
 
@@ -198,14 +201,26 @@ public class PoorerListActivity extends AppCompatActivity {
                         map = new HashMap<String, String>();
                         JSONObject item = dataJson.getJSONObject(i);
                         try{
-                            map.put("aid", item.getString("aid"));
+                            map.put("aid", item.optString("aid"));
                             map.put("status2", "1");
                         }catch (Exception es){
-                            map.put("aid", item.getString("id"));
+                            map.put("aid", item.optString("id"));
                             map.put("status2", "0");
                         }
-                        String name = item.getString("name");
+                        String name = item.optString("name");
                         map.put("name", name);
+                        String poorType = item.optString("poorType");
+                        if(poorType.equals("0")){
+                            map.put("poorType", "五保户");
+                        }else if(poorType.equals("1")){
+                            map.put("poorType", "低保户");
+                        }else if(poorType.equals("2")){
+                            map.put("poorType", "残疾户");
+                        }else if(poorType.equals("3")){
+                            map.put("poorType", "一般低收入户");
+                        }else{
+                            map.put("poorType", "其他");
+                        }
                         list.add(map);
                     }
                 } catch (Exception e) {

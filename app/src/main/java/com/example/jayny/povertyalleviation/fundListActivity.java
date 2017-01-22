@@ -218,10 +218,10 @@ public class fundListActivity extends AppCompatActivity {
                     JSONArray dataJson = new JSONArray(msg);
                     for (int i = 0; i < dataJson.length(); i++) {
                         JSONObject item = dataJson.getJSONObject(i);
-                        String oid = item.getString("id");
-                        String title = item.getString("title");
-                        String content = item.getString("content");
-                        String name = item.getString("name");
+                        String oid = item.optString("id");
+                        String title = item.optString("title");
+                        String content = item.optString("content");
+                        String name = item.optString("name");
                         map = new HashMap<String, String>();
                         map.put("oid", oid);
                         map.put("title", title);

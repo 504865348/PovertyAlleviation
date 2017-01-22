@@ -200,7 +200,7 @@ public class LoginActivity extends AppCompatActivity {
             } else {
                 try {
                     JSONObject dataJson = new JSONObject(msg);
-                    if (dataJson.getString("status").equals("fail")) {
+                    if (dataJson.optString("status").equals("fail")) {
                         mPasswordView.setError(getString(R.string.error_incorrect_password));
                         mPasswordView.requestFocus();
                     } else {
@@ -209,22 +209,22 @@ public class LoginActivity extends AppCompatActivity {
                         editor.putString("mPassword", mPassword);
                         editor.putBoolean("checkboxBoolean", true);
                         editor.commit();
-                        Constant.statusTime = dataJson.getString("statusTime");
-                        Constant.userid = dataJson.getString("userid");
-                        Constant.usertype = dataJson.getString("usertype");
-                        Constant.username = dataJson.getString("username");
+                        Constant.statusTime = dataJson.optString("statusTime");
+                        Constant.userid = dataJson.optString("userid");
+                        Constant.usertype = dataJson.optString("usertype");
+                        Constant.username = dataJson.optString("username");
                         Constant.pname = "";
                         Constant.aid = "";
                         if (Constant.usertype.equals("0")) {
-                            Constant.fundstatus = dataJson.getString("fundstatus");
-                            Constant.aid = dataJson.getString("aid");
+                            Constant.fundstatus = dataJson.optString("fundstatus");
+                            Constant.aid = dataJson.optString("aid");
                             intent = new Intent(LoginActivity.this, PoorListActivity.class);
                         } else if (Constant.usertype.equals("5")) {
-                            Constant.fundstatus = dataJson.getString("fundstatus");
+                            Constant.fundstatus = dataJson.optString("fundstatus");
                             intent = new Intent(LoginActivity.this, PoorListActivity.class);
                         } else if (Constant.usertype.equals("1")) {
-                            Constant.fundstatus = dataJson.getString("fundstatus");
-                            Constant.pname = dataJson.getString("pname");
+                            Constant.fundstatus = dataJson.optString("fundstatus");
+                            Constant.pname = dataJson.optString("pname");
                             intent = new Intent(LoginActivity.this, AssistListActivity.class);
                         } else {
                             intent = new Intent(LoginActivity.this, ManagerListActivity.class);
