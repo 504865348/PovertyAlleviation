@@ -37,7 +37,7 @@
                 <ImageView
                     android:id="@+id/as_1_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/tongdian" />
+                    android:src="@mipmap/tongdian_2" />
 
                 <TextView
                     style="@style/assist_tv"
@@ -57,7 +57,7 @@
                 <ImageView
                     android:id="@+id/as_2_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/tongshui" />
+                    android:src="@mipmap/tongshui_2" />
 
                 <TextView
                     style="@style/assist_tv"
@@ -78,7 +78,7 @@
                 <ImageView
                     android:id="@+id/as_3_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/tongqi" />
+                    android:src="@mipmap/tongqi_2" />
 
                 <TextView
                     style="@style/assist_tv"
@@ -99,7 +99,7 @@
                 <ImageView
                     android:id="@+id/as_4_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/youxian" />
+                    android:src="@mipmap/youxian_2" />
 
                 <TextView
                     style="@style/assist_tv"
@@ -128,7 +128,7 @@
                 <ImageView
                     android:id="@+id/as_5_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/shenghuo" />
+                    android:src="@mipmap/shenghuo_2" />
 
                 <TextView
                     style="@style/assist_tv"
@@ -147,7 +147,7 @@
                 <ImageView
                     android:id="@+id/as_6_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/jiaju" />
+                    android:src="@mipmap/jiaju_2" />
 
                 <TextView
                     style="@style/assist_tv"
@@ -168,7 +168,7 @@
                 <ImageView
                     android:id="@+id/as_7_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/chuwei" />
+                    android:src="@mipmap/chuwei_2" />
 
                 <TextView
                     style="@style/assist_tv"
@@ -189,7 +189,7 @@
                 <ImageView
                     android:id="@+id/as_8_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/jiadian" />
+                    android:src="@mipmap/jiadian_2" />
 
                 <TextView
                     style="@style/assist_tv"
@@ -218,7 +218,7 @@
                 <ImageView
                     android:id="@+id/as_9_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/renqin" />
+                    android:src="@mipmap/renqin_2" />
 
                 <TextView
                     style="@style/assist_tv"
@@ -237,7 +237,7 @@
                 <ImageView
                     android:id="@+id/as_10_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/nuanqin" />
+                    android:src="@mipmap/nuanqin_2" />
 
                 <TextView
                     style="@style/assist_tv"
@@ -258,7 +258,7 @@
                 <ImageView
                     android:id="@+id/as_11_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/fangqin" />
+                    android:src="@mipmap/fangqin_2" />
 
                 <TextView
                     style="@style/assist_tv"
@@ -279,7 +279,7 @@
                 <ImageView
                     android:id="@+id/as_12_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/bangqin" />
+                    android:src="@mipmap/bangqin_2" />
 
                 <TextView
                     style="@style/assist_tv"

@@ -286,54 +286,54 @@ public class AssistSetActivity extends AppCompatActivity {
                 try {
                     if (!msg.equals("")) {
                         int color = getResources().getColor(R.color.font_green);
-                        JSONObject dataJson = new JSONObject(msg);
-                        ImageView temp = (ImageView) findViewById(R.id.as_1_status);
-                        if (dataJson.getString("1").equals("1")) {
-                            temp.setImageResource(R.mipmap.tongdian);
-                        }
-                        temp = (ImageView) findViewById(R.id.as_2_status);
-                        if (dataJson.getString("2").equals("1")) {
-                            temp.setImageResource(R.mipmap.tongshui);
-                        }
-                        temp = (ImageView) findViewById(R.id.as_3_status);
-                        if (dataJson.getString("3").equals("1")) {
-                            temp.setImageResource(R.mipmap.tongqi);
-                        }
-                        temp = (ImageView) findViewById(R.id.as_4_status);
-                        if (dataJson.getString("4").equals("1")) {
-                            temp.setImageResource(R.mipmap.youxian);
-                        }
-                        temp = (ImageView) findViewById(R.id.as_5_status);
-                        if (dataJson.getString("5").equals("1")) {
-                            temp.setImageResource(R.mipmap.shenghuo);
-                        }
-                        temp = (ImageView) findViewById(R.id.as_6_status);
-                        if (dataJson.getString("6").equals("1")) {
-                            temp.setImageResource(R.mipmap.jiaju);
-                        }
-                        temp = (ImageView) findViewById(R.id.as_7_status);
-                        if (dataJson.getString("7").equals("1")) {
-                            temp.setImageResource(R.mipmap.chuwei);
-                        }
-                        temp = (ImageView) findViewById(R.id.as_8_status);
-                        if (dataJson.getString("8").equals("1")) {
-                            temp.setImageResource(R.mipmap.jiadian);
-                        }
-                        temp = (ImageView) findViewById(R.id.as_9_status);
-                        if (dataJson.getString("9").equals("1")) {
-                            temp.setImageResource(R.mipmap.renqin);
-                        }
-                        temp = (ImageView) findViewById(R.id.as_10_status);
-                        if (dataJson.getString("10").equals("1")) {
-                            temp.setImageResource(R.mipmap.nuanqin);
-                        }
-                        temp = (ImageView) findViewById(R.id.as_11_status);
-                        if (dataJson.getString("11").equals("1")) {
-                            temp.setImageResource(R.mipmap.fangqin);
-                        }
-                        temp = (ImageView) findViewById(R.id.as_12_status);
-                        if (dataJson.getString("12").equals("1")) {
-                            temp.setImageResource(R.mipmap.bangqin);
+                            JSONObject dataJson = new JSONObject(msg);
+                            ImageView temp = (ImageView) findViewById(R.id.as_1_status);
+                            if (dataJson.optString("1").equals("1")) {
+                                temp.setImageResource(R.mipmap.tongdian);
+                            }
+                            temp = (ImageView) findViewById(R.id.as_2_status);
+                            if (dataJson.optString("2").equals("1")) {
+                                temp.setImageResource(R.mipmap.tongshui);
+                            }
+                            temp = (ImageView) findViewById(R.id.as_3_status);
+                            if (dataJson.optString("3").equals("1")) {
+                                temp.setImageResource(R.mipmap.tongqi);
+                            }
+                            temp = (ImageView) findViewById(R.id.as_4_status);
+                            if (dataJson.optString("4").equals("1")) {
+                                temp.setImageResource(R.mipmap.youxian);
+                            }
+                            temp = (ImageView) findViewById(R.id.as_5_status);
+                            if (dataJson.optString("5").equals("1")) {
+                                temp.setImageResource(R.mipmap.shenghuo);
+                            }
+                            temp = (ImageView) findViewById(R.id.as_6_status);
+                            if (dataJson.optString("6").equals("1")) {
+                                temp.setImageResource(R.mipmap.jiaju);
+                            }
+                            temp = (ImageView) findViewById(R.id.as_7_status);
+                            if (dataJson.optString("7").equals("1")) {
+                                temp.setImageResource(R.mipmap.chuwei);
+                            }
+                            temp = (ImageView) findViewById(R.id.as_8_status);
+                            if (dataJson.optString("8").equals("1")) {
+                                temp.setImageResource(R.mipmap.jiadian);
+                            }
+                            temp = (ImageView) findViewById(R.id.as_9_status);
+                            if (dataJson.optString("9").equals("1")) {
+                                temp.setImageResource(R.mipmap.renqin);
+                            }
+                            temp = (ImageView) findViewById(R.id.as_10_status);
+                            if (dataJson.optString("10").equals("1")) {
+                                temp.setImageResource(R.mipmap.nuanqin);
+                            }
+                            temp = (ImageView) findViewById(R.id.as_11_status);
+                            if (dataJson.optString("11").equals("1")) {
+                                temp.setImageResource(R.mipmap.fangqin);
+                            }
+                            temp = (ImageView) findViewById(R.id.as_12_status);
+                            if (dataJson.optString("12").equals("1")) {
+                                temp.setImageResource(R.mipmap.bangqin);
                         }
                     }
                 } catch (Exception e) {
