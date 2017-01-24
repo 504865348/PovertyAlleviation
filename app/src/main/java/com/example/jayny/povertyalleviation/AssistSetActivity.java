@@ -160,7 +160,7 @@ public class AssistSetActivity extends AppCompatActivity {
                                     @Override
                                     public void onClick(View view) {
                                         Context context = view.getContext();
-                                        Intent intent = new Intent(context, SetContentActivity.class);
+                                        Intent intent = new Intent(context, AssistSetPhotoActivity.class);
                                         intent.putExtra("as", "结对认亲");
                                         intent.putExtra("as_type", "9");
                                         intent.putExtra("status3", null==getIntent().getStringExtra("status3")?"0":getIntent().getStringExtra("status3"));
@@ -175,7 +175,7 @@ public class AssistSetActivity extends AppCompatActivity {
                                      @Override
                                      public void onClick(View view) {
                                          Context context = view.getContext();
-                                         Intent intent = new Intent(context, SetContentActivity.class);
+                                         Intent intent = new Intent(context, AssistSetPhotoActivity.class);
                                          intent.putExtra("as", "结对帮亲");
                                          intent.putExtra("as_type", "10");
                                          intent.putExtra("status3", null==getIntent().getStringExtra("status3")?"0":getIntent().getStringExtra("status3"));
@@ -190,7 +190,7 @@ public class AssistSetActivity extends AppCompatActivity {
                                      @Override
                                      public void onClick(View view) {
                                          Context context = view.getContext();
-                                         Intent intent = new Intent(context, SetContentActivity.class);
+                                         Intent intent = new Intent(context, AssistSetPhotoActivity.class);
                                          intent.putExtra("as", "结对暖亲");
                                          intent.putExtra("as_type", "11");
                                          intent.putExtra("status3", null==getIntent().getStringExtra("status3")?"0":getIntent().getStringExtra("status3"));

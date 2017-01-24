@@ -258,11 +258,11 @@
                 <ImageView
                     android:id="@+id/as_11_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/fangqin_2" />
+                    android:src="@mipmap/bangqin_2" />
 
                 <TextView
                     style="@style/assist_tv"
-                    android:text="结对访亲" />
+                    android:text="结对帮亲" />
 
 
             </LinearLayout>
@@ -279,11 +279,11 @@
                 <ImageView
                     android:id="@+id/as_12_status"
                     style="@style/assist_iv"
-                    android:src="@mipmap/bangqin_2" />
+                    android:src="@mipmap/fangqin_2" />
 
                 <TextView
                     style="@style/assist_tv"
-                    android:text="结对帮亲" />
+                    android:text="结对访亲" />
 
 
             </LinearLayout>
