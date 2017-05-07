@@ -1,8 +1,8 @@
 <resources>
     <!--公司内网-->
-    <!--<string name="host_port">http://192.168.1.125:8081</string>-->
-    <!--<string name="host_port_server">http://192.168.1.125:8081/jeesite/app/</string>-->
-    <!--<string name="host_port_server_pic">http://192.168.1.125:8081/jeesite/</string>-->
+    <!--<string name="host_port">http://192.168.1.186:8081</string>-->
+    <!--<string name="host_port_server">http://192.168.1.186:8081/jeesite/app/</string>-->
+    <!--<string name="host_port_server_pic">http://192.168.1.186:8081/jeesite/</string>-->
     <!--家-->
     <!--<string name="host_port">http://192.168.1.125:8081</string>-->
     <!--<string name="host_port_server">http://192.168.199.146:8081/jeesite/app/</string>-->
@@ -40,7 +40,7 @@
     <string name="title_p_info_edit">帮扶对象信息</string>
     <string name="title_p_suggest">意见建议</string>
     <string name="title_assis_set">帮扶要求</string>
-    <string name="error_p_suggest">请填写意见建议</string>
+    <string name="error_p_suggest">意见建议</string>
     <string name="error_p_set">请填写</string>
     <string name="title_require_list">帮扶对象需求</string>
     <string name="title_require_detail">Require Detail</string>

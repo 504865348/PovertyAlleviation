@@ -193,9 +193,9 @@ public class ItemListActivity extends AppCompatActivity {
                     JSONArray dataJson = new JSONArray(msg);
                     for (int i = 0; i < dataJson.length(); i++) {
                         JSONObject item = dataJson.getJSONObject(i);
-                        String documentId = item.getString("id");
-                        String documentName = item.getString("documentName");
-                        String documentContent = item.getString("documentContent");
+                        String documentId = item.optString("id");
+                        String documentName = item.optString("documentName");
+                        String documentContent = item.optString("documentContent");
                         map = new HashMap<String, String>();
                         map.put("documentId", documentId);
                         map.put("documentName", documentName);

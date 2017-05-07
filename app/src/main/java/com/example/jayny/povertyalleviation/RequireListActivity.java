@@ -231,11 +231,11 @@ public class RequireListActivity extends AppCompatActivity {
                     for (int i = 0; i < dataJson.length(); i++) {
                         JSONObject item = dataJson.getJSONObject(i);
                         map = new HashMap<String, String>();
-                        String oid = item.getString("id");
-                        String poorContent = item.getString("poorContent");
-                        String isChange = item.getString("isChange");
+                        String oid = item.optString("id");
+                        String poorContent = item.optString("poorContent");
+                        String isChange = item.optString("isChange");
                         try{
-                            String solution = item.getString("solution");
+                            String solution = item.optString("solution");
                             map.put("solution", solution);
                         }catch (Exception e){
                             map.put("solution", "");

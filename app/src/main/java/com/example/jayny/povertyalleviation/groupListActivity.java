@@ -190,9 +190,9 @@ public class groupListActivity extends AppCompatActivity {
                     JSONArray dataJson = new JSONArray(msg);
                     for (int i = 0; i < dataJson.length(); i++) {
                         JSONObject item = dataJson.getJSONObject(i);
-                        String name = item.getString("name");
-                        String master = item.getString("master");
-                        String phone = item.getString("phone");
+                        String name = item.optString("name");
+                        String master = item.optString("master");
+                        String phone = item.optString("phone");
                         map = new HashMap<String, String>();
                         map.put("name", name);
                         map.put("master", master);

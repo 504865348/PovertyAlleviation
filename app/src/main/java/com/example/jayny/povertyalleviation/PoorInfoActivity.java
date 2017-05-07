@@ -125,7 +125,9 @@ public class PoorInfoActivity extends AppCompatActivity {
                         TextView temp = (TextView) findViewById(R.id.name);
                         temp.append(dataJson.optString("name"));
                         temp = (TextView) findViewById(R.id.birthday);
-                        temp.append(dataJson.optString("identityCard").substring(6,14));
+                        if(dataJson.optString("identityCard").length()>14) {
+                            temp.append(dataJson.optString("identityCard").substring(6, 14));
+                        }
                         temp = (TextView) findViewById(R.id.identityCard);
                         temp.append(dataJson.optString("identityCard"));
                         temp = (TextView) findViewById(R.id.sex);

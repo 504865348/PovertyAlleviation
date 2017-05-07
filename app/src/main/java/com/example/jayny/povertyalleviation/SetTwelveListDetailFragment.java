@@ -477,7 +477,7 @@ public class SetTwelveListDetailFragment extends Fragment {
             } else {
                 try {
                     JSONObject dataJson = new JSONObject(msg);
-                    if (dataJson.getString("status").equals("ok")) {
+                    if (dataJson.optString("status").equals("ok")) {
                         Toast.makeText(getActivity(), "保存成功！", Toast.LENGTH_LONG).show();
                         getActivity().navigateUpTo(new Intent(getActivity(), SetTwelveListListActivity.class).putExtra("as",getArguments().getString("as")).putExtra("as_type",getArguments().getString("as_type")).putExtra("status3",null==getArguments().getString("status3")?"0":getArguments().getString("status3")));
                     } else {

@@ -118,7 +118,7 @@ public class SuggestActivity extends AppCompatActivity {
                     if (!msg.equals("")) {
                         JSONObject dataJson = new JSONObject(msg);
                         TextView temp = (TextView) findViewById(R.id.suggestionContent);
-                        temp.setText(dataJson.getString("suggestionContent"));
+                        temp.setText(dataJson.optString("suggestionContent"));
                     }
                 } catch (Exception e) {
                     Log.d("getJosn:", e.getMessage());
@@ -175,7 +175,7 @@ public class SuggestActivity extends AppCompatActivity {
             } else {
                 try {
                     JSONObject dataJson = new JSONObject(msg);
-                    if (dataJson.getString("status").equals("ok")) {
+                    if (dataJson.optString("status").equals("ok")) {
                         Toast.makeText(SuggestActivity.this, "保存成功！", Toast.LENGTH_LONG).show();
                         SuggestActivity.this.finish();
                     } else {

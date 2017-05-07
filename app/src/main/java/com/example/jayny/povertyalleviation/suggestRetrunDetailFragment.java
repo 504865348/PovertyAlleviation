@@ -133,7 +133,7 @@ public class suggestRetrunDetailFragment extends Fragment {
             } else {
                 try {
                     JSONObject dataJson = new JSONObject(msg);
-                    if (dataJson.getString("status").equals("ok")) {
+                    if (dataJson.optString("status").equals("ok")) {
                         Toast.makeText(getActivity(), "保存成功！", Toast.LENGTH_LONG).show();
                         getActivity().navigateUpTo(new Intent(getActivity(), suggestRetrunListActivity.class));
                     } else {

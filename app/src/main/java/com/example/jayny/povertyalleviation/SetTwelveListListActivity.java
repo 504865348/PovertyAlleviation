@@ -275,11 +275,11 @@ public class SetTwelveListListActivity extends AppCompatActivity {
                     JSONArray dataJson = new JSONArray(msg);
                     for (int i = 0; i < dataJson.length(); i++) {
                         JSONObject item = dataJson.getJSONObject(i);
-                        String oid = item.getString("id");
-                        String pic = item.getString("pic");
-                        String words = item.getString("words");
-                        String title = item.getString("title");
-                        String remarks = item.getString("remarks");
+                        String oid = item.optString("id");
+                        String pic = item.optString("pic");
+                        String words = item.optString("words");
+                        String title = item.optString("title");
+                        String remarks = item.optString("remarks");
                         map = new HashMap<String, String>();
                         map.put("oid", oid);
                         map.put("pic", pic);

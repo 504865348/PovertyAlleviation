@@ -173,7 +173,7 @@ public class SetContentActivity extends AppCompatActivity {
                     if(!msg.equals("")){
                         JSONObject dataJson = new JSONObject(msg);
                         TextView temp = (TextView) findViewById(R.id.setContentContent);
-                        temp.setText(dataJson.getString("words"));
+                        temp.setText(dataJson.optString("words"));
                     }
                 } catch (Exception e) {
                     Log.e("getJosn:", e.getMessage());
@@ -222,7 +222,7 @@ public class SetContentActivity extends AppCompatActivity {
             } else {
                 try {
                     JSONObject dataJson = new JSONObject(msg);
-                    if (dataJson.getString("status").equals("ok")) {
+                    if (dataJson.optString("status").equals("ok")) {
                         Toast.makeText(SetContentActivity.this, "保存成功！", Toast.LENGTH_LONG).show();
                         navigateUpTo(new Intent(SetContentActivity.this, AssistSetActivity.class).putExtra("status3",null==getIntent().getStringExtra("status3")?"0":getIntent().getStringExtra("status3")));
                     } else {
