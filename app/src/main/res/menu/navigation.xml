@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_xcjg"
+        android:icon="@drawable/xcjg"
+        android:title="乡村机构"/>
+
+    <item
+        android:id="@+id/navigation_bfdw"
+        android:icon="@drawable/bfdw"
+        android:title="帮扶单位"/>
+
+    <item
+        android:id="@+id/navigation_yjfk"
+        android:icon="@drawable/yjfk"
+        android:title="意见反馈"/>
+
+</menu>

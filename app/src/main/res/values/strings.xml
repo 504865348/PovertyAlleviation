@@ -18,8 +18,9 @@
     <string name="module_manager">精准扶贫-管理系统</string>
 
     <!-- Strings related to login -->
-    <string name="prompt_email">请输入用户名</string>
-    <string name="prompt_password">请输入密码</string>
+    <string name="prompt_email">手机号/卡（账）号/别名</string>
+    <string name="prompt_password">登录密码</string>
+    <string name="prompt_type">请选择用户类型</string>
     <string name="action_sign_in">登陆</string>
     <string name="action_sign_in_short">确认</string>
     <string name="error_incorrect_password">账号或密码错误</string>
@@ -57,4 +58,12 @@
     <string name="title_group_detail">group Detail</string>
     <string name="title_fund_list">fund</string>
     <string name="title_fund_detail">fund Detail</string>
+    <string name="title_activity_new_manager_list">newManagerListActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_main_manager">MainManagerActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

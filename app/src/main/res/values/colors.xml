@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#35b9fe</color>
-    <color name="colorPrimaryDark">#5ec5fb</color>
-    <color name="colorAccent">#5ec5fb</color>
+    <color name="colorPrimary">#fc7e7f</color>
+    <color name="colorPrimaryDark">#fc7e7f</color>
+    <color name="colorAccent">#fc7e7f</color>
+
     <color name="colorBlurGrey">#e1dfdf</color>
     <color name="font_black">#000</color>
     <color name="font_green">#11c601</color>
@@ -31,4 +32,7 @@
     <color name="manager_bg_1">#f5f5f5</color>
     <color name="manager_txt_bg">#333333</color>
     <color name="gray">#f7f7f7</color>
+    <!-- 更新3.0 -->
+    <color name="latest_gray">#bcb9b9</color>
+
 </resources>

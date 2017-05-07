@@ -111,7 +111,7 @@ public class suggestRetrunListActivity extends AppCompatActivity {
                         arguments.putString("suggestionContent", holder.mItem.get("suggestionContent"));
                         suggestRetrunDetailFragment fragment = new suggestRetrunDetailFragment();
                         fragment.setArguments(arguments);
-                        getSupportFragmentManager().beginTransaction()
+                        getFragmentManager().beginTransaction()
                                 .replace(R.id.suggestretrun_detail_container, fragment)
                                 .commit();
                     } else {

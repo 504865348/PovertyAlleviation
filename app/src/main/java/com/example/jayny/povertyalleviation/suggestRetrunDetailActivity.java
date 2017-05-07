@@ -50,7 +50,7 @@ public class suggestRetrunDetailActivity extends AppCompatActivity {
                     getIntent().getStringExtra("suggestionContent"));
             suggestRetrunDetailFragment fragment = new suggestRetrunDetailFragment();
             fragment.setArguments(arguments);
-            getSupportFragmentManager().beginTransaction()
+            getFragmentManager().beginTransaction()
                     .add(R.id.suggestretrun_detail_container, fragment)
                     .commit();
         }
