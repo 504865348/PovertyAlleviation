@@ -2,37 +2,46 @@ package com.example.jayny.povertyalleviation.fragment;
 
 import android.app.Fragment;
 import android.content.Context;
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
+import android.text.Editable;
+import android.text.TextUtils;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
-import android.widget.TextView;
+import android.widget.Adapter;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.jayny.povertyalleviation.Constant;
 import com.example.jayny.povertyalleviation.MyUtils;
-import com.example.jayny.povertyalleviation.PoorerListActivity;
 import com.example.jayny.povertyalleviation.R;
-import com.example.jayny.povertyalleviation.VillageInfoActivity;
+import com.example.jayny.povertyalleviation.sort.CharacterParser;
+import com.example.jayny.povertyalleviation.sort.ClearEditText;
+import com.example.jayny.povertyalleviation.sort.VillageListAdapter;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static android.icu.lang.UCharacter.GraphemeClusterBreak.V;
+
 public class VillageListFragment extends Fragment {
-    List<Map<String, String>> list = new ArrayList<Map<String, String>>();
+    List<Map<String, String>> list = new ArrayList<>();
     Map<String, String> map = null;
-    private ListTask listTask;
+    private VillageListAdapter mAdapter;
+    private CharacterParser mParser;
+    private Comparator<Map<String, String>> mComparator;
+
 
     public VillageListFragment() {
     }
@@ -47,11 +56,59 @@ public class VillageListFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_manager_list, container, false);
-        View recyclerView = view.findViewById(R.id.village_list);
+        ListView recyclerView = (ListView) view.findViewById(R.id.village_list);
         assert recyclerView != null;
-        listTask = new ListTask(recyclerView);
+        ListTask listTask = new ListTask(recyclerView);
         listTask.executeOnExecutor(com.example.jayny.povertyalleviation.Executor.exec);
+        initSearchView(view);
         return view;
+    }
+
+    private void initSearchView(View view) {
+        ClearEditText mClearEditText = (ClearEditText) view.findViewById(R.id.filter_edit);
+
+        //根据输入框输入值的改变来过滤搜索
+        mClearEditText.addTextChangedListener(new TextWatcher() {
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                //当输入框里面的值为空，更新为原来的列表，否则为过滤数据列表
+                filterData(s.toString());
+            }
+
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count,
+                                          int after) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+            }
+        });
+    }
+    /**
+     * 根据输入框中的值来过滤数据并更新ListView
+     * @param filterStr
+     */
+    private void filterData(String filterStr){
+        List<Map<String,String>> filterDateList = new ArrayList<>();
+
+        if(TextUtils.isEmpty(filterStr)){
+            filterDateList = list;
+        }else{
+            filterDateList.clear();
+            for(Map<String,String> sortModel : list){
+                String name = sortModel.get("name");
+                if(name.contains(filterStr) || mParser.getSelling(name).startsWith(filterStr)){
+                    filterDateList.add(sortModel);
+                }
+            }
+        }
+
+        // 根据a-z进行排序
+        Collections.sort(filterDateList, mComparator);
+        mAdapter.updateListView(filterDateList);
     }
 
     @Override
@@ -66,100 +123,10 @@ public class VillageListFragment extends Fragment {
     }
 
 
-    private void setupRecyclerView(@NonNull RecyclerView recyclerView) {
-        recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(list));
+    private void setupRecyclerView(@NonNull ListView recyclerView) {
+        mAdapter = new VillageListAdapter(getActivity(),list);
+        recyclerView.setAdapter(mAdapter);
     }
-
-    public class SimpleItemRecyclerViewAdapter
-            extends RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.ViewHolder> {
-
-        private final List<Map<String, String>> mValues;
-
-        public SimpleItemRecyclerViewAdapter(List<Map<String, String>> items) {
-            mValues = items;
-        }
-
-        @Override
-        public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            View view = LayoutInflater.from(parent.getContext())
-                    .inflate(R.layout.village_list_content, parent, false);
-            return new ViewHolder(view);
-        }
-
-        @Override
-        public void onBindViewHolder(final ViewHolder holder, int position) {
-            holder.mItem = mValues.get(position);
-            holder.mIdView.setText(String.valueOf(position));
-            holder.mContentView.setText(mValues.get(position).get("name"));
-            holder.mCount.setText(mValues.get(position).get("count"));
-            holder.mView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Context context = v.getContext();
-                    Intent intent = new Intent(context, PoorerListActivity.class);
-                    intent.putExtra("areaid",holder.mItem.get("oid"));
-                    intent.putExtra("areaname",holder.mItem.get("name"));
-                    intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                    context.startActivity(intent);
-                }
-            });
-            holder.mCheckDetail.setOnClickListener(
-                    new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            Context context = v.getContext();
-                            Intent intent = new Intent(context, VillageInfoActivity.class);
-                            intent.putExtra("areaid",holder.mItem.get("oid"));
-                            intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                            context.startActivity(intent);
-                        }
-                    }
-            );
-            holder.mContentView.setOnClickListener(
-                    new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            Context context = v.getContext();
-                            Intent intent = new Intent(context, VillageInfoActivity.class);
-                            intent.putExtra("areaid",holder.mItem.get("oid"));
-                            intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                            context.startActivity(intent);
-                        }
-                    }
-            );
-        }
-
-        @Override
-        public int getItemCount() {
-            return mValues.size();
-        }
-
-        public class ViewHolder extends RecyclerView.ViewHolder {
-            public final LinearLayout mVillageList;
-            public final View mView;
-            public final TextView mIdView;
-            public final TextView mContentView;
-            public final TextView mCount;
-            public final TextView mCheckDetail;
-            public Map<String, String> mItem;
-
-            public ViewHolder(View view) {
-                super(view);
-                mView = view;
-                mIdView = (TextView) view.findViewById(R.id.id);
-                mContentView = (TextView) view.findViewById(R.id.content);
-                mCount = (TextView) view.findViewById(R.id.count);
-                mVillageList= (LinearLayout) view.findViewById(R.id.ll_village_list);
-                mCheckDetail= (TextView) view.findViewById(R.id.check);
-            }
-
-            @Override
-            public String toString() {
-                return super.toString() + " '" + mContentView.getText() + "'";
-            }
-        }
-    }
-
 
 
     /**
@@ -184,16 +151,14 @@ public class VillageListFragment extends Fragment {
             } catch (InterruptedException e) {
                 return "";
             }
-            Map<String, String> map = new HashMap<String, String>();
+            Map<String, String> map = new HashMap<>();
             map.put("userid", Constant.userid);
-            String result = MyUtils.postGetJson(getResources().getString(R.string.host_port_server) + "findVillageById", "POST", map);
-            return result;
+            return MyUtils.postGetJson(getResources().getString(R.string.host_port_server) + "findVillageById", "POST", map);
         }
 
         @Override
         protected void onPostExecute(String msg) {
             //showProgress(false);
-
             if (msg.equals("") || msg.equals("error")) {
                 Toast.makeText(getActivity(), getString(R.string.error_remote), Toast.LENGTH_LONG).show();
             } else {
@@ -208,14 +173,39 @@ public class VillageListFragment extends Fragment {
                         map.put("oid", oid);
                         map.put("name", name);
                         map.put("count", count);
+                        //汉字转换成拼音
+                        mParser = new CharacterParser();
+                        String pinyin = mParser.getSelling(name);
+                        String sortString = pinyin.substring(0, 1).toUpperCase();
+                        // 正则表达式，判断首字母是否是英文字母
+                        if(sortString.matches("[A-Z]")){
+                            map.put("sort",sortString.toUpperCase());
+                        }else{
+                            map.put("sort","#");
+                        }
                         list.add(map);
                     }
+                    mComparator = new Comparator<Map<String, String>>() {
+                        @Override
+                        public int compare(Map<String, String> o1, Map<String, String> o2) {
+                            if (o1.get("sort").equals("@")
+                                    || o2.get("sort").equals("#")) {
+                                return -1;
+                            } else if (o1.get("sort").equals("#")
+                                    || o2.get("sort").equals("@")) {
+                                return 1;
+                            } else {
+                                return o1.get("sort").compareTo(o2.get("sort"));
+                            }
+                        }
+                    };
+//                    Collections.sort(list, mComparator);
                 } catch (Exception e) {
                     Log.e("getJosn:", e.getMessage());
                     e.printStackTrace();
                     Toast.makeText(getActivity(), getString(R.string.error_local), Toast.LENGTH_LONG).show();
                 }
-                setupRecyclerView((RecyclerView) view);
+                setupRecyclerView((ListView) view);
             }
         }
 

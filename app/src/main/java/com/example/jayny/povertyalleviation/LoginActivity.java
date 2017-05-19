@@ -23,12 +23,16 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.jayny.povertyalleviation.fragment.MainManagerActivity;
+import com.example.jayny.povertyalleviation.fragment.MainManager0Activity;
+import com.example.jayny.povertyalleviation.fragment.MainManager2Activity;
+import com.example.jayny.povertyalleviation.fragment.MainManager3Activity;
 
 import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import static com.example.jayny.povertyalleviation.R.id.aUnit;
 
 
 public class LoginActivity extends AppCompatActivity {
@@ -251,7 +255,8 @@ public class LoginActivity extends AppCompatActivity {
                         if (Constant.usertype.equals("0")) {
                             Constant.fundstatus = dataJson.optString("fundstatus");
                             Constant.aid = dataJson.optString("aid");
-                            intent = new Intent(LoginActivity.this, PoorListActivity.class);
+//                            intent = new Intent(LoginActivity.this, PoorListActivity.class);
+                            intent = new Intent(LoginActivity.this, MainManager0Activity.class);
                         } else if (Constant.usertype.equals("5")) {
                             Constant.fundstatus = dataJson.optString("fundstatus");
                             intent = new Intent(LoginActivity.this, PoorListActivity.class);
@@ -259,9 +264,11 @@ public class LoginActivity extends AppCompatActivity {
                             Constant.fundstatus = dataJson.optString("fundstatus");
                             Constant.pname = dataJson.optString("pname");
                             intent = new Intent(LoginActivity.this, AssistListActivity.class);
-                        } else {
+                        } else if(Constant.usertype.equals("2")){
+                            intent = new Intent(LoginActivity.this, MainManager2Activity.class);
+                        }else if(Constant.usertype.equals("3")){
 //                            intent = new Intent(LoginActivity.this, ManagerListActivity.class);
-                            intent = new Intent(LoginActivity.this, MainManagerActivity.class);
+                            intent = new Intent(LoginActivity.this, MainManager3Activity.class);
                         }
                         startActivity(intent);
                         finish();

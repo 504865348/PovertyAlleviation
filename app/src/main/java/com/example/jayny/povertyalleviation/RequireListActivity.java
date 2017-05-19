@@ -71,7 +71,7 @@ public class RequireListActivity extends AppCompatActivity {
                 public void onClick(View view) {
                     if (mTwoPane) {
                         RequireDetailFragment fragment = new RequireDetailFragment();
-                        getSupportFragmentManager().beginTransaction()
+                        getFragmentManager().beginTransaction()
                                 .replace(R.id.require_detail_container, fragment)
                                 .commit();
                     } else {
@@ -135,7 +135,7 @@ public class RequireListActivity extends AppCompatActivity {
                         arguments.putString("status3", null==getIntent().getStringExtra("status3")?"0":getIntent().getStringExtra("status3"));
                         RequireDetailFragment fragment = new RequireDetailFragment();
                         fragment.setArguments(arguments);
-                        getSupportFragmentManager().beginTransaction()
+                        getFragmentManager().beginTransaction()
                                 .replace(R.id.require_detail_container, fragment)
                                 .commit();
                     } else {

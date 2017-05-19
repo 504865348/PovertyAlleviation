@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_jtqk"
+        android:icon="@drawable/jtqk"
+        android:title="家庭情况"/>
+    <item
+        android:id="@+id/navigation_bfrw"
+        android:icon="@drawable/bfrw"
+        android:title="帮扶任务"/>
+    <item
+        android:id="@+id/navigation_zcwj"
+        android:icon="@drawable/zcwj"
+        android:title="政策文件"/>
+
+    <item
+        android:id="@+id/navigation_fpdt"
+        android:icon="@drawable/fpdt"
+        android:title="扶贫动态"/>
+    <item
+        android:id="@+id/navigation_xqss"
+        android:icon="@drawable/xqss"
+        android:title="需求诉说"/>
+</menu>

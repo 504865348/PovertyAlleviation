@@ -165,8 +165,7 @@ public class PoorListActivity extends AppCompatActivity {
             } else {
                 temp.put("aid", Constant.aid);
             }
-            String result = MyUtils.postGetJson(getResources().getString(R.string.host_port_server) + "findFrontPoorInfo", "POST", temp);
-            return result;
+            return MyUtils.postGetJson(getResources().getString(R.string.host_port_server) + "findFrontPoorInfo", "POST", temp);
         }
 
         @Override

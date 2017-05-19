@@ -1,11 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/poorer_list"
-    android:name="com.example.jayny.povertyalleviation.PoorerListFragment"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    app:layoutManager="LinearLayoutManager"
-    tools:context="com.example.jayny.povertyalleviation.PoorerListActivity"
-    tools:listitem="@layout/poorer_list_content" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <com.example.jayny.povertyalleviation.sort.ClearEditText
+        android:id="@+id/filter_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:drawableLeft="@drawable/search_bar_icon_normal"
+        android:hint="请输入关键字"
+        android:maxLines="1"
+        android:textSize="14sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/latest_gray"/>
+
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+                                            xmlns:tools="http://schemas.android.com/tools"
+                                            android:id="@+id/poorer_list"
+                                            android:name="com.example.jayny.povertyalleviation.PoorerListFragment"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            tools:context="com.example.jayny.povertyalleviation.PoorerListActivity"
+                                            tools:listitem="@layout/poorer_list_content"/>
+
+</LinearLayout>
+

@@ -58,7 +58,7 @@ public class RequireDetailActivity extends AppCompatActivity {
                     getIntent().getStringExtra("status3"));
             RequireDetailFragment fragment = new RequireDetailFragment();
             fragment.setArguments(arguments);
-            getSupportFragmentManager().beginTransaction()
+            getFragmentManager().beginTransaction()
                     .add(R.id.require_detail_container, fragment)
                     .commit();
         }

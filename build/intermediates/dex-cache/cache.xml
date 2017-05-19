@@ -3,6 +3,87 @@
 
     <item
         is-multidex="true"
+        jar="D:\software\AndroidStudio\AVD\.android\build-cache\d1eacc20726a5bd06d7cba5c4adc3f897681a3d0\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
+        <dex dex="D:\other\project\poverty\PovertyAlleviation\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8a9ade8dbcda5121e25a86186d501ea583f55b07\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\software\AndroidStudio\AVD\.android\build-cache\04ab69474c42279a45d70d1bb0deb4641b285574\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
+        <dex dex="D:\other\project\poverty\PovertyAlleviation\app\build\intermediates\pre-dexed\release\classes_2d79219f1b9ffc3a1e5aafbcf26fb8e93f99cc34.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\software\AndroidStudio\AVD\.android\build-cache\d1eacc20726a5bd06d7cba5c4adc3f897681a3d0\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
+        <dex dex="D:\other\project\poverty\PovertyAlleviation\app\build\intermediates\pre-dexed\release\classes_8a9ade8dbcda5121e25a86186d501ea583f55b07.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\software\AndroidStudio\AVD\.android\build-cache\04ab69474c42279a45d70d1bb0deb4641b285574\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
+        <dex dex="D:\other\project\poverty\PovertyAlleviation\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2d79219f1b9ffc3a1e5aafbcf26fb8e93f99cc34\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\software\AndroidStudio\AVD\.android\build-cache\320ec3b8628e7f172bcffb221f6be3562763adb6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="D:\other\project\poverty\PovertyAlleviation\app\build\intermediates\pre-dexed\release\classes_7064af63149fa82fb4a0c35fa9dbcc3fe77ff55f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\software\AndroidStudio\AVD\.android\build-cache\e0244976467b8e955a9c62d2e6f352fa2b2f9265\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="D:\other\project\poverty\PovertyAlleviation\app\build\intermediates\pre-dexed\release\classes_47e68ef94e4273b67ba3618576d85d64c93f4aed.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\other\project\poverty\PovertyAlleviation\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="D:\other\project\poverty\PovertyAlleviation\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_29ab32a39c9ed87c38308afc4554aa5228244027\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\software\AndroidStudio\AVD\.android\build-cache\07d24310ded2c82bebba5377bbcddd5d9725a057\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\other\project\poverty\PovertyAlleviation\app\build\intermediates\pre-dexed\release\classes_f52a514f3451a2ed76225245bd90bba42dab66af.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\software\AndroidStudio\AVD\.android\build-cache\aeab97b9564634ee57931c5532c9d976bf8bbc21\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="D:\other\project\poverty\PovertyAlleviation\app\build\intermediates\pre-dexed\release\classes_a7333ded0038368586f323d8bcf3297e86ea22c5.jar" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\software\AndroidStudio\AVD\.android\build-cache\276a65cb7a2b63cf8cc0aae225c1ffe48bf2a5e8\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -16,35 +97,71 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="e2a67127df7f248204780b86792154c978c83e51">
+        sha1="4c6ac82b187494a3c1c37f1ea014eda042119bfa">
         <dex dex="D:\other\project\poverty\PovertyAlleviation\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_65629321031b869063cc91053f99c3cb1d496073\classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="D:\other\project\poverty\PovertyAlleviation\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="D:\software\AndroidStudio\AVD\.android\build-cache\6e67861b5a090966c825da5f5a66979fa7b4d17e\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
-        <dex dex="D:\other\project\poverty\PovertyAlleviation\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_29ab32a39c9ed87c38308afc4554aa5228244027\classes.dex" />
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="D:\other\project\poverty\PovertyAlleviation\app\build\intermediates\pre-dexed\release\classes_2ac3c40cc9fa82e85bdef19c781c6781db508d93.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="D:\software\AndroidStudio\AVD\.android\build-cache\d1eacc20726a5bd06d7cba5c4adc3f897681a3d0\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="D:\software\AndroidStudio\AVD\.android\build-cache\276a65cb7a2b63cf8cc0aae225c1ffe48bf2a5e8\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
-        <dex dex="D:\other\project\poverty\PovertyAlleviation\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8a9ade8dbcda5121e25a86186d501ea583f55b07\classes.dex" />
+        sha1="7e92aadd0697922316d1395c1887a23aebec640a">
+        <dex dex="D:\other\project\poverty\PovertyAlleviation\app\build\intermediates\pre-dexed\release\classes_0489f509f5050ffbe15eea85db7b0ccd1c9577c3.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="D:\software\AndroidStudio\AVD\.android\build-cache\04ab69474c42279a45d70d1bb0deb4641b285574\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="D:\software\AndroidStudio\AVD\.android\build-cache\92d3e4be99a4179f1a800714c8d9a7d1109e4340\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
-        <dex dex="D:\other\project\poverty\PovertyAlleviation\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2d79219f1b9ffc3a1e5aafbcf26fb8e93f99cc34\classes.dex" />
+        sha1="e3234cd25e23069abd48ecd2117bc0e8011bf45a">
+        <dex dex="D:\other\project\poverty\PovertyAlleviation\app\build\intermediates\pre-dexed\release\classes_80fc43a8626a0fcb58a8e09440d2f8bf20dfb40b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\software\AndroidStudio\SDK\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="D:\other\project\poverty\PovertyAlleviation\app\build\intermediates\pre-dexed\release\support-annotations-25.3.1_a3d00312ce95875ef4b1164a7861c4fdd5acdd6d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\software\AndroidStudio\AVD\.android\build-cache\9536a9c18a24579b2be14a5e725b39af8930dd42\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="D:\other\project\poverty\PovertyAlleviation\app\build\intermediates\pre-dexed\release\classes_fec1806eb6db7a596eba0ab9cd07e921324fd4c4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\software\AndroidStudio\AVD\.android\build-cache\c78a1f9efce71dff6e2d660d208c4fb623e2b3c7\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="D:\other\project\poverty\PovertyAlleviation\app\build\intermediates\pre-dexed\release\classes_21571be35bc29a7136dc27211af7b74bef712642.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\software\AndroidStudio\AVD\.android\build-cache\9401c0273e0431d08a5a417f9747383bda82a050\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="D:\other\project\poverty\PovertyAlleviation\app\build\intermediates\pre-dexed\release\classes_439b3043751eadefd6f49e50ff06d510861203c8.jar" />
     </item>
     <item
         is-multidex="true"
@@ -63,6 +180,51 @@
         revision="25.0.2"
         sha1="e3234cd25e23069abd48ecd2117bc0e8011bf45a">
         <dex dex="D:\other\project\poverty\PovertyAlleviation\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_80fc43a8626a0fcb58a8e09440d2f8bf20dfb40b\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\software\AndroidStudio\AVD\.android\build-cache\6b39429fbb6d58519029b27244cd0f92aee272c7\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="D:\other\project\poverty\PovertyAlleviation\app\build\intermediates\pre-dexed\release\classes_f4694fb5e10a65791e4f8cb90e1da8e163a2c250.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\software\AndroidStudio\AVD\.android\build-cache\0b02c8c81e65a10cbe9b4a41db2ef15aa7442143\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="D:\other\project\poverty\PovertyAlleviation\app\build\intermediates\pre-dexed\release\classes_423bf2890af3f6801836a329085da67eac770e0f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\software\AndroidStudio\AVD\.android\build-cache\eb21b38ccc12986b8e7896c9b522f0504b26e13a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="D:\other\project\poverty\PovertyAlleviation\app\build\intermediates\pre-dexed\release\classes_c5d952990d3b131adc54b29977c8863ebc239ad3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\software\AndroidStudio\AVD\.android\build-cache\db7420fc914053786eb77d4e28b8be87146cb667\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="D:\other\project\poverty\PovertyAlleviation\app\build\intermediates\pre-dexed\release\classes_1261d516038bfe216a62be736e6fceb1cc59d9be.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\software\AndroidStudio\AVD\.android\build-cache\bf215809ab49465f5f62c80d1e40737ebf3a0e34\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="D:\other\project\poverty\PovertyAlleviation\app\build\intermediates\pre-dexed\release\classes_1d013111e421d8ec4e01d79e5c51eff72449be3c.jar" />
     </item>
 
 </items>

@@ -4,20 +4,32 @@
               android:layout_height="wrap_content"
               android:orientation="vertical"
     >
-
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#efefef"
+        android:textColor="#454545"
+        android:layout_weight="1.0"
+        android:paddingLeft="5dip"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:text="A"/>
     <LinearLayout
         android:id="@+id/ll_village_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
         >
 
         <ImageView
-            android:layout_width="28dp"
-            android:layout_height="28dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_gravity="center"
             android:layout_marginLeft="12dp"
-            android:background="@mipmap/pkh_v_icon"
+            android:background="@drawable/village_icon"
             />
 
         <LinearLayout
@@ -57,22 +69,18 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:gravity="right"
             android:layout_weight="3"
             android:orientation="horizontal">
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="此村有"
-                />
 
             <TextView
                 android:id="@+id/count"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="0"
-                android:textColor="@color/latest_blue"
+                android:textColor="@color/font_red"
                 android:textSize="18sp"
                 />
 
@@ -91,6 +99,7 @@
             android:layout_gravity="center"
             android:layout_marginRight="8dp"
             android:gravity="right"
+
             android:src="@mipmap/pkh_arrow"
             />
 

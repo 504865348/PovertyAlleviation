@@ -51,7 +51,7 @@ public class UnitListFragment extends Fragment {
         assert recyclerView != null;
         setupRecyclerView((RecyclerView) recyclerView);
         listTask = new ListTask(recyclerView);
-        listTask.executeOnExecutor(Executor.exec);
+        listTask.executeOnExecutor(com.example.jayny.povertyalleviation.Executor.exec);
         return view;
     }
 
@@ -166,13 +166,15 @@ public class UnitListFragment extends Fragment {
                 try {
                     JSONArray dataJson = new JSONArray(msg);
                     for (int i = 0; i < dataJson.length(); i++) {
-                        map = new HashMap<String, String>();
-                        JSONObject item = dataJson.getJSONObject(i);
-                        String name = item.getString("name");
-                        String oid = item.getString("id");
-                        map.put("name", name);
-                        map.put("oid", oid);
-                        list.add(map);
+                        map = new HashMap<>();
+                        if (null != dataJson.optJSONObject(i) && !dataJson.optJSONObject(i).equals("")) {
+                            JSONObject item = dataJson.getJSONObject(i);
+                            String name = item.getString("name");
+                            String oid = item.getString("id");
+                            map.put("name", name);
+                            map.put("oid", oid);
+                            list.add(map);
+                        }
                     }
                 } catch (Exception e) {
                     Log.e("getJosn:", e.getMessage());

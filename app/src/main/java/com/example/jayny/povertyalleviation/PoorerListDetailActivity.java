@@ -148,6 +148,7 @@ public class PoorerListDetailActivity extends AppCompatActivity {
             Map<String, String> temp = new HashMap<String, String>();
             if (Constant.usertype.equals("1")) {
                 temp.put("aid", Constant.userid);
+
             } else if (Constant.usertype.equals("2")) {
                 if (getIntent().getStringExtra("status2").equals("0")) {
                     temp.put("pid", Constant.aid);
@@ -159,8 +160,7 @@ public class PoorerListDetailActivity extends AppCompatActivity {
             } else {
                 temp.put("aid", Constant.aid);
             }
-            String result = MyUtils.postGetJson(getResources().getString(R.string.host_port_server) + "findFrontPoorInfo", "POST", temp);
-            return result;
+            return MyUtils.postGetJson(getResources().getString(R.string.host_port_server) + "findFrontPoorInfo", "POST", temp);
         }
 
         @Override

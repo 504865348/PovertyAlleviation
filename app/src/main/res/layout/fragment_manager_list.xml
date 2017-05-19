@@ -4,12 +4,29 @@
               android:layout_height="match_parent"
               android:orientation="vertical"
 >
+    <com.example.jayny.povertyalleviation.sort.ClearEditText
+        android:id="@+id/filter_edit"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:drawable/editbox_background_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/search_bar_icon_normal"
+        android:hint="请输入关键字"
+        android:maxLines="1"
+        android:textSize="14sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/latest_gray"/>
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <include layout="@layout/village_list"/>
+        <include layout="@layout/latest_village_list"/>
     </FrameLayout>
 </LinearLayout>
 

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="GBK">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/jayny/povertyalleviation/sort/CharacterParser.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/jayny/povertyalleviation/sort/ClearEditText.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/jayny/povertyalleviation/sort/PoorerListAdapter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/jayny/povertyalleviation/sort/VillageListAdapter.java" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

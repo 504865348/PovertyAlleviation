@@ -49,7 +49,7 @@ public class ItemDetailActivity extends AppCompatActivity {
                     getIntent().getStringExtra("documentContent"));
             ItemDetailFragment fragment = new ItemDetailFragment();
             fragment.setArguments(arguments);
-            getSupportFragmentManager().beginTransaction()
+            getFragmentManager().beginTransaction()
                     .add(R.id.item_detail_container, fragment)
                     .commit();
         }

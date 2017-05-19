@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_bfdx"
+        android:icon="@drawable/bfdx"
+        android:title="帮扶对象"/>
+    <item
+        android:id="@+id/navigation_wggbfdx"
+        android:icon="@drawable/wggbfdx"
+        android:title="尚未挂钩"/>
+    <item
+        android:id="@+id/navigation_bfdw"
+        android:icon="@drawable/bfdw"
+        android:title="帮扶单位"/>
+
+    <item
+        android:id="@+id/navigation_yjfk"
+        android:icon="@drawable/yjfk"
+        android:title="意见反馈"/>
+</menu>

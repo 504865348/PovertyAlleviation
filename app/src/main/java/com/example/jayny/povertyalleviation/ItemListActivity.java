@@ -35,7 +35,7 @@ import java.util.Map;
  * item details side-by-side using two vertical panes.
  */
 public class ItemListActivity extends AppCompatActivity {
-    List<Map<String, String>> list = new ArrayList<Map<String, String>>();
+    List<Map<String, String>> list = new ArrayList<>();
     Map<String, String> map = null;
     private ListTask listTask;
     private String gettype;
@@ -117,7 +117,7 @@ public class ItemListActivity extends AppCompatActivity {
                         arguments.putString("documentContent", holder.mItem.get("documentContent"));
                         ItemDetailFragment fragment = new ItemDetailFragment();
                         fragment.setArguments(arguments);
-                        getSupportFragmentManager().beginTransaction()
+                        getFragmentManager().beginTransaction()
                                 .replace(R.id.item_detail_container, fragment)
                                 .commit();
                     } else {
